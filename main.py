@@ -8,12 +8,12 @@ def index():
     return render_template('/main.html')
 
 
-@app.route('/kontakt')
+@app.route('/contacts')
 def kontakt():
     return render_template('/kontakt.html')
 
 
-@app.route('/o_nas')
+@app.route('/about_us')
 def about():
     return render_template('/o_nas.html')
 
