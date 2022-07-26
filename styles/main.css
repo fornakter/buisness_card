@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(214, 238, 254);
+  --secondary-color: rgb(19, 125, 197);
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar {
+  height: 100px;
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  background-color: var(--main-color);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, var(--main-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right bottom, var(--main-color) 50%, var(--secondary-color));
+}
+
+.navbar .logo {
+  height: 100%;
+}
+
+.navbar .menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  list-style: none;
+}
+
+.navbar .menu__item {
+  height: 100%;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+  text-align: center;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.navbar .menu__item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background-color: #000;
+  -webkit-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.navbar .menu__item:hover::before {
+  width: 100%;
+}
+
+.navbar .menu__item .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--secondary-color);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 1rem;
+  -webkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+.navbar .menu__item .link:hover {
+  background-color: #137dc5;
+  opacity: 0.5;
+  color: white;
+  border-radius: 0.3rem;
+}
+/*# sourceMappingURL=main.css.map */
