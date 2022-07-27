@@ -1,2 +1,3 @@
-import { openNavbar } from "./navbar.js";
-openNavbar();
+import { changeNavbar } from "./navbar.js";
+
+changeNavbar();

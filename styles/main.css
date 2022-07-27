@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
@@ -17,75 +16,42 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 .navbar {
   height: 100px;
   min-width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   font-size: 1.5rem;
   background-color: var(--main-color);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, var(--main-color)), to(var(--secondary-color)));
-  background: linear-gradient(to right bottom, var(--main-color) 50%, var(--secondary-color));
+  position: relative;
+  background: linear-gradient(to top, var(--main-color) 60%, var(--secondary-color));
+  position: fixed;
 }
-
 .navbar .logo {
   height: 100%;
 }
-
-.navbar .hamburger {
-  margin-right: 1rem;
-  height: 60%;
-  width: 60px;
-  padding: 10px;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.navbar .hamburger .bar {
-  height: 5px;
-  border-radius: 10px;
-  background-color: var(--secondary-color);
-  background-color: white;
-  width: 100%;
-  -webkit-transition: 0.5s all ease-in-out;
-  transition: 0.5s all ease-in-out;
-}
-
-.navbar .menu {
+.navbar .navbar__menu-desktop {
   display: none;
 }
-
-.navbar .menu__item {
-  height: 100%;
-  -webkit-transition: 0.2s all ease-in-out;
-  transition: 0.2s all ease-in-out;
-  text-align: center;
-  position: relative;
-  margin-right: 2rem;
+.navbar .navbar__menu-mobile {
+  position: absolute;
+  top: 100px;
+  transform: translateX(-100%);
+  transition: 0.5s all ease-in-out;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--main-color);
 }
-
+.navbar .menu__item {
+  list-style: none;
+  height: 100%;
+  width: 100%;
+  transition: 0.2s all ease-in-out;
+  position: relative;
+}
 .navbar .menu__item::before {
   content: "";
   position: absolute;
@@ -93,122 +59,144 @@ a {
   left: 50%;
   bottom: 0;
   height: 3px;
-  background-color: #000;
-  -webkit-transform: translate(-50%, 100%);
-          transform: translate(-50%, 100%);
-  -webkit-transition: 0.2s all ease-in-out;
+  background-color: var(--secondary-color);
+  transform: translate(-50%, 100%);
   transition: 0.2s all ease-in-out;
 }
-
 .navbar .menu__item:hover::before {
   width: 100%;
 }
-
 .navbar .menu__item .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: var(--secondary-color);
   width: 100%;
   height: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
-  -webkit-transition: 0.2s all ease-in-out;
   transition: 0.2s all ease-in-out;
 }
-
 .navbar .menu__item .link:hover {
-  background-color: #137dc5;
+  background-color: rgb(19, 125, 197);
   opacity: 0.5;
   color: white;
-  border-radius: 0.3rem;
+}
+.navbar .navbar__menu-mobile-open {
+  transform: translateX(0%);
 }
 
-@media screen and (min-width: 780px) {
-  .navbar {
-    height: 100px;
-    min-width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 1.5rem;
-    background-color: var(--main-color);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(50%, var(--main-color)), to(var(--secondary-color)));
-    background: linear-gradient(to right bottom, var(--main-color) 50%, var(--secondary-color));
+@media only screen and (min-width: 788px) {
+  .navbar .navbar__menu-mobile {
+    display: none;
   }
-  .navbar .logo {
-    height: 100%;
-  }
-  .navbar .menu {
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .navbar .navbar__menu-desktop {
     width: 100%;
-    list-style: none;
-  }
-  .navbar .menu__item {
-    height: 100%;
-    -webkit-transition: 0.2s all ease-in-out;
-    transition: 0.2s all ease-in-out;
-    text-align: center;
-    position: relative;
-    margin-right: 2rem;
-  }
-  .navbar .menu__item::before {
-    content: "";
-    position: absolute;
-    width: 0;
-    left: 50%;
-    bottom: 0;
-    height: 3px;
-    background-color: #000;
-    -webkit-transform: translate(-50%, 100%);
-            transform: translate(-50%, 100%);
-    -webkit-transition: 0.2s all ease-in-out;
-    transition: 0.2s all ease-in-out;
-  }
-  .navbar .menu__item:hover::before {
-    width: 100%;
-  }
-  .navbar .menu__item .link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: var(--secondary-color);
-    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
     height: 100%;
-    text-align: center;
-    padding: 1rem;
-    -webkit-transition: 0.2s all ease-in-out;
-    transition: 0.2s all ease-in-out;
   }
-  .navbar .menu__item .link:hover {
-    background-color: #137dc5;
-    opacity: 0.5;
-    color: white;
-    border-radius: 0.3rem;
+  .navbar .navbar__menu-desktop .menu__item {
+    height: 100%;
+    width: auto;
   }
-  .navbar .hamburger {
+  .navbar .navbar__menu-desktop .menu__item .link {
+    height: 100%;
+  }
+}
+.hamburger {
+  margin-right: 1rem;
+  height: 60%;
+  width: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+  justify-content: space-around;
+}
+.hamburger .bar {
+  display: flex;
+  height: 5px;
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.hamburger-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5 all ease-in-out;
+}
+
+.hamburger-open .bar:nth-child(1) {
+  transform: rotate(225deg) translateY(-7px);
+}
+
+.hamburger-open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-open .bar:nth-child(3) {
+  transform: rotate(-225deg) translateY(7px);
+}
+
+@media only screen and (min-width: 788px) {
+  .hamburger {
     display: none;
   }
 }
-/*# sourceMappingURL=main.css.map */
+.header {
+  background: linear-gradient(to bottom, rgba(119, 186, 215, 0.578), rgba(4, 58, 100, 0.578)), url(../source/images/header-mobile-bg.jpg);
+  height: 110vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 1px;
+}
+.header .main-title {
+  color: white;
+  margin-top: 150px;
+  letter-spacing: 5px;
+}
+.header button {
+  position: absolute;
+  bottom: 2rem;
+  transform: translate(-50%, 0);
+  transition: all 0.2s ease-in-out;
+}
+.header button:hover {
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -2px);
+  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  padding: 5px 20px;
+  color: var(--secondary-color);
+  border: 5px solid var(--secondary-color);
+}
+
+@media only screen and (min-width: 788px) {
+  .header {
+    background: linear-gradient(to bottom, var(--main-color), var(--secondary-color)), url(../source/images/header-desktop-bg.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+button {
+  font-family: "Kanit", sans-serif;
+  background: none;
+  border: 2px solid white;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=main.css.map */

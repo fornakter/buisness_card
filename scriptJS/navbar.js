@@ -1,23 +1,16 @@
-export const openNavbar = () => {
-  let isOpen = false;
-
+export const changeNavbar = () => {
   const hamburgerButton = document.querySelector(".hamburger");
-  const bars = document.querySelectorAll(".bar");
+  const menu = document.querySelector(".navbar__menu-mobile");
+  const links = document.querySelectorAll(".link");
 
   hamburgerButton.addEventListener("click", (e) => {
-    if (!isOpen) {
-      hamburgerButton.style.justifyContent = "center";
-      bars[0].style.transform = "translateY(5px) rotate(225deg)";
-      bars[2].style.transform = "translateY(-5px) rotate(-225deg)";
-      bars[1].style.opacity = "0";
-      isOpen = true;
-    } else {
-      hamburgerButton.style.justifyContent = "space-between";
-      bars[0].style.transform = "translateY(5px) rotate(0deg)";
-      bars[2].style.transform = "translateY(-5px) rotate(0deg)";
-      bars[1].style.opacity = "1";
-      isOpen = false;
-    }
-    console.log(isOpen);
+    menu.classList.toggle("navbar__menu-mobile-open");
+    hamburgerButton.classList.toggle("hamburger-open");
   });
+  links.forEach((link) =>
+    link.addEventListener("click", () => {
+      menu.classList.toggle("navbar__menu-mobile-open");
+      hamburgerButton.classList.toggle("hamburger-open");
+    })
+  );
 };
