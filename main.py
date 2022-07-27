@@ -25,7 +25,7 @@ def sendData():
         return jsonify("Email został wysłany")
     else:
         #TODO zrobić podonie z jsonify("Email nie został wysłany") jak wyżej
-        return jsonify("Email nie został wysłany")
+        return jsonify("Problemy z wysłaniem emaila")
 
 
 @app.route('/about_us/')
