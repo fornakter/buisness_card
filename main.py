@@ -1,5 +1,4 @@
-from flask import Flask, render_template, request
-
+from flask import Flask, render_template, request,jsonify
 
 app = Flask(__name__)
 
@@ -9,7 +8,7 @@ def index():
     return render_template('main.html')
 
 
-@app.route('/kontakt/')
+@app.route('/contacts/')
 def kontakt():
     return render_template('kontakt.html')
 
@@ -18,14 +17,15 @@ def sendData():
     import send
     mail = request.form.get('mail')
     message = request.form.get('message')
+    # mail="abc@example.com"
     if send.checkMail(mail) == True:
         send.sendMail(mail,message)
-        return "Poszło"
+        return jsonify("Poszło")
     else:
-        return "Nie"
+        return jsonify("Nie")
 
 
-@app.route('/o_nas/')
+@app.route('/about_us/')
 def about():
     return render_template('o_nas.html')
 
