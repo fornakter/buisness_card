@@ -1,10 +1,16 @@
 # sprawdzenie poprawności wpisanego maila
+
+import re
+
 def checkMail(mail):
-    #sprawdzenie czy wpisane dane w formularzu to adres mailowy, sprawdzenie czy znajduje się 1 znak @ i 1 znak .
-    if mail.count('@') == 1 and mail.count('.') == 1:
-        return True
-    else:
-        return False
+   if mail==None:
+      return False
+   else:
+       pat = "^[a-zA-Z0-9-_]+@[a-zA-Z0-9]+\.[a-z]{1,3}$"
+       if re.match(pat, mail):
+          return True
+       return False
+
 
 #wysłanie maila za pomocą gmaila, protokółów SSL i SMTP
 def sendMail(mail, mess):
