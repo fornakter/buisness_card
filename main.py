@@ -9,25 +9,28 @@ def index():
 
 
 @app.route('/contacts/')
-def kontakt():
-    return render_template('kontakt.html')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/send/', methods=['GET','POST'])
 def sendData():
     import send
     mail = request.form.get('mail')
     message = request.form.get('message')
-    # mail="abc@example.com"
     if send.checkMail(mail) == True:
         send.sendMail(mail,message)
-        return jsonify("Poszło")
+        #TODO zrobić szablon strony aby później można było dziedziczyć z niego i dodawać tylko do niego poszczególne elementy
+        #TODO jsonify("Email został wysłany") należy zastąpić  render_template('email_sent.html')
+        #TODO należy tam umieścić całą stronę internetową która ma zostać wyświetlona w przypadku gdy wiadomość  została pomyślnie wysłana
+        return jsonify("Email został wysłany")
     else:
-        return jsonify("Nie")
+        #TODO zrobić podonie z jsonify("Email nie został wysłany") jak wyżej
+        return jsonify("Email nie został wysłany")
 
 
 @app.route('/about_us/')
-def about():
-    return render_template('o_nas.html')
+def about_us():
+    return render_template('about_us.html')
 
 
 @app.route('/projects/')
