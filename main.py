@@ -1,7 +1,7 @@
-from flask import Flask, render_template, request,jsonify
-import os
+from flask import Flask, render_template, request
 
-app = Flask(__name__, static_folder='static')
+
+app = Flask(__name__)
 
 
 @app.route('/')
@@ -9,25 +9,25 @@ def index():
     return render_template('main.html')
 
 
-@app.route('/contacts/')
-def contact():
-    return render_template('contact.html')
+@app.route('/kontakt/')
+def kontakt():
+    return render_template('kontakt.html')
 
-@app.route('/send/', methods=['GET', 'POST'])
+@app.route('/send/', methods=['GET','POST'])
 def sendData():
     import send
     mail = request.form.get('mail')
     message = request.form.get('message')
     if send.checkMail(mail) == True:
-        send.sendMail(mail, message)
-        return render_template('email_sent.html')
+        send.sendMail(mail,message)
+        return "Poszło"
     else:
-        return render_template('email_error.html')
+        return "Nie"
 
 
-@app.route('/about_us/')
-def about_us():
-    return render_template('about_us.html')
+@app.route('/o_nas/')
+def about():
+    return render_template('o_nas.html')
 
 
 @app.route('/projects/')

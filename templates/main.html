@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{{url_for('static', filename='styles/main.css' )}}" />
-    <script src="{{url_for('static', filename='scriptJS/main.js' )}}" type="module"></script>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <script src="../scriptJS/main.js" type="module"></script>
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <img src="{{url_for('static', filename='logo/logo.png' )}}" alt="Logo"/>
+      <img src="../source/logo/logo.png" alt="logo" class="navbar__logo logo" />
 
       <ul class="navbar__menu-desktop menu-desktop">
         <li class="menu__item">
-          <a href={{url_for('about_us')}} class="link link-about-us">O Nas</a>
+          <a href="#" class="link link-about-us">O Nas</a>
         </li>
         <li class="menu__item">
-          <a href={{url_for('projects')}} class="link link-our-projects">Nasze Projekty</a>
+          <a href="#" class="link link-our-projects">Nasze Projekty</a>
         </li>
         <li class="menu__item">
-          <a href={{url_for('contact')}} class="link link-contact">Kontakt</a>
+          <a href="kontakt.html" class="link link-contact">Kontakt</a>
         </li>
       </ul>
       <ul class="navbar__menu-mobile menu-mobile">
@@ -31,7 +31,7 @@
           <a href="#" class="link link-our-projects">Nasze Projekty</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link-contact">Kontakt</a>
+          <a href="kontakt.html" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -42,10 +42,34 @@
       </div>
     </nav>
     <header class="header">
-      <h1 class="main-title">Lorem, ipsum dolor.</h1>
+      <h1 class="header__title title">Tytuł/Slogan. Do wymyślenia <br /></h1>
+
       <button class="header__button button button-learn-more">
         Learn more
       </button>
     </header>
+    <section class="intro">
+      <div class="intro__container">
+        <h2 class="intro__title">Jakiś sobie tytuł</h2>
+        <img
+          class="intro__img"
+          src="../source/images/groupOfPeoaple.jpg"
+          alt=""
+        />
+        <article class="intro__text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia rem
+          modi voluptatem consequatur mollitia amet culpa officiis nisi, omnis
+          temporibus! Alias reiciendis quis deserunt cum? Tenetur aperiam
+          quisquam molestias quis possimus repudiandae et, doloremque blanditiis
+          voluptates quia velit enim, nulla fugit asperiores a ducimus
+          accusamus? Minus id repudiandae explicabo quibusdam.
+        </article>
+      </div>
+      <a href="projects.html" class="intro__button-link"
+        ><buttton class="button intro__button-show-projects">
+          Zobacz nasze projekty</buttton
+        ></a
+      >
+    </section>
   </body>
 </html>

@@ -14,8 +14,8 @@
     display: flex;
     height: 5px;
     border-radius: 10px;
-    background-color: var(--secondary-color);
-    background-color: var(--secondary-color);
+    background-color: rgba(var(--secondary-color));
+    background-color: rgba(var(--secondary-color));
     width: 100%;
     transition: 0.5s all ease-in-out;
   }
