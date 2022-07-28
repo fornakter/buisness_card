@@ -13,7 +13,7 @@ def index():
 def contact():
     return render_template('contact.html')
 
-@app.route('/send/', methods=['GET','POST'])
+@app.route('/send/', methods=['GET', 'POST'])
 def sendData():
     import send
     mail = request.form.get('mail')
