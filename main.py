@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request,jsonify
 import os
 
-app = Flask(__name__,static_url_path="/static/logo/")
+app = Flask(__name__, static_folder='styles')
 
 
 @app.route('/')
