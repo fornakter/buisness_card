@@ -1,0 +1,58 @@
+@import "_header.scss";
+.intro {
+  margin: 2rem 0;
+  background-color: rgb(var(--main-color));
+  padding: 3rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: rgb(17, 93, 193);
+    width: 100%;
+
+    padding: 1rem;
+  }
+
+  &__img {
+    width: 100%;
+    border: 2px solid white;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+  // &__button-show-projects {
+  //   border: 2px solid black;
+  //   transform: translate(-50%, 0);
+  //   transition: all 0.2s ease-in-out;
+  //   padding: 0.5rem 0.8rem;
+  //   border-radius: 10px;
+
+  //   &:hover {
+  //     background-color: rgb(255, 255, 255);
+  //     transform: translate(-50%, -2px);
+  //     box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  //     padding: 5px 30px;
+  //     color: rgba(var(--secondary-color));
+  //     border: 5px solid rgba(var(--secondary-color));
+  //   }
+  // }
+}
+@media only screen and (min-width: 788px) {
+  .intro {
+    margin: 5rem 2rem;
+    display: flex;
+    align-items: center;
+
+    &__img {
+      width: 50%;
+      border: 5px solid white;
+    }
+    &__text {
+      padding: 3rem;
+    }
+  }
+}

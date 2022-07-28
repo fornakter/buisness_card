@@ -2,20 +2,23 @@
   background: linear-gradient(
       to bottom,
       rgba(119, 186, 215, 0.578),
-      rgba(4, 58, 100, 0.578)
+      rgba(4, 58, 100, 0.747)
     ),
-    url(../source/images/header-mobile-bg.jpg);
-  height: 110vh;
+    url(../source/images/header-mobile-bg-small.jpg);
+  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   padding-top: 1px;
 
-  .main-title {
+  .header__title {
     color: white;
     margin-top: 150px;
+    padding: 1rem;
     letter-spacing: 5px;
+    background-color: rgb(var(--main-color), 0.3);
+    backdrop-filter: blur(5px);
   }
   button {
     position: absolute;
@@ -26,9 +29,9 @@
       background-color: rgb(255, 255, 255);
       transform: translate(-50%, -2px);
       box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
-      padding: 5px 20px;
-      color: var(--secondary-color);
-      border: 5px solid var(--secondary-color);
+      padding: 5px 30px;
+      color: rgba(var(--secondary-color));
+      border: 5px solid rgba(var(--secondary-color));
     }
   }
 }
@@ -37,13 +40,19 @@
   .header {
     background: linear-gradient(
         to bottom,
-        var(--main-color),
-        var(--secondary-color)
+        rgba(var(--main-color), 0.1),
+        rgba(var(--secondary-color), 0.4)
       ),
       url(../source/images/header-desktop-bg.jpg);
-    height: 80vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    &__title {
+      color: white;
+      margin-top: 20rem;
+      padding: 3rem;
+      font-size: 3rem;
+      display: block;
+    }
   }
 }

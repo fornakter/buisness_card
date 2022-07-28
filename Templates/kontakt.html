@@ -2,15 +2,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/kontakt.css" />
+    <title>Document</title>
   </head>
   <body>
-    Kontakt
+    <h1 class="main-title">Napisz do nas</h1>
     <h2>Formularz kontaktowy</h2>
-    <form method="post" action="/send/">
-      <p><input type="text" name="mail" /></p>
-      <p><textarea rows="25" cols="100" name="message"></textarea></p>
-      <p><input type="submit" name="submit" /></p>
+    <form class="form" method="post" action="/send/">
+      <input type="text" name="mail" />
+      <textarea rows="25" cols="100" name="message"></textarea>
+      <input type="submit" name="submit" />
     </form>
   </body>
 </html>
