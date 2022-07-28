@@ -209,64 +209,17 @@ a {
     display: block;
   }
 }
-.header {
-  background: linear-gradient(to bottom, rgba(119, 186, 215, 0.578), rgba(4, 58, 100, 0.747)), url(../source/images/header-mobile-bg-small.jpg);
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding-top: 1px;
-}
-.header .header__title {
-  color: white;
-  margin-top: 150px;
-  padding: 1rem;
-  letter-spacing: 5px;
-  background-color: rgb(var(--main-color), 0.3);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-.header button {
-  position: absolute;
-  bottom: 2rem;
-  transform: translate(-50%, 0);
-  transition: all 0.2s ease-in-out;
-}
-.header button:hover {
-  background-color: rgb(255, 255, 255);
-  transform: translate(-50%, -2px);
-  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
-  padding: 5px 30px;
-  color: rgba(var(--secondary-color));
-  border: 5px solid rgba(var(--secondary-color));
-}
-
-@media only screen and (min-width: 788px) {
-  .header {
-    background: linear-gradient(to bottom, rgba(var(--main-color), 0.1), rgba(var(--secondary-color), 0.4)), url(../source/images/header-desktop-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  .header__title {
-    color: white;
-    margin-top: 20rem;
-    padding: 3rem;
-    font-size: 3rem;
-    display: block;
-  }
-}
 .intro {
   margin: 2rem 0;
   background-color: rgb(var(--main-color));
   padding: 3rem 1rem;
   text-align: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
 }
 .intro__title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   color: rgb(17, 93, 193);
   width: 100%;
@@ -279,6 +232,25 @@ a {
 }
 .intro__text {
   font-size: 1.5rem;
+  color: rgb(46, 46, 46);
+}
+.intro__button-link {
+  color: black;
+}
+.intro__button-show-projects {
+  margin-top: 2rem;
+  border: 2px solid black;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+}
+.intro__button-show-projects:hover {
+  background-color: rgb(255, 255, 255);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  padding: 5px 30px;
+  color: rgba(var(--secondary-color));
+  border: 5px solid rgba(var(--secondary-color));
 }
 
 @media only screen and (min-width: 788px) {
