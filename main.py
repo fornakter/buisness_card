@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request,jsonify
+import os
 
-app = Flask(__name__, static_folder='styles')
+app = Flask(__name__,static_url_path="/static/logo/")
 
 
 @app.route('/')
@@ -11,7 +12,6 @@ def index():
 @app.route('/contacts/')
 def contact():
     return render_template('contact.html')
-
 
 @app.route('/send/', methods=['GET','POST'])
 def sendData():
@@ -37,6 +37,7 @@ def about_us():
 @app.route('/projects/')
 def projects():
     return render_template('projects.html')
+
 
 
 if __name__ == '__main__':
