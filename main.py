@@ -9,9 +9,9 @@ def index():
     return render_template('main.html')
 
 
-@app.route('/kontakt/')
-def kontakt():
-    return render_template('kontakt.html')
+@app.route('/contact/')
+def contact():
+    return render_template('contact.html')
 
 @app.route('/send/', methods=['GET','POST'])
 def sendData():
@@ -25,9 +25,9 @@ def sendData():
         return "Nie"
 
 
-@app.route('/o_nas/')
+@app.route('/about_us/')
 def about():
-    return render_template('o_nas.html')
+    return render_template('about_us.html')
 
 
 @app.route('/projects/')

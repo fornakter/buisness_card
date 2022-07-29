@@ -4,34 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/main.css" />
-    <script src="../scriptJS/main.js" type="module"></script>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/main.css')}}"/>
+    <script src="{{ url_for('static',filename='scriptJS/main.js')}}" type="module"></script>
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <img src="../source/logo/logo.png" alt="logo" class="navbar__logo logo" />
+      <img src="{{ url_for('static',filename='logo/logo.png')}}" alt="logo" class="navbar__logo logo" />
 
       <ul class="navbar__menu-desktop menu-desktop">
         <li class="menu__item">
-          <a href="#" class="link link-about-us">O Nas</a>
+          <a href="{{ url_for('about')}}" class="link link-about-us">O Nas</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link-our-projects">Nasze Projekty</a>
+          <a href="{{ url_for('projects')}}" class="link link-our-projects">Nasze Projekty</a>
         </li>
         <li class="menu__item">
-          <a href="kontakt.html" class="link link-contact">Kontakt</a>
+          <a href="{{ url_for('contact')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
       <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
-          <a href="#" class="link link-about-us">O Nas</a>
+          <a href="{{ url_for('about')}}" class="link link-about-us">O Nas</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link-our-projects">Nasze Projekty</a>
+          <a href="{{ url_for('projects')}}" class="link link-our-projects">Nasze Projekty</a>
         </li>
         <li class="menu__item">
-          <a href="kontakt.html" class="link link-contact">Kontakt</a>
+          <a href="{{ url_for('contact')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -53,7 +53,8 @@
         <h2 class="intro__title">Jakiś sobie tytuł</h2>
         <img
           class="intro__img"
-          src="../source/images/groupOfPeoaple.jpg"
+          src="{{ url_for('static',filename='images/groupOfPeoaple.jpg')}}"
+
           alt=""
         />
         <article class="intro__text">
@@ -65,7 +66,7 @@
           accusamus? Minus id repudiandae explicabo quibusdam.
         </article>
       </div>
-      <a href="projects.html" class="intro__button-link"
+      <a href="{{ url_for('projects')}}"class="intro__button-link"
         ><buttton class="button intro__button-show-projects">
           Zobacz nasze projekty</buttton
         ></a
