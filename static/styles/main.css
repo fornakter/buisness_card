@@ -24,9 +24,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 1.2rem;
+  font-size: 3rem;
   position: relative;
-  background: linear-gradient(to top right, rgb(var(--main-color), 0.9), 60%, rgb(var(--secondary-color), 0.9));
+  background: linear-gradient(to top right, rgb(var(--main-color), 0.9), 60%, rgb(var(--secondary-color), 0.2));
   position: fixed;
   z-index: 10;
 }
@@ -112,7 +112,7 @@ a {
     height: 100%;
   }
   .navbar .navbar__menu-desktop .menu__item .link:hover {
-    color: white;
+    color: rgb(246, 11, 11);
   }
 }
 .hamburger {
