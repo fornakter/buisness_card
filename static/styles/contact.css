@@ -153,6 +153,7 @@ body {
   border-radius: 2rem;
   padding: 2rem 1rem;
   background-color: white;
+  background-color: rgb(var(--main-color));
 }
 
 .input-container {
@@ -196,4 +197,4 @@ body {
   padding: 5px 30px;
   color: rgba(var(--secondary-color));
   border: 5px solid rgba(var(--secondary-color));
-}/*# sourceMappingURL=kontakt.css.map */
+}/*# sourceMappingURL=contact.css.map */
