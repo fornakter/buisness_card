@@ -4,16 +4,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/kontakt.css" />
+    <link rel="stylesheet" href="../static/styles/contact.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="main-title">Napisz</h1>
-    <h2>Formularz kontaktowy</h2>
-    <form class="form" method="post" action="/send/">
-      <input type="text" name="mail" />
-      <textarea rows="25" cols="100" name="message"></textarea>
-      <input type="submit" name="submit" />
-    </form>
+    <h1 class="contakt-title">Contakt Us</h1>
+
+    <div class="contact__conntainer contact">
+      <div class="contact__container__text"></div>
+
+      <form class="form" method="post" action="/send/">
+        <div class="input-container inputs-name">
+          <label class="label" for="form__name label">Your Name</label>
+          <input
+            class="form__name input"
+            placeholder="First Name"
+            type="text"
+            name="_"
+          />
+          <input
+            class="form__name input"
+            placeholder="Last Name"
+            type="text"
+            name="_"
+          />
+        </div>
+
+        <div class="input-container">
+          <label class="label" for="form-phone">Phone</label>
+          <input
+            class="form-phone input"
+            placeholder="e.g 123-123-123"
+            type="tel"
+            name="_"
+          />
+        </div>
+
+        <div class="input-container">
+          <label class="label" for="form-email label ">Your Email</label>
+          <input
+            class="form-email input"
+            placeholder="e.g hello@contact.com"
+            type="text"
+            name="mail"
+          />
+        </div>
+        <div class="input-container">
+          <label class="label" for="form-message-title">Message Title</label>
+          <input
+            class="form-message-title input"
+            placeholder="Title"
+            type="text"
+            name="_"
+          />
+        </div>
+
+        <div class="input-container">
+          <label for="input-text-area " class="label">Message</label>
+          <textarea
+            class="form__input-text-area input"
+            name="message"
+          ></textarea
+          ><input class="submit" type="submit" name="submit" />
+        </div>
+      </form>
+    </div>
   </body>
 </html>
