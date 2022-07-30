@@ -29,12 +29,13 @@ a {
   position: relative;
   background: linear-gradient(
     to top right,
-    rgb(var(--main-color), 0.9),
+    rgb(var(--main-color), 0.5),
     60%,
-    rgb(var(--secondary-color), 0.9)
+    rgb(var(--secondary-color), 0.5)
   );
   position: fixed;
   z-index: 10;
+  backdrop-filter: blur(10px);
 
   .logo {
     height: 100%;
@@ -50,6 +51,7 @@ a {
     transition: 0.5s all ease-in-out;
     flex-direction: column;
     width: 100%;
+    backdrop-filter: blur(10px);
   }
   .menu__item {
     position: relative;

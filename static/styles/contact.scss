@@ -1,0 +1,81 @@
+@import "navbar.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(var(--secondary-color), 0.5);
+}
+.contakt-title {
+  font-size: 3rem;
+  margin: 2rem;
+  letter-spacing: 5px;
+  color: white;
+  position: relative;
+  &::after {
+    content: "";
+    left: 0;
+    bottom: -10px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: absolute;
+  }
+}
+
+.contact__conntainer {
+  margin: 0 auto;
+  width: 90%;
+  box-shadow: 0 10px 30px -10px black;
+  border-radius: 2rem;
+  padding: 2rem 1rem;
+  background-color: white;
+  background-color: rgb(var(--main-color));
+}
+
+.input-container {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  .label {
+    width: 200px;
+    font-size: 1.5rem;
+    color: rgb(86, 84, 84);
+  }
+  .input {
+    border: 2px solid rgb(91, 91, 94);
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    font-family: "Kanit", sans-serif;
+    border-radius: 10px;
+    letter-spacing: 1.5px;
+  }
+  .form__input-text-area {
+    min-height: 300px;
+  }
+}
+
+.submit {
+  margin: 0 auto;
+  font-family: "Kanit", sans-serif;
+  background: none;
+  margin: 2rem auto;
+  padding: 5px 15px;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid black;
+
+  &:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+    padding: 5px 30px;
+    color: rgba(var(--secondary-color));
+    border: 5px solid rgba(var(--secondary-color));
+  }
+}
