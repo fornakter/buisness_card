@@ -24,11 +24,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 3rem;
+  font-size: 1.2rem;
   position: relative;
-  background: linear-gradient(to top right, rgb(var(--main-color), 0.9), 60%, rgb(var(--secondary-color), 0.2));
+  background: linear-gradient(to top right, rgb(var(--main-color), 0.5), 60%, rgb(var(--secondary-color), 0.5));
   position: fixed;
   z-index: 10;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .navbar .logo {
   height: 100%;
@@ -43,6 +45,8 @@ a {
   transition: 0.5s all ease-in-out;
   flex-direction: column;
   width: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .navbar .menu__item {
   position: relative;
@@ -112,7 +116,7 @@ a {
     height: 100%;
   }
   .navbar .navbar__menu-desktop .menu__item .link:hover {
-    color: rgb(246, 11, 11);
+    color: white;
   }
 }
 .hamburger {
