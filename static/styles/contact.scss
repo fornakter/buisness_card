@@ -60,7 +60,7 @@ body {
   }
 }
 
-.submit {
+.submit-btn {
   margin: 0 auto;
   font-family: "Kanit", sans-serif;
   background: none;
@@ -78,4 +78,18 @@ body {
     color: rgba(var(--secondary-color));
     border: 5px solid rgba(var(--secondary-color));
   }
+}
+.wrong {
+  transition: 0.5s box-shadow ease-in-out;
+  box-shadow: 0 0 10px 2px red;
+}
+.weaker-warning {
+  transition: 0.5s box-shadow ease-in-out;
+  box-shadow: 0 0 10px 2px rgb(255, 153, 0);
+}
+
+.contact__container__text {
+  font-size: 1.2rem;
+  color: red;
+  margin-bottom: 1rem;
 }
