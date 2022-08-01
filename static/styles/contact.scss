@@ -1,4 +1,7 @@
 @import "navbar.scss";
+@import "header.scss";
+@import "_hamburger.scss";
+@import "_components.scss";
 
 * {
   margin: 0;
@@ -39,6 +42,7 @@ body {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   .label {
     width: 200px;
@@ -55,29 +59,16 @@ body {
     border-radius: 10px;
     letter-spacing: 1.5px;
   }
-  .form__input-text-area {
+  .input__message {
     min-height: 300px;
   }
 }
-
-.submit-btn {
-  margin: 0 auto;
-  font-family: "Kanit", sans-serif;
-  background: none;
-  margin: 2rem auto;
-  padding: 5px 15px;
-  border-radius: 0.8rem;
-  font-size: 1.5rem;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid black;
-
-  &:hover {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
-    padding: 5px 30px;
-    color: rgba(var(--secondary-color));
-    border: 5px solid rgba(var(--secondary-color));
-  }
+.button {
+  align-self: center;
+  margin-top: 1rem;
+  // padding: 1rem 10rem;
+  border-color: black;
+  color: black;
 }
 .wrong {
   transition: 0.5s box-shadow ease-in-out;
@@ -88,8 +79,51 @@ body {
   box-shadow: 0 0 10px 2px rgb(255, 153, 0);
 }
 
-.contact__container__text {
+.contact__error-mesages {
   font-size: 1.2rem;
   color: red;
   margin-bottom: 1rem;
+}
+
+.confirmation {
+  background-color: white;
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  opacity: 0.9;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -20%);
+  margin: 0;
+  opacity: 0;
+  &__btn-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    &:hover {
+      transform: rotate(90deg);
+      transition: 0.5s all ease-in-out;
+    }
+  }
+}
+.confirmation--show {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+.overlay-show {
+  height: 120%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: grey;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
 }
