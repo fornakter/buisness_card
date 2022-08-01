@@ -81,7 +81,7 @@ const validateForm = () => {
     removeWarnings();
 
     if ((checkName(), checkContact(), checkMessage())) {
-      e.preventDefault();
+      // e.preventDefault();
       showConfirmeMessage();
       errorField.textContent = "";
       //   return true;
