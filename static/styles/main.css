@@ -33,7 +33,8 @@ a {
           backdrop-filter: blur(10px);
 }
 .navbar .logo {
-  height: 100%;
+  margin-left: 1rem;
+  width: 50%;
 }
 .navbar .navbar__menu-desktop {
   display: none;
