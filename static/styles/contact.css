@@ -19,6 +19,7 @@ a {
 }
 
 .navbar {
+  top: 0;
   height: 5rem;
   min-width: 100%;
   display: flex;
@@ -120,6 +121,144 @@ a {
     color: white;
   }
 }
+.button {
+  transition: all 0.2s ease-in-out;
+  font-family: "Kanit", sans-serif;
+  background: none;
+  border: 5px solid white;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  padding: 5px 30px;
+  color: rgba(var(--secondary-color));
+  border: 5px solid rgba(var(--secondary-color));
+}
+
+a {
+  color: black;
+}
+
+.header {
+  background: linear-gradient(to bottom, rgba(119, 186, 215, 0.578), rgba(4, 58, 100, 0.747)), url(../images/header-mobile-bg-small.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 1px;
+}
+.header .header__title {
+  color: white;
+  margin-top: 150px;
+  padding: 1rem;
+  letter-spacing: 5px;
+  background-color: rgb(var(--main-color), 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.header button {
+  position: absolute;
+  bottom: 2rem;
+  transform: translate(-50%, 0);
+  transition: all 0.2s ease-in-out;
+}
+.header button:hover {
+  background-color: rgb(255, 255, 255);
+  transform: translate(-50%, -2px);
+  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  padding: 5px 30px;
+  color: rgba(var(--secondary-color));
+  border: 5px solid rgba(var(--secondary-color));
+}
+
+@media only screen and (min-width: 788px) {
+  .header {
+    background: linear-gradient(to bottom, rgba(var(--main-color), 0.1), rgba(var(--secondary-color), 0.4)), url(../images/header-desktop-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header__title {
+    color: white;
+    margin-top: 20rem;
+    padding: 3rem;
+    font-size: 3rem;
+    display: block;
+  }
+}
+.hamburger {
+  margin-right: 1rem;
+  height: 60%;
+  width: 60px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+  justify-content: space-around;
+}
+.hamburger .bar {
+  display: flex;
+  height: 5px;
+  border-radius: 10px;
+  background-color: rgba(var(--secondary-color));
+  background-color: rgba(var(--secondary-color));
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.hamburger-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5 all ease-in-out;
+}
+
+.hamburger-open .bar:nth-child(1) {
+  transform: rotate(225deg) translateY(-7px);
+}
+
+.hamburger-open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-open .bar:nth-child(3) {
+  transform: rotate(-225deg) translateY(7px);
+}
+
+@media only screen and (min-width: 788px) {
+  .hamburger {
+    display: none;
+  }
+}
+.button {
+  transition: all 0.2s ease-in-out;
+  font-family: "Kanit", sans-serif;
+  background: none;
+  border: 5px solid white;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  padding: 5px 30px;
+  color: rgba(var(--secondary-color));
+  border: 5px solid rgba(var(--secondary-color));
+}
+
+a {
+  color: black;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -161,6 +300,7 @@ body {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 .input-container .label {
   width: 200px;
@@ -177,27 +317,15 @@ body {
   border-radius: 10px;
   letter-spacing: 1.5px;
 }
-.input-container .form__input-text-area {
+.input-container .input__message {
   min-height: 300px;
 }
 
-.submit-btn {
-  margin: 0 auto;
-  font-family: "Kanit", sans-serif;
-  background: none;
-  margin: 2rem auto;
-  padding: 5px 15px;
-  border-radius: 0.8rem;
-  font-size: 1.5rem;
-  transition: all 0.2s ease-in-out;
-  border: 2px solid black;
-}
-.submit-btn:hover {
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
-  padding: 5px 30px;
-  color: rgba(var(--secondary-color));
-  border: 5px solid rgba(var(--secondary-color));
+.button {
+  align-self: center;
+  margin-top: 1rem;
+  border-color: black;
+  color: black;
 }
 
 .wrong {
@@ -210,8 +338,53 @@ body {
   box-shadow: 0 0 10px 2px rgb(255, 153, 0);
 }
 
-.contact__container__text {
+.contact__error-mesages {
   font-size: 1.2rem;
   color: red;
   margin-bottom: 1rem;
+}
+
+.confirmation {
+  background-color: white;
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  opacity: 0.9;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translate(-100%, -20%);
+  margin: 0;
+  opacity: 0;
+}
+.confirmation__btn-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.confirmation__btn-close:hover {
+  transform: rotate(90deg);
+  transition: 0.5s all ease-in-out;
+}
+
+.confirmation--show {
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.overlay-show {
+  height: 120%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background-color: grey;
+  transition: all 0.5s ease-in-out;
+  position: absolute;
 }/*# sourceMappingURL=contact.css.map */

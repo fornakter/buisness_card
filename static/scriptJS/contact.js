@@ -1,3 +1,4 @@
+import { changeNavbar } from "./navbar.js";
 const validateForm = () => {
   const btnSubmit = document.querySelector(".submit-btn");
   const inputEmail = document.querySelector(".input__email");
@@ -5,7 +6,10 @@ const validateForm = () => {
   const inputName = document.querySelector(".input__name");
   const inputMessage = document.querySelector(".input__message");
   const inputs = document.querySelectorAll(".input");
-  const errorField = document.querySelector(".contact__container__text");
+  const errorField = document.querySelector(".contact__error-mesages");
+  const confirmMessage = document.querySelector(".confirmation");
+  const confirmMessageOverlay = document.querySelector(".overlay");
+  const btnCloseMessage = document.querySelector(".confirmation__btn-close");
 
   let message = [];
 
@@ -62,13 +66,25 @@ const validateForm = () => {
       errorField.insertAdjacentText("afterbegin", ` *-${mes} `)
     );
   };
+  // showing confirmation message
+  const showConfirmeMessage = () => {
+    confirmMessage.classList.toggle("confirmation--show");
+    confirmMessageOverlay.classList.toggle("overlay-show");
+  };
+  // close confirmation message
+  btnCloseMessage.addEventListener("click", () => {
+    showConfirmeMessage();
+  });
 
   btnSubmit.addEventListener("click", (e) => {
     message = [];
     removeWarnings();
 
     if ((checkName(), checkContact(), checkMessage())) {
-      return true;
+      e.preventDefault();
+      showConfirmeMessage();
+      errorField.textContent = "";
+      //   return true;
     } else {
       e.preventDefault();
       showErrorMessage();
@@ -77,3 +93,4 @@ const validateForm = () => {
   });
 };
 validateForm();
+changeNavbar();

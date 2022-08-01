@@ -20,6 +20,7 @@ a {
 }
 
 .navbar {
+  top: 0;
   height: 5rem;
   min-width: 100%;
   display: flex;
@@ -39,6 +40,7 @@ a {
 
   .logo {
     margin-left: 1rem;
+    // height: 100%;
     width: 50%;
   }
   .navbar__menu-desktop {
