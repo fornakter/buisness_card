@@ -1,5 +1,3 @@
-#TODO udoskonalić tą prostą walidację
-
 # sprawdzenie poprawności wpisanego maila
 def checkMail(mail):
     #sprawdzenie czy wpisane dane w formularzu to adres mailowy, sprawdzenie czy znajduje się 1 znak @ i 1 znak .
