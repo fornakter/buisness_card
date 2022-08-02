@@ -19,6 +19,7 @@ def sendData():
     import checkinform
     mail = request.form.get('mail')
     message = request.form.get('message')
+    name = request.form.get('client_name')
     if checkinform.checkMail(mail) == True:
         send.sendMail(mail,message)
         return "Poszło"
