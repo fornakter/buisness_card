@@ -11,14 +11,15 @@ def index():
 
 @app.route('/kontakt/')
 def kontakt():
-    return render_template('kontakt.html')
+    return render_template('contact.html')
 
 @app.route('/send/', methods=['GET','POST'])
 def sendData():
     import send
+    import checkinform
     mail = request.form.get('mail')
     message = request.form.get('message')
-    if send.checkMail(mail) == True:
+    if checkinform.checkMail(mail) == True:
         send.sendMail(mail,message)
         return "Poszło"
     else:
@@ -27,7 +28,7 @@ def sendData():
 
 @app.route('/o_nas/')
 def about():
-    return render_template('o_nas.html')
+    return render_template('about_us.html')
 
 
 @app.route('/projects/')
