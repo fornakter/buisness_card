@@ -19,6 +19,7 @@ a {
 }
 
 .navbar {
+  top: 0;
   height: 5rem;
   min-width: 100%;
   display: flex;
@@ -33,7 +34,8 @@ a {
           backdrop-filter: blur(10px);
 }
 .navbar .logo {
-  height: 100%;
+  margin-left: 1rem;
+  height: 4rem;
 }
 .navbar .navbar__menu-desktop {
   display: none;
@@ -165,6 +167,28 @@ a {
     display: none;
   }
 }
+.button {
+  transition: all 0.2s ease-in-out;
+  font-family: "Kanit", sans-serif;
+  background: none;
+  border: 5px solid white;
+  padding: 5px 10px;
+  border-radius: 0.8rem;
+  color: white;
+  font-size: 1.2rem;
+}
+.button:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 10px -5px rgb(103, 102, 102);
+  padding: 5px 30px;
+  color: rgba(var(--secondary-color));
+  border: 5px solid rgba(var(--secondary-color));
+}
+
+a {
+  color: black;
+}
+
 .header {
   background: linear-gradient(to bottom, rgba(119, 186, 215, 0.578), rgba(4, 58, 100, 0.747)), url(../images/header-mobile-bg-small.jpg);
   height: 100vh;
@@ -238,7 +262,7 @@ a {
   font-size: 1.5rem;
   color: rgb(46, 46, 46);
 }
-.intro__button-link {
+.intro__button-show-projects {
   color: black;
 }
 .intro__button-show-projects {
@@ -271,12 +295,6 @@ a {
     padding: 3rem;
   }
 }
-button {
-  font-family: "Kanit", sans-serif;
-  background: none;
-  border: 2px solid white;
-  padding: 5px 10px;
-  border-radius: 0.8rem;
-  color: white;
-  font-size: 1.2rem;
+a {
+  color: black;
 }/*# sourceMappingURL=main.css.map */

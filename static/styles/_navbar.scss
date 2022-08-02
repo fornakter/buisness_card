@@ -20,6 +20,7 @@ a {
 }
 
 .navbar {
+  top: 0;
   height: 5rem;
   min-width: 100%;
   display: flex;
@@ -38,7 +39,8 @@ a {
   backdrop-filter: blur(10px);
 
   .logo {
-    height: 100%;
+    margin-left: 1rem;
+    height: 4rem;
   }
   .navbar__menu-desktop {
     display: none;
