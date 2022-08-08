@@ -6,10 +6,10 @@ def sendMail(mail, mess):
     import smtplib
 
     #określanie nadawcy maila, odbiorcy, hasła nadawcy, tematu oraz treści wiadomości
-    sender = 'stronapython@gmail.com'
-    password = 'bnyjmrhfdlvdvpuz'
-    receiver = 'theforgedev@gmail.com'
-
+    import inform
+    sender = inform.sender()
+    receiver = inform.receiver()
+    password = inform.password()
     subject = 'Zlecenie'
     body = f'''
     Mail kontaktowy klienta: {mail}
