@@ -2,15 +2,16 @@ export const changeNavbar = () => {
   const hamburgerButton = document.querySelector(".hamburger");
   const mobileMenu = document.querySelector(".navbar__menu-mobile");
   const currentPageTracker = document.querySelector(".current-page-tracker");
-  const navbarItemsDesktop = document.querySelectorAll(".menu__item-desktop");
   const navbarMenuDesktop = document.querySelector(".menu-desktop");
-  console.log(navbarMenuDesktop);
+
+  // Open & close navbar menu.
 
   hamburgerButton.addEventListener("click", () => {
     mobileMenu.classList.toggle("navbar__menu-mobile--open");
     hamburgerButton.classList.toggle("hamburger--open");
   });
 
+  // Move page tracker
   navbarMenuDesktop.addEventListener("click", (e) => {
     e.target.dataset.trackerpos;
     currentPageTracker.style.transform = `translateX(${

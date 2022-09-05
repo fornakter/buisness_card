@@ -17,7 +17,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  height: 8rem;
+  padding: 5rem 2rem;
 }
 .navbar .logo {
   color: transparent;
@@ -96,6 +97,10 @@
     background-color: white;
   }
   .navbar {
+    min-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.7rem;
     position: fixed;
     background-color: var(--secondary-color);
     justify-content: space-around;
@@ -115,7 +120,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
   .navbar .navbar__menu-desktop .current-page-tracker {
     height: 100%;
@@ -160,4 +165,5 @@ body {
 
 html {
   font-size: 62.5%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

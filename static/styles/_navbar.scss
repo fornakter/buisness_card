@@ -5,7 +5,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem;
+  height: 8rem;
+  padding: 5rem 2rem;
 
   .logo {
     color: transparent;
@@ -90,10 +91,15 @@
     background-color: white;
   }
   .navbar {
+    min-width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.7rem;
     position: fixed;
     background-color: var(--secondary-color);
     justify-content: space-around;
     flex-direction: column;
+
     .hamburger {
       display: none;
     }
@@ -108,7 +114,7 @@
       justify-content: space-around;
       align-items: center;
       position: relative;
-      padding: 2rem 0;
+      padding: 1rem 0;
 
       .current-page-tracker {
         height: 100%;
@@ -122,6 +128,7 @@
       .menu__item {
         text-align: center;
         position: relative;
+
         a {
           font-size: 2rem;
           color: black;
