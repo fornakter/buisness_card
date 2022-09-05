@@ -1,8 +1,23 @@
+@import "variables";
 @import "navbar";
-@import "hamburger";
-@import "header";
-@import "introSection";
+@font-face {
+  font-family: "Helvetica-Nouel";
+  src: url(../source/fonts/Helvetica-NeueLTW0693BlkExtObl-2.ttf);
+}
 
-a {
-  color: black;
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font), sans-serif;
+  background-color: var(--primary-color);
+}
+
+html {
+  font-size: 62.5%;
 }

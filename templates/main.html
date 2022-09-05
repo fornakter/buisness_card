@@ -5,33 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/styles/main.css" />
-    <script src="../static/scriptJS/main.js" type="module"></script>
+    <script src="../static/scriptJS/main.js" type="module" defer></script>
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <img src="../static/logo/logo.png" alt="logo" class="navbar__logo logo" />
+      <!-- LOGO -->
+      <p class="logo">logo</p>
 
-      <ul class="navbar__menu-desktop menu-desktop">
+      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
+
+      <!-- Nav-mobile -->
+
+      <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
-          <a href="{{url_for('about')}}" class="link link-about-us">O Nas</a>
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('projects')}}" class="link link-our-projects">Nasze Projekty</a>
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
         </li>
         <li class="menu__item">
           <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
-      <ul class="navbar__menu-mobile menu-mobile">
-        <li class="menu__item">
-          <a href="{{url_for('about')}}" class="link link-about-us">O Nas</a>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img
+          class="current-page-tracker"
+          src="../static/source/images/Vector.png"
+          alt=""
+        />
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="#" class="link link-our-projects" data-trackerPos="0"
+            >Home</a
+          >
         </li>
-        <li class="menu__item">
-          <a href="{{url_for('projects')}}" class="link link-our-projects">Nasze Projekty</a>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a href="#" class="link link-about-us" data-trackerPos="0.9">O nas</a>
         </li>
-        <li class="menu__item">
-          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="2.5"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a href="#" class="link link-contact" data-trackerPos="3.55"
+            >Kontakt</a
+          >
         </li>
       </ul>
 
@@ -41,35 +80,5 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
-    <header class="header">
-      <h1 class="header__title title">Tytuł/Slogan. Do wymyślenia <br /></h1>
-
-      <button class="header__button button button-learn-more">
-        Learn more
-      </button>
-    </header>
-    <section class="intro">
-      <div class="intro__container">
-        <h2 class="intro__title">Jakiś sobie tytuł</h2>
-        <img
-          class="intro__img"
-          src="../static/images/groupOfPeoaple.jpg"
-          alt=""
-        />
-        <article class="intro__text">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia rem
-          modi voluptatem consequatur mollitia amet culpa officiis nisi, omnis
-          temporibus! Alias reiciendis quis deserunt cum? Tenetur aperiam
-          quisquam molestias quis possimus repudiandae et, doloremque blanditiis
-          voluptates quia velit enim, nulla fugit asperiores a ducimus
-          accusamus? Minus id repudiandae explicabo quibusdam.
-        </article>
-      </div>
-      <a href="projects.html" class="intro__button-link"
-        ><buttton class="button intro__button-show-projects">
-          Zobacz nasze projekty</buttton
-        ></a
-      >
-    </section>
   </body>
 </html>
