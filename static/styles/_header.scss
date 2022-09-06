@@ -84,6 +84,10 @@
 @media screen and (min-width: 1600px) {
   .header {
     flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20rem;
+    height: 80rem;
     &__main-title {
       span {
         &:nth-child(3) {
@@ -92,7 +96,7 @@
       }
     }
     &__image {
-      width: 50%;
+      width: 80%;
     }
   }
 }

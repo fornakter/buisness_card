@@ -229,12 +229,16 @@
 @media screen and (min-width: 1600px) {
   .header {
     flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20rem;
+    height: 80rem;
   }
   .header__main-title span:nth-child(3) {
     transform: translateX(-2rem);
   }
   .header__image {
-    width: 50%;
+    width: 80%;
   }
 }
 @font-face {
