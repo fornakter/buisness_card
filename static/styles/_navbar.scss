@@ -7,12 +7,13 @@
   justify-content: space-between;
   height: 8rem;
   padding: 5rem 2rem;
+  z-index: 100;
 
   .logo {
     color: transparent;
     font-size: 2rem;
     -webkit-text-stroke: 1px white;
-    z-index: 11;
+    z-index: 10;
   }
 
   .hamburger {
@@ -57,6 +58,7 @@
     transform: translateX(-100%);
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    z-index: 9;
 
     .menu__item {
       padding: 2rem;
@@ -94,7 +96,7 @@
     min-width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    top: 1.7rem;
+    top: 5rem;
     position: fixed;
     background-color: var(--secondary-color);
     justify-content: space-around;

@@ -3,6 +3,7 @@ export const changeNavbar = () => {
   const mobileMenu = document.querySelector(".navbar__menu-mobile");
   const currentPageTracker = document.querySelector(".current-page-tracker");
   const navbarMenuDesktop = document.querySelector(".menu-desktop");
+  const titleMiddle = document.querySelector(".middle");
 
   // Open & close navbar menu.
 
