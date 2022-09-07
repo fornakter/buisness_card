@@ -8,14 +8,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--secondary-color);
+    color: $secondary-color;
     font-size: 3rem;
     font-weight: 900;
     span {
       color: var(--secondary-color);
 
       &:nth-child(2) {
-        -webkit-text-stroke: 0.2rem var(--secondary-color);
+        -webkit-text-stroke: 0.2rem $secondary-color;
         color: transparent;
         font-size: 5rem;
         position: relative;
@@ -29,7 +29,7 @@
           bottom: 2px;
           width: 105%;
           height: 100%;
-          background-color: var(--primary-color);
+          background-color: $primary-color;
           z-index: -2;
         }
         &::after {

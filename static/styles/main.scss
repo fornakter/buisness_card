@@ -4,6 +4,7 @@
 @import "main--offer";
 @import "why-worth-it";
 @import "process";
+@import "footer";
 
 @font-face {
   font-family: "Helvetica-Nouel";
@@ -19,8 +20,8 @@
 }
 
 body {
-  font-family: var(--primary-font), sans-serif;
-  background-color: var(--primary-color);
+  font-family: $primary-font, sans-serif;
+  background-color: $primary-color;
 }
 
 html {

@@ -248,5 +248,32 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <img
+        src="../static/source/images/Footer.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
+      />
+      <ul class="footer__mobile">
+        <li class="footer__mobile__item">
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+      <span class="footer__design-by">Design by</span>
+    </footer>
   </body>
 </html>
