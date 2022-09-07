@@ -1,0 +1,119 @@
+.process {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    margin: 0 auto;
+    margin-top: 6.1rem;
+    width: 80%;
+    background-color: var(--primary-color);
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    text-align: center;
+    padding: 3.5rem 0;
+    font-size: 2rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__gear {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &-img {
+      position: absolute;
+      bottom: 4%;
+      left: -42%;
+      z-index: -1;
+      width: 70rem;
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: -5rem;
+      left: 0;
+      gap: 1rem;
+
+      &__item {
+        display: flex;
+        gap: 2.5rem;
+
+        &-number {
+          font-size: 5rem;
+          -webkit-text-fill-color: var(
+            --primary-color
+          ); /* Will override color (regardless of order) */
+          -webkit-text-stroke-width: 3px;
+          -webkit-text-stroke-color: var(--secondary-color);
+          width: 4.8rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &--bigger {
+            font-size: 5.7rem;
+          }
+        }
+
+        &-text {
+          font-family: "Jost", sans-serif;
+          font-size: 1.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--secondary-color);
+        }
+      }
+
+      &-btn {
+        font-family: "Helvetica-Nouel";
+        font-size: 1.4rem;
+        background: var(--secondary-color);
+        border-bottom-left-radius: 6rem;
+        border-top-right-radius: 6rem;
+        width: 100%;
+        margin: 3.5rem auto 0;
+        color: var(--font-color-mobile-menu);
+        text-align: center;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-shadow: 0px 4px 1rem rgba(0, 0, 0, 0.25);
+        text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
+        text-decoration: none;
+        position: relative;
+        bottom: 0%;
+        left: 0%;
+
+        &::before {
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: none;
+          border: 3px solid var(--secondary-color);
+          bottom: -15%;
+          right: -5%;
+          border-bottom-left-radius: 6rem;
+          border-top-right-radius: 6rem;
+        }
+      }
+    }
+  }
+}
