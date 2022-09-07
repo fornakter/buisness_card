@@ -161,6 +161,7 @@
   align-items: center;
   color: var(--secondary-color);
   font-size: 3rem;
+  font-weight: 900;
 }
 .header__main-title span {
   color: var(--secondary-color);
@@ -241,6 +242,48 @@
     width: 80%;
   }
 }
+.offer {
+  height: 100vh;
+  font-weight: 100;
+}
+.offer__title {
+  width: 90%;
+  display: block;
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+  color: var(--secondary-color);
+  border: 4px solid var(--secondary-color);
+  text-align: center;
+  padding: 1.4rem 3.3rem;
+  border-radius: 0 8rem 0 8rem;
+}
+.offer__container {
+  display: grid;
+}
+.offer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 7rem;
+}
+.offer__item__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  color: var(--accent-color-dark);
+  position: absolute;
+  font-size: 1.6rem;
+  bottom: 3rem;
+  text-align: center;
+  padding: 2rem;
+  width: 30rem;
+  height: 8.1rem;
+}
+
 @font-face {
   font-family: "Helvetica-Nouel";
   src: url(../source/fonts/Helvetica-NeueLTW0693BlkExtObl-2.ttf);

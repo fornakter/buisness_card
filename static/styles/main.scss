@@ -1,6 +1,8 @@
 @import "variables";
 @import "navbar";
 @import "header";
+@import "main--offer";
+
 @font-face {
   font-family: "Helvetica-Nouel";
   src: url(../source/fonts/Helvetica-NeueLTW0693BlkExtObl-2.ttf);
@@ -17,7 +19,6 @@
 body {
   font-family: var(--primary-font), sans-serif;
   background-color: var(--primary-color);
-  // overflow: hidden;
 }
 
 html {
