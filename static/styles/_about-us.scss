@@ -1,6 +1,6 @@
 .about-us {
   &__header {
-    min-width: 100%;
+    width: 100%;
     margin-top: 11rem;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,7 @@
     &__title {
       font-size: 3rem;
       margin-bottom: 3.8rem;
+      letter-spacing: 1rem;
     }
     &__member {
       margin-bottom: 5rem;
@@ -72,6 +73,125 @@
           font-family: "Jost", sans-serif;
           line-height: 2.5rem;
           width: 80%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 850px) {
+  .about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__header {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10rem 15.2rem 12rem 10.3rem;
+      margin-top: 40rem;
+      border: 5px solid $secondary-color;
+      position: relative;
+      border-radius: 0 30rem 0 30rem;
+      text-align: s;
+
+      &__title {
+        border-radius: 0 12rem 0 12rem;
+        padding: 2.1rem 10rem;
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+      }
+
+      &__img {
+        width: 50rem;
+        position: absolute;
+        bottom: 0;
+        right: 1%;
+        transform: translateY(40%);
+      }
+      .text-container {
+        font-size: 2.2rem;
+        text-align: start;
+        &__paragraph {
+          &:last-child {
+            margin-right: 50%;
+          }
+        }
+      }
+    }
+    &__team,
+    .team {
+      &__title {
+        font-size: 8rem;
+        margin: 19rem;
+      }
+      &__members-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &__member {
+        width: 50%;
+
+        &__photo {
+          width: 40%;
+        }
+        &__description,
+        .description {
+          &__name {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+          }
+          &__job {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+          }
+          &__text {
+            font-size: 3rem;
+            line-height: 4.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__header {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10rem 15.2rem 12rem 10.3rem;
+      margin-top: 40rem;
+      border: 5px solid $secondary-color;
+      position: relative;
+      border-radius: 0 30rem 0 30rem;
+      text-align: s;
+
+      &__title {
+        border-radius: 0 12rem 0 12rem;
+        padding: 2.1rem 18rem;
+        font-size: 6rem;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+      }
+      .text-container {
+        font-size: 2.2rem;
+        text-align: start;
+        &__paragraph {
+          &:last-child {
+            margin-right: 30%;
+          }
         }
       }
     }
