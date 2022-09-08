@@ -1,14 +1,12 @@
-<<<<<<< HEAD
-4393
+4391
 80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/projects.html1662580954168584100 0
-76/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/main.html1662631931948953500 0
+76/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/main.html1662638778818347300 0
 82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/email_sent.html1662580954151593500 0
 83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/email_error.html1662580954143597500 0
 66/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates1662621293689911000 1
-84/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_process.scss1662621293216200900 0
-88/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_main--offer.scss1662632684088786000 0
+84/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_process.scss1662633248707419300 0
+88/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_main--offer.scss1662633495752865500 0
 83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_header.scss1662623144951015200 0
-82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/contact.css1662632684429824300 0
 88/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/source/images/Vector.png1662580953996687900 0
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/source/images/Top_komputer@3x.png1662580953986694500 0
 94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/source/images/Top_komputer.png1662583197687534200 0
@@ -91,7 +89,7 @@
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/ts41/camel-case.d.ts1662582044423379400 0
 84/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/ts411662582052734259700 1
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/source/union-to-intersection.d.ts1662582053360872500 0
-70/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles1662621293718892900 1
+70/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles1662642742651001500 1
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/source/tsconfig-json.d.ts1662582053183980500 0
 103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/source/stringified.d.ts1662582052905152800 0
 107/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/source/set-return-type.d.ts1662582052734259700 0
@@ -113,7 +111,6 @@
 86/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/tslib/tslib.d.ts1662582045885478800 0
 92/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/tslib/modules/index.js1662582038295253000 0
 83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/tslib/modules1662582043443984300 1
-86/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/contact.css.map1662632684429824300 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/tslib/LICENSE.txt1662582046967810800 0
 75/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/tslib1662582046671994000 1
 94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/to-regex-range/README.md1662582039506409900 0
@@ -329,7 +326,7 @@
 86/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/parcel/README.md1662582045584664100 0
 80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/scriptJS/main.js1662621293142247300 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/parcel/lib/cli.js1662582041403241600 0
-83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_navbar.scss1662622372834871600 0
+83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_navbar.scss1662633245867384500 0
 76/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/parcel1662582045143940300 1
 92/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/ordered-binary/uuid.js1662582043961664800 0
 90/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/ordered-binary/tests1662582042374642100 1
@@ -837,7 +834,7 @@
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-what/lib/commonjs/index.js1662582038663932500 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-what/lib/commonjs/index.d.ts.map1662582048390934600 0
 82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-what/lib1662582039761253100 1
-69/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/package.json1662582163899873800 0
+69/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/package.json1662642925222624100 0
 78/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-what1662582050446668200 1
 88/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-tree/README.md1662582064206187600 0
 91/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-tree/package.json1662582064013315800 0
@@ -1066,6 +1063,7 @@
 103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/dist/lib/statuses.js1662582072222247700 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/dist1662582072196263600 1
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/ZW.js1662582074057116900 0
+85/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_about-us.scss1662642792683944600 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/ZA.js1662582074035129700 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/YT.js1662582074020141100 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/WS.js1662582073921200000 0
@@ -1407,7 +1405,6 @@
 89/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/packager-js1662582050993330800 1
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/commander/LICENSE1662582036885120500 0
 111/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/packager-html/src/HTMLPackager.js1662582040964512500 0
-83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/contact.scss1662622050922877100 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/lmdb/util/RangeIterable.js1662582065713258900 0
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/packager-html/package.json1662582042645475000 0
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/node-addon-api/tools/conversion.js1662582050730493000 0
@@ -1698,7 +1695,7 @@
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/domcontentloaded.js1662582067795975300 0
 135/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/package-manager/test/fixtures/packages/peers/package.json1662582058017002500 0
 93/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/csso/lib/clean/utils.js1662582056856717500 0
-106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Zaprogramowanie_strony@3x.9c4850eb.png1662632667076595800 0
+106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Zaprogramowanie_strony@3x.9c4850eb.png1662642909192195200 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@types/parse-json1662582038127354000 1
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/logger/package.json1662582042682454000 0
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/events/lib/types.js1662582044853117200 0
@@ -1931,7 +1928,7 @@
 129/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@jridgewell/sourcemap-codec/dist/types/sourcemap-codec.d.ts1662582045869489100 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/parcel/src/cli.js1662582043507943900 0
 95/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@lezer/lr/dist/stack.d.ts1662582047684369500 0
-61/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist1662632684658359200 1
+61/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist1662642925907901500 1
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/optimizer-htmlnano/src/svgMappings.js1662582043217126400 0
 110/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@mischnic/json-sourcemap/dist/index.d.ts1662582040054073900 0
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/test/fixtures/parcel/yarn.lock1662582068180738700 0
@@ -2025,7 +2022,7 @@
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/mdn-data/css/selectors.json1662582053248941200 0
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/compressor-raw/package.json1662582041078442700 0
 118/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@swc/helpers/lib/_is_native_reflect_construct.js1662582054032459800 0
-71/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.html1662632667005638500 0
+71/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.html1662642909423078100 0
 94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/packager-css/src1662582039063683300 1
 107/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/public/Dependency.js1662582058732561000 0
 108/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/test/fixtures/main-global1662582068007845400 1
@@ -2207,7 +2204,7 @@
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/regenerator-runtime/runtime.js1662582038394190800 0
 127/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@jridgewell/gen-mapping/dist/types/sourcemap-segment.d.ts1662582049046530100 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/Parcel.js1662582062484249800 0
-83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_footer.scss1662621975757194700 0
+83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/_footer.scss1662633249814484100 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/.idea/inspectionProfiles/Project_Default.xml1662580882648661800 0
 144/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/source-map/parcel_sourcemap_node/artifacts/index.darwin-arm64.node1662582055828351500 0
 122/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/dom-serializer/node_modules/entities/lib/decode.d.ts1662582049300374400 0
@@ -2234,7 +2231,7 @@
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@lmdb/lmdb-linux-x64/README.md1662582038219297100 0
 84/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/source-map/lib1662582048307985500 1
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/packager-js/src/ESMOutputFormat.js1662582046182297000 0
-79/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/main.css1662632684429824300 0
+79/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/main.css1662642823475925900 0
 109/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/terser/node_modules/commander/Readme.md1662582042785388900 0
 131/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/graph/test/integration/adjacency-list-shared-array.js1662582039180613400 0
 165/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/side-effects-package-redirect-down/foo/bar1662582066638691100 1
@@ -2255,11 +2252,11 @@
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/css-linux-x64-gnu/README.md1662582037486748700 0
 99/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@lezer/common/dist/parse.d.ts1662582046908850200 0
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/watcher/src/Watcher.cc1662582048751712900 0
-94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Key_Visual@3x.7cb0c9b5.png1662632667149885400 0
+94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Key_Visual@3x.7cb0c9b5.png1662642909197197600 0
 114/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/viewport-units.js1662582073559423800 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@jridgewell/gen-mapping/src/types.ts1662582049974958500 0
 114/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/rel-noreferrer.js1662582071624622200 0
-83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/main.css.map1662632684429824300 0
+83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/main.css.map1662642823474918500 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/optimizer-htmlnano1662582043211129500 1
 82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/yaml/util.js1662582055838345200 0
 125/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/css-linux-x64-gnu/parcel-css.linux-x64-gnu.node1662582062829037800 0
@@ -2279,7 +2276,7 @@
 94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/.bin/node-gyp-build-test1662582075260374300 0
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@babel/helper-validator-identifier/scripts1662582042771397200 1
 88/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/fs/LICENSE1662582036899112000 0
-100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Koncepcja_strony@2x.e6fc86cb.png1662632667041616300 0
+100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Koncepcja_strony@2x.e6fc86cb.png1662642909155320700 0
 103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/reporter-cli/src/utils.js1662582050271775500 0
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/TargetDescriptor.schema.js1662582065281525400 0
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/workers/lib/threads/ThreadsChild.js1662582052782229800 0
@@ -2290,9 +2287,9 @@
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/package-manager/src1662582056164145500 1
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/markdown-ansi/lib/markdown-ansi.js1662582038176323900 0
 111/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/reporter-dev-server/src/templates1662582039966126900 1
-106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Zaprogramowanie_strony@2x.b2dfc9dd.png1662632667041616300 0
+106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Zaprogramowanie_strony@2x.b2dfc9dd.png1662642909155320700 0
 121/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@babel/highlight/node_modules/has-flag/package.json1662582037138963600 0
-80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/about_us.html1662580954125609100 0
+80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/about_us.html1662642716287986400 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/utils/test/input/config1662582066886536000 1
 84/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/dotenv/LICENSE1662582038662929400 0
 111/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/flexbox-gap.js1662582068390608500 0
@@ -2318,7 +2315,7 @@
 108/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@babel/helper-validator-identifier/lib1662582040096047000 1
 123/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@babel/highlight/node_modules/supports-color/index.js1662582038251278700 0
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@swc/helpers/lib/_update.js1662582057181523000 0
-67/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/.gitignore1662632711367310400 0
+67/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/.gitignore1662632805096545700 0
 118/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/html-media-capture.js1662582069047387700 0
 179/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/.pnpm/source-pnpm@1.0.0/node_modules/source-pnpm/dist.js1662582053745635100 0
 73/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/.idea/.gitignore1662580882633675500 0
@@ -2361,7 +2358,7 @@
 107/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/cache/src/IDBCache.browser.js1662582042708438800 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/mdn-data/css/syntaxes.json1662582053625708700 0
 140/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/test/fixtures/config-extends-not-found/.parcelrc-multiple1662582051344117800 0
-104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Odświeżenie_strony@3x.61fa7836.png1662632667268158900 0
+104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Odświeżenie_strony@3x.61fa7836.png1662642909202196600 0
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/sass/types/value/function.d.ts1662582066100022400 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/transformer-babel/src/jsx.js1662582048170072300 0
 82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/lmdb/open.js1662582065661295500 0
@@ -2405,7 +2402,7 @@
 110/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/runtime-browser-hmr/package.json1662582047644395000 0
 85/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/xxhash-wasm/esm1662582043336049600 1
 95/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/types.js1662582066408830000 0
-83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.bb208ca9.css.map1662632684646366900 0
+83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.bb208ca9.css.map1662642909350607200 0
 119/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@jridgewell/source-map/dist/types/source-map.d.ts1662582049507245600 0
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@swc/helpers/lib/_async_generator_delegate.js1662582041694062900 0
 114/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/resizeobserver.js1662582071668588500 0
@@ -2422,7 +2419,7 @@
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/DE.js1662582067336259300 0
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/lib/requests/AssetGraphRequest.js1662582054301292300 0
 98/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/workers/lib/child.js1662582043104193800 0
-56/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card1662631717146243600 1
+56/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card1662642909059955600 1
 76/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/braces1662582040751644300 1
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/runtime-js/src/helpers/cacheLoader.js1662582044814138200 0
 92/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/react-refresh/babel.js1662582037012042800 0
@@ -2444,7 +2441,7 @@
 90/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/stable/stable.min.js1662582039413467500 0
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/input-selection.js1662582069548895900 0
 80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/color-name1662582038001432900 1
-81/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Footer.8f9561c7.png1662632667021630700 0
+81/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Footer.8f9561c7.png1662642909154321500 0
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/optimizer-svgo/lib/SVGOOptimizer.js1662582038176323900 0
 119/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@babel/helper-validator-identifier/lib/keyword.js1662582041194370200 0
 109/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/css-fixed.js1662582063106865400 0
@@ -2642,7 +2639,7 @@
 127/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@babel/highlight/node_modules/supports-color/package.json1662582036905108200 0
 82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/hash1662582061237018200 1
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/VC.js1662582073442496900 0
-97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Koncepcja_strony.3f6c5f89.png1662632667042615900 0
+97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Koncepcja_strony.3f6c5f89.png1662642909154321500 0
 110/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/use-strict.js1662582073363835100 0
 109/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/webcodecs.js1662582073712331900 0
 80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/.idea/buisness_card.iml1662580882640665200 0
@@ -2689,7 +2686,7 @@
 146/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/@scope/pkg/package.json1662582064421054500 0
 118/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/lib/requests/ParcelConfigRequest.js1662582063068887500 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/CI.js1662582059537064200 0
-101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Odświeżenie_strony.77a6af97.png1662632667119534400 0
+101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Odświeżenie_strony.77a6af97.png1662642909157320600 0
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/getrandomvalues.js1662582068760379800 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/mathml.js1662582070284442000 0
 84/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/yaml/types.mjs1662582056817740900 0
@@ -2738,14 +2735,14 @@
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/compressor-raw/LICENSE1662582036900111700 0
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/cookie-store-api.js1662582061085112100 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/GM.js1662582068827342600 0
-94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Key_Visual@2x.5fb3171e.png1662632667025680000 0
+94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Key_Visual@2x.5fb3171e.png1662642909155320700 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/svgo/plugins/mergePaths.js1662582054054444900 0
 117/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/test/fixtures/config-node-pipeline1662582046196288000 1
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/graph/src/Graph.js1662582048752712000 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/transformer-raw/LICENSE1662582036893115600 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/compressor-raw/src1662582039181610600 1
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/fs-search/index.js1662582037604676800 0
-103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Zaprogramowanie_strony.11e7e2e8.png1662632667021630700 0
+103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Zaprogramowanie_strony.11e7e2e8.png1662642909155320700 0
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/compressor-raw/src/RawCompressor.js1662582040013097700 0
 122/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs.map1662582043860726900 0
 157/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/node-resolver-core/test/fixture/node_modules/package-browser-alias/package.json1662582065452419800 0
@@ -2767,7 +2764,7 @@
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/lib/requests/TargetRequest.js1662582065514382300 0
 97/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/svgo/plugins/mergeStyles.js1662582054100415700 0
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/runtime-service-worker/lib1662582037448773100 1
-91/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Key_Visual.27703c16.png1662632667041616300 0
+91/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Key_Visual.27703c16.png1662642909155320700 0
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/form-validation.js1662582068622467300 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/entities/lib/maps1662582048845654000 1
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/lib/Dependency.js1662582058615633300 0
@@ -2790,7 +2787,7 @@
 115/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/htmlnano/lib/modules/removeAttributeQuotes.js1662582050759476200 0
 128/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/package-manager/test/fixtures/has-foo/node_modules1662582050862410900 1
 99/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/lmdb/dependencies/lz4/LICENSE1662582051090272400 0
-78/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.04528a29.js1662632667166915500 0
+78/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.04528a29.js1662642925875683800 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/lib/worker.js1662582067060428100 0
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/lib/requests/ConfigRequest.js1662582058058978100 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/css-tree/lib/lexer/generic-urange.js1662582059301211100 0
@@ -2877,7 +2874,7 @@
 100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/type-fest/source/value-of.d.ts1662582053505784400 0
 135/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@swc/helpers/src/_class_check_private_static_field_descriptor.mjs1662582058857485900 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/summarizeRequest.js1662582064397069600 0
-90/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Top_komputer@2x.d987e60f.png1662632667075596000 0
+90/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Top_komputer@2x.d987e60f.png1662642909163315800 0
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/dom-serializer/node_modules/entities/readme.md1662582048523855400 0
 118/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/test/fixtures/common-targets-ignore1662582067446191000 1
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/CommittedAsset.js1662582057807133100 0
@@ -2936,7 +2933,7 @@
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/dist/unpacker/agents.js1662582049248406500 0
 96/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@trysound/sax/package.json1662582040861575500 0
 114/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/test/fixtures/duplicate-targets1662582067693041300 1
-82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.04528a29.js.map1662632667308908600 0
+82/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.04528a29.js.map1662642925896905800 0
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/core/src/requests/ConfigRequest.js1662582058156915100 0
 99/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/source-map/index.d.ts1662582066087030300 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/transformer-posthtml/LICENSE1662582036893115600 0
@@ -2988,7 +2985,7 @@
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/woff.js1662582073879228000 0
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/entities/lib/generated/decode-data-html.js1662582044081590500 0
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/package-manager/src/Pnpm.js1662582055743405300 0
-100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Koncepcja_strony@3x.855d2659.png1662632667076595800 0
+100/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Koncepcja_strony@3x.855d2659.png1662642909182186300 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/PK.js1662582071274973000 0
 127/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/runtime-js/src/helpers/browser/import-polyfill.js1662582051310135800 0
 106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@swc/helpers/src/_inherits_loose.mjs1662582060764310900 0
@@ -3429,7 +3426,7 @@
 103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/utils/test/config.test.js1662582047653391400 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/JM.js1662582069757767300 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/runtime-browser-hmr/src1662582046522086000 1
-104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Odświeżenie_strony@2x.30585d1b.png1662632667157890700 0
+104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Ikona_Odświeżenie_strony@2x.30585d1b.png1662642909156325800 0
 114/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/transformer-postcss/lib/constants.js1662582038173326700 0
 94/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/utils/test/input1662582058659606500 1
 109/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@parcel/utils/test/input/config/.testrc1662582039091665300 0
@@ -3868,7 +3865,7 @@
 83/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/acorn/LICENSE1662582038143344400 0
 85/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/acorn/README.md1662582049206432600 0
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/alt-as.js1662582050688517700 0
-81/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Vector.320295ab.png1662632666982673700 0
+81/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Vector.320295ab.png1662642909154321500 0
 78/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/anymatch1662582038717896000 1
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/anymatch/index.js1662582037360828400 0
 91/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/anymatch/package.json1662582038053399100 0
@@ -4090,7 +4087,7 @@
 114/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/node-gyp-build-optional-packages/optional.js1662582039610348500 0
 118/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/orientation-sensor.js1662582071028982900 0
 111/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/css-nesting.js1662582064096255800 0
-80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/main.scss1662621293258178000 0
+80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/styles/main.scss1662642823282901900 0
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/css-not-sel-list.js1662582064113244500 0
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/yaml/browser/dist/legacy-exports.js1662582048271011000 0
 119/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/css-optional-pseudo.js1662582064206187600 0
@@ -4182,7 +4179,7 @@
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/mutationobserver.js1662582070639223200 0
 120/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/css-display-contents.js1662582062733095500 0
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/flac.js1662582068378325400 0
-79/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.bb208ca9.css1662632684632375100 0
+79/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/main.bb208ca9.css1662642909325622000 0
 107/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/@swc/helpers/lib/_set_prototype_of.js1662582055282691500 0
 112/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/font-kerning.js1662582068472559500 0
 116/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/font-size-adjust.js1662582068519531900 0
@@ -4190,7 +4187,7 @@
 118/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/font-unicode-range.js1662582068553510600 0
 120/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/font-variant-numeric.js1662582068576495100 0
 108/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/fontface.js1662582068587487700 0
-106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Background_Jak wygląda proces_.92edc98e.png1662632667041616300 0
+106/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Background_Jak wygląda proces_.92edc98e.png1662642909155320700 0
 122/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/form-submit-attributes.js1662582068613471400 0
 122/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/static/source/images/offer-imgs/Ikona_Odświeżenie_strony@3x.png1662583197641562700 0
 101/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/regions/PG.js1662582071188885200 0
@@ -4289,7 +4286,7 @@
 109/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/objectrtc.js1662582070932824300 0
 110/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/ogg-vorbis.js1662582070951030600 0
 111/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/ol-reversed.js1662582070981507800 0
-107/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Helvetica-NeueLTW0693BlkExtObl-2.b580bb2e.ttf1662632667185961900 0
+107/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/dist/Helvetica-NeueLTW0693BlkExtObl-2.b580bb2e.ttf1662642909213715200 0
 113/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/online-status.js1662582071011995400 0
 103/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/url.js1662582073321573200 0
 104/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/opus.js1662582071020987400 0
@@ -4393,7 +4390,3 @@
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/woff2.js1662582073900213200 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/nth-check/lib/esm1662582050108877000 1
 110/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/word-break.js1662582073901640400 0
-=======
-91108320
-1662628730010826000
->>>>>>> 7215c6e6d6489cb5e79abd4593dcf15bf224b461

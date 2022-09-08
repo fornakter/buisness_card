@@ -273,7 +273,7 @@
   font-size: 1.6rem;
   font-family: "Jost", sans-serif;
   font-weight: 900;
-  bottom: 20%;
+  bottom: 13%;
   text-align: center;
   padding: 2rem;
   width: 90%;
@@ -541,6 +541,98 @@
     bottom: -15rem;
   }
 }
+.about-us__header {
+  min-width: 100%;
+  margin-top: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__header__title {
+  color: white;
+  font-size: 2.2rem;
+  background-color: rgb(121, 255, 215);
+  padding: 1.2rem 6rem;
+  border-radius: 0 6rem 0 6rem;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.4rem 1.5rem -0.5rem #ffffff;
+}
+.about-us__header__text-container,
+.about-us__header .text-container {
+  width: 90%;
+  font-family: "jost";
+  color: rgb(121, 255, 215);
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 4rem;
+}
+.about-us__header__text-container__paragraph,
+.about-us__header .text-container__paragraph {
+  margin-bottom: 1.5rem;
+}
+.about-us__header__text-container .bold,
+.about-us__header .text-container .bold {
+  font-weight: 600;
+}
+.about-us__team,
+.about-us .team {
+  color: rgb(121, 255, 215);
+  margin: 4rem auto;
+  display: inline-block;
+  text-align: center;
+}
+.about-us__team__title,
+.about-us .team__title {
+  font-size: 3rem;
+  margin-bottom: 3.8rem;
+}
+.about-us__team__member,
+.about-us .team__member {
+  margin-bottom: 5rem;
+}
+.about-us__team__member__photo,
+.about-us .team__member__photo {
+  width: 70%;
+}
+.about-us__team__member__description,
+.about-us__team__member .description,
+.about-us .team__member__description,
+.about-us .team__member .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__team__member__description__name,
+.about-us__team__member .description__name,
+.about-us .team__member__description__name,
+.about-us .team__member .description__name {
+  color: rgb(255, 255, 255);
+  font-size: 2.2rem;
+  margin-bottom: 0rem;
+  line-height: 4.5rem;
+}
+.about-us__team__member__description__job,
+.about-us__team__member .description__job,
+.about-us .team__member__description__job,
+.about-us .team__member .description__job {
+  font-size: 2.2rem;
+  font-family: "Jost", sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 0.16rem;
+  line-height: 3.2rem;
+}
+.about-us__team__member__description__text,
+.about-us__team__member .description__text,
+.about-us .team__member__description__text,
+.about-us .team__member .description__text {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  font-family: "Jost", sans-serif;
+  line-height: 2.5rem;
+  width: 80%;
+}
+
 .footer {
   height: 90vh;
   position: relative;
