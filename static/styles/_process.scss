@@ -4,14 +4,15 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
+  margin-bottom: 8.2rem;
 
   &__title {
     margin: 0 auto;
     margin-top: 6.1rem;
     width: 80%;
-    background-color: var(--primary-color);
-    border: 3px solid var(--secondary-color);
-    color: var(--secondary-color);
+    background-color: $primary-color;
+    border: 3px solid $secondary-color;
+    color: $secondary-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,11 +56,9 @@
 
         &-number {
           font-size: 5rem;
-          -webkit-text-fill-color: var(
-            --primary-color
-          ); /* Will override color (regardless of order) */
+          -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 3px;
-          -webkit-text-stroke-color: var(--secondary-color);
+          -webkit-text-stroke-color: $secondary-color;
           width: 4.8rem;
           display: flex;
           justify-content: center;
@@ -76,19 +75,19 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          color: var(--secondary-color);
+          color: $secondary-color;
         }
       }
 
       &-btn {
         font-family: "Helvetica-Nouel";
         font-size: 1.4rem;
-        background: var(--secondary-color);
+        background: $secondary-color;
         border-bottom-left-radius: 6rem;
         border-top-right-radius: 6rem;
         width: 100%;
         margin: 3.5rem auto 0;
-        color: var(--font-color-mobile-menu);
+        color: $font-color-mobile-menu;
         text-align: center;
         height: 6rem;
         display: flex;
@@ -100,6 +99,14 @@
         position: relative;
         bottom: 0%;
         left: 0%;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          color: $secondary-color;
+          background-color: $primary-color;
+          padding-top: 1.5rem;
+        }
 
         &::before {
           content: "";
@@ -107,7 +114,7 @@
           height: 100%;
           position: absolute;
           background: none;
-          border: 3px solid var(--secondary-color);
+          border: 3px solid $secondary-color;
           bottom: -15%;
           right: -5%;
           border-bottom-left-radius: 6rem;
@@ -115,5 +122,16 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .process__gear-img {
+    bottom: 25%;
+    left: -35%;
+  }
+
+  .process__gear__box {
+    top: -16rem;
   }
 }

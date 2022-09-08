@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: rgba(var(--secondary-color), 0.5);
-}
-
 .contakt-title {
   font-size: 3rem;
   margin: 2rem;
@@ -32,7 +28,6 @@ body {
   border-radius: 2rem;
   padding: 2rem 1rem;
   background-color: white;
-  background-color: rgb(var(--main-color));
 }
 
 .input-container {

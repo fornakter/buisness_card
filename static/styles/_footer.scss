@@ -1,0 +1,77 @@
+.footer {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  &__img {
+    position: absolute;
+    top: 0%;
+    left: -45%;
+    z-index: -100;
+    animation: rotate 100s linear infinite;
+  }
+
+  &__mobile {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 2.5rem;
+    font-family: "Helvetica-Nouel";
+    top: 3rem;
+    position: absolute;
+
+    &__item {
+      width: 100%;
+      text-align: center;
+      a {
+        color: $secondary-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: -20rem;
+    font-style: normal;
+
+    &__design-by {
+      color: $accent-color-dark;
+      position: relative;
+      z-index: 1000;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      font-size: 2.2rem;
+      border-bottom: 3px solid $accent-color-dark;
+      line-height: 5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__fotorygo {
+      font-size: 2.2rem;
+      -webkit-text-fill-color: $font-color-darkness; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: $font-color-bright;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

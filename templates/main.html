@@ -23,7 +23,7 @@
 
       <!-- Nav-mobile -->
 
-      <ul class="navbar__menu-mobile menu-mobile">
+      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
         <li class="menu__item">
           <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
         </li>
@@ -103,7 +103,13 @@
       <div class="offer__container">
         <div class="offer__item">
           <img
-            src="../static/source/images/Ikona_Koncepcja strony.png"
+            class="offer__item__img"
+            src="../static/source/images/offer-imgs/Ikona_Koncepcja_strony.png"
+            srcset="
+              ../static/source/images/offer-imgs/Ikona_Koncepcja_strony.png     850w,
+              ../static/source/images/offer-imgs/Ikona_Koncepcja_strony@2x.png 1200w,
+              ../static/source/images/offer-imgs/Ikona_Koncepcja_strony@3x.png 1500w
+            "
             alt=""
           />
           <p class="offer__item__text">
@@ -112,7 +118,14 @@
         </div>
         <div class="offer__item">
           <img
-            src="../static/source/images/Ikona_Koncepcja strony.png"
+            class="offer__item__img"
+            src="../static/source/images/offer-imgs/Ikona_Zaprogramowanie_strony.png"
+            srcset="
+              ../static/source/images/offer-imgs/Ikona_Zaprogramowanie_strony.png     850w,
+              ../static/source/images/offer-imgs/Ikona_Zaprogramowanie_strony@2x.png 1200w,
+              ../static/source/images/offer-imgs/Ikona_Zaprogramowanie_strony@3x.png 1500w
+            "
+            alt=""
             alt=""
           />
 
@@ -120,7 +133,13 @@
         </div>
         <div class="offer__item">
           <img
-            src="../static/source/images/Ikona_Koncepcja strony.png"
+            class="offer__item__img"
+            src="../static/source/images/offer-imgs/Ikona_Key_Visual.png"
+            srcset="
+              ../static/source/images/offer-imgs/Ikona_Key_Visual.png     850w,
+              ../static/source/images/offer-imgs/Ikona_Key_Visual@2x.png 1200w,
+              ../static/source/images/offer-imgs/Ikona_Key_Visual@3x.png 1500w
+            "
             alt=""
           />
 
@@ -128,15 +147,20 @@
         </div>
         <div class="offer__item">
           <img
-            src="../static/source/images/Ikona_Koncepcja strony.png"
+            class="offer__item__img"
+            src="../static/source/images/offer-imgs/Ikona_Odświeżenie_strony.png"
+            srcset="
+              ../static/source/images/offer-imgs/Ikona_Odświeżenie_strony.png     850w,
+              ../static/source/images/offer-imgs/Ikona_Odświeżenie_strony@2x.png 1200w,
+              ../static/source/images/offer-imgs/Ikona_Odświeżenie_strony@3x.png 1500w
+            "
             alt=""
           />
 
           <p class="offer__item__text">Odświerzenie strony</p>
         </div>
-
-        <a href="#" class="offer__form-link">Przejdź do formularza</a>
       </div>
+      <a href="#" class="offer__form-link">Przejdź do formularza</a>
     </section>
 
     <!-- Section why worth it? -->
@@ -248,5 +272,35 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <img
+        src="../static/source/images/Footer.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
+      />
+      <ul class="footer__mobile">
+        <li class="footer__mobile__item">
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="footer__mobile__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+      <div class="footer__text-box">
+        <span class="footer__text-box__design-by">Design by</span>
+        <span class="footer__text-box__fotorygo">Fotorygo</span>
+      </div>
+    </footer>
   </body>
 </html>
