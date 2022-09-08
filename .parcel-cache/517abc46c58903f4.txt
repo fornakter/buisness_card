@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 4393
 80/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/projects.html1662580954168584100 0
 76/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/templates/main.html1662631931948953500 0
@@ -4392,3 +4393,7 @@
 105/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/woff2.js1662582073900213200 0
 87/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/nth-check/lib/esm1662582050108877000 1
 110/mnt/c/Users/Dell/Desktop/wspólny projekt/buisness_card/node_modules/caniuse-lite/data/features/word-break.js1662582073901640400 0
+=======
+91108320
+1662628730010826000
+>>>>>>> 7215c6e6d6489cb5e79abd4593dcf15bf224b461
