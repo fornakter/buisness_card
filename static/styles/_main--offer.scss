@@ -55,6 +55,12 @@
     background: none;
     text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
     z-index: 100;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $font-color-mobile-menu;
+      background-color: $secondary-color;
+    }
 
     &::before {
       content: "";

@@ -99,6 +99,14 @@
         position: relative;
         bottom: 0%;
         left: 0%;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        &:hover {
+          color: $secondary-color;
+          background-color: $primary-color;
+          padding-top: 1.5rem;
+        }
 
         &::before {
           content: "";
@@ -114,5 +122,16 @@
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .process__gear-img {
+    bottom: 25%;
+    left: -35%;
+  }
+
+  .process__gear__box {
+    top: -16rem;
   }
 }
