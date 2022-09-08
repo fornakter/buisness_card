@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 4398
 70/mnt/c/Users/Dell/Desktop/STRONA/buisness_card/templates/projects.html1662660568090738700 0
 66/mnt/c/Users/Dell/Desktop/STRONA/buisness_card/templates/main.html1662660568075729700 0
@@ -4397,3 +4398,7 @@
 111/mnt/c/Users/Dell/Desktop/STRONA/buisness_card/node_modules/caniuse-lite/data/features/constraint-validation.js1662660991834337200 0
 94/mnt/c/Users/Dell/Desktop/STRONA/buisness_card/node_modules/caniuse-lite/data/features/xhr2.js1662661001455185800 0
 101/mnt/c/Users/Dell/Desktop/STRONA/buisness_card/node_modules/caniuse-lite/data/features/will-change.js1662661001387718900 0
+=======
+91840815
+1662672154739664000
+>>>>>>> 33ad4c53663f734e9ad2bbafd75170486eaecb1c

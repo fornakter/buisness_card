@@ -166,62 +166,62 @@
     <!-- Section why worth it? -->
     <section class="worth">
       <h2 class="worth__title">Dlaczego warto?</h2>
+
       <p class="worth__text">
         Dobrze zaplanowana strategia pomaga zwiększyć dochody, a dobrze wykonana
         strona przynieść realne wyniki i zapaść w pamięć odbiorców. Składa się
         <br />
         na to wiele czynników takich jak:
       </p>
-      <div class="worth__box">
-        <h3 class="worth__box-title">Reklama</h3>
-        <p class="worth__box-text">
-          Trudno wskazać bardziej wydajny kanał reklamowy niż strona
-          internetowa. W przeciwieństwie do innych form reklamowania się, strona
-          internetowa jest pozbawiona ograniczeń plakatów, ulotek, reklam w
-          prasie lub w telewizji.
-        </p>
-      </div>
-      <div class="worth__box">
-        <h3 class="worth__box-title">Wiarygodność</h3>
-        <p class="worth__box-text">
-          Posiadanie strony internetowej pomaga zwiększyć twoją wiarygodność
-          jako przedsiębiorcy. Witryna WWW jest swoistym wyznacznikiem
-          profesjonalizmu, a opinie klientów potrafią przekonać
-          niezdecydowanych.
-        </p>
-      </div>
-      <div class="worth__box">
-        <h3 class="worth__box-title">
-          Prezentacja <br />
-          oferty
-        </h3>
-        <p class="worth__box-text">
-          Dzięki stronie internetowej w łatwy sposób możesz zaprezentować pełen
-          asortyment swoich usług lub produktów w dowolnej formie.
-        </p>
-      </div>
-      <div class="worth__box">
-        <h3 class="worth__box-title">Oszczedność czasu</h3>
-        <p class="worth__box-text">
-          Dobrze zaprojektowana witryna odpowiada na pytania klientów.
-          Przemyślana treść i opisy uchronią Cię przed nieustannym odpowiadaniem
-          na pytania klientów.
-        </p>
-      </div>
-      <div class="worth__box">
-        <h3 class="worth__box-title">Konkurencja</h3>
-        <p class="worth__box-text">
-          Prawdopodobnie konkurencja z Twojej branży posiada już stronę, ze
-          względu na poprzednie argumenty, aby stać się bardziej konkurencyjnym
-          Ty również powinieneś posiadać stronę.
-        </p>
+      <div class="worth__big-box">
+        <div class="worth__box">
+          <h3 class="worth__box-title">Reklama</h3>
+          <p class="worth__box-text">
+            Trudno wskazać bardziej wydajny kanał reklamowy niż strona
+            internetowa. W przeciwieństwie do innych form reklamowania się,
+            strona internetowa jest pozbawiona ograniczeń plakatów, ulotek,
+            reklam w prasie lub w telewizji.
+          </p>
+        </div>
+        <div class="worth__box">
+          <h3 class="worth__box-title">Wiarygodność</h3>
+          <p class="worth__box-text">
+            Posiadanie strony internetowej pomaga zwiększyć twoją wiarygodność
+            jako przedsiębiorcy. Witryna WWW jest swoistym wyznacznikiem
+            profesjonalizmu, a opinie klientów potrafią przekonać
+            niezdecydowanych.
+          </p>
+        </div>
+        <div class="worth__box">
+          <h3 class="worth__box-title">
+            Prezentacja <br />
+            oferty
+          </h3>
+          <p class="worth__box-text">
+            Dzięki stronie internetowej w łatwy sposób możesz zaprezentować
+            pełen asortyment swoich usług lub produktów w dowolnej formie.
+          </p>
+        </div>
+        <div class="worth__box">
+          <h3 class="worth__box-title">Oszczedność czasu</h3>
+          <p class="worth__box-text">
+            Dobrze zaprojektowana witryna odpowiada na pytania klientów.
+            Przemyślana treść i opisy uchronią Cię przed nieustannym
+            odpowiadaniem na pytania klientów.
+          </p>
+        </div>
+        <div class="worth__box">
+          <h3 class="worth__box-title">Konkurencja</h3>
+          <p class="worth__box-text">
+            Prawdopodobnie konkurencja z Twojej branży posiada już stronę, ze
+            względu na poprzednie argumenty, aby stać się bardziej
+            konkurencyjnym Ty również powinieneś posiadać stronę.
+          </p>
+        </div>
       </div>
     </section>
     <section class="process">
-      <h2 class="process__title">
-        Jak wygląda <br />
-        proces?
-      </h2>
+      <h2 class="process__title">Jak wygląda proces?</h2>
       <div class="process__gear">
         <img
           src="../static/source/images/Background_Jak wygląda proces_.png"
@@ -278,28 +278,35 @@
         alt="Miętowa zębatka"
         class="footer__img"
       />
-      <ul class="footer__mobile">
-        <li class="footer__mobile__item">
-          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
-        </li>
-        <li class="footer__mobile__item">
-          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
-        </li>
-        <li class="footer__mobile__item">
-          <a href="{{url_for('projects')}}" class="link link-our-projects"
-            >Projekty</a
-          >
-        </li>
-        <li class="footer__mobile__item">
-          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
-        </li>
-        <li class="footer__mobile__item">
-          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
-        </li>
-      </ul>
-      <div class="footer__text-box">
-        <span class="footer__text-box__design-by">Design by</span>
-        <span class="footer__text-box__fotorygo">Fotorygo</span>
+
+      <div class="footer__desktop">
+        <ul class="footer__mobile">
+          <li class="footer__mobile__item">
+            <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+          </li>
+          <li class="footer__mobile__item">
+            <a href="{{url_for('about_us')}}" class="link link-about-us"
+              >O nas</a
+            >
+          </li>
+          <li class="footer__mobile__item">
+            <a href="{{url_for('projects')}}" class="link link-our-projects"
+              >Projekty</a
+            >
+          </li>
+          <li class="footer__mobile__item">
+            <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+          </li>
+          <li class="footer__mobile__item">
+            <a href="{{url_for('kontakt')}}" class="link link-contact"
+              >Kontakt</a
+            >
+          </li>
+        </ul>
+        <div class="footer__text-box">
+          <span class="footer__text-box__design-by">Design by</span>
+          <span class="footer__text-box__fotorygo">Fotorygo</span>
+        </div>
       </div>
     </footer>
   </body>
