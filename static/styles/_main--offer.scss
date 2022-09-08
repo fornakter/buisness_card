@@ -54,9 +54,9 @@
     position: relative;
     background: none;
     text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
-    z-index: 100;
+    z-index: 10;
 
-    &::before {
+    &::after {
       content: "";
       position: absolute;
       width: 100%;
@@ -66,7 +66,14 @@
       background-color: var(--accent-color-dark);
       border-bottom-left-radius: 6rem;
       border-top-right-radius: 6rem;
-      z-index: 10;
+      z-index: 1;
+    }
+  }
+}
+@media screen and (min-width: 850px) {
+  .offer {
+    &__title {
+      width: 60%;
     }
   }
 }

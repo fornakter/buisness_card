@@ -243,7 +243,7 @@
   }
 }
 .offer {
-  height: 100vh;
+  min-height: 100vh;
   font-weight: 100;
 }
 .offer__title {
@@ -282,6 +282,198 @@
   padding: 2rem;
   width: 30rem;
   height: 8.1rem;
+}
+.offer__form-link {
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 2rem;
+  border: 3px solid var(--secondary-color);
+  width: 80%;
+  margin: 4.1rem auto 7rem;
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  position: relative;
+  background: none;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
+  z-index: 10;
+}
+.offer__form-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -10%;
+  left: -4%;
+  background-color: var(--accent-color-dark);
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  z-index: 1;
+}
+
+@media screen and (min-width: 850px) {
+  .offer__title {
+    width: 60%;
+  }
+}
+.worth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.worth__title {
+  font-size: 2.2rem;
+  background: var(--secondary-color);
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  width: 90%;
+  margin: 0 auto;
+  color: var(--font-color-mobile-menu);
+  text-align: center;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0px 4px 1rem rgba(0, 0, 0, 0.25);
+  margin-bottom: 4.2rem;
+}
+.worth__text {
+  font-family: "Jost", sans-serif;
+  color: var(--secondary-color);
+  font-size: 1.7rem;
+  width: 85%;
+  text-align: center;
+  margin: 0 auto 4.8rem;
+}
+.worth__box {
+  width: 80%;
+  background-color: var(--secondary-color);
+  padding: 2rem;
+  margin: 0 auto 4.8rem;
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+}
+.worth__box-title {
+  font-size: 2rem;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
+  color: var(--font-color-mobile-menu);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.worth__box-text {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-family: "Jost", sans-serif;
+  text-align: center;
+}
+
+.process {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.process__title {
+  margin: 0 auto;
+  margin-top: 6.1rem;
+  width: 80%;
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  text-align: center;
+  padding: 3.5rem 0;
+  font-size: 2rem;
+  position: relative;
+  z-index: 10;
+}
+.process__gear {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.process__gear-img {
+  position: absolute;
+  bottom: 4%;
+  left: -42%;
+  z-index: -1;
+  width: 70rem;
+}
+.process__gear__box {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -5rem;
+  left: 0;
+  gap: 1rem;
+}
+.process__gear__box__item {
+  display: flex;
+  gap: 2.5rem;
+}
+.process__gear__box__item-number {
+  font-size: 5rem;
+  -webkit-text-fill-color: var(--primary-color); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: var(--secondary-color);
+  width: 4.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.process__gear__box__item-number--bigger {
+  font-size: 5.7rem;
+}
+.process__gear__box__item-text {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+}
+.process__gear__box-btn {
+  font-family: "Helvetica-Nouel";
+  font-size: 1.4rem;
+  background: var(--secondary-color);
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
+  width: 100%;
+  margin: 3.5rem auto 0;
+  color: var(--font-color-mobile-menu);
+  text-align: center;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0px 4px 1rem rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
+  text-decoration: none;
+  position: relative;
+  bottom: 0%;
+  left: 0%;
+}
+.process__gear__box-btn::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: none;
+  border: 3px solid var(--secondary-color);
+  bottom: -15%;
+  right: -5%;
+  border-bottom-left-radius: 6rem;
+  border-top-right-radius: 6rem;
 }
 
 @font-face {
