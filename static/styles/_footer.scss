@@ -1,192 +1,75 @@
 .footer {
-  height: 90vh;
+  width: 100%;
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  bottom: 0;
   overflow: hidden;
-  position: relative;
+  padding-top: 20rem;
+
+  font-family: "Jost", sans-serif;
 
   &__img {
+    margin: 0;
+    width: 200%;
     position: absolute;
-    top: 0%;
-    left: -45%;
-    z-index: -100;
-    animation: rotate 100s linear infinite;
+    top: 10%;
+    left: -50%;
+
+    animation: "rotateFooterBorder" 100s linear infinite;
   }
-
-  &__mobile {
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    font-size: 2.5rem;
-    font-family: "Helvetica-Nouel";
-    top: 3rem;
-    position: absolute;
-
+  &__logo {
+    color: transparent;
+    display: inline-block;
+    -webkit-text-stroke: 2px black;
+    font-size: 2rem;
+    background-color: $secondary-color;
+    display: none;
+  }
+  &__list {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 5rem;
     &__item {
-      width: 100%;
-      text-align: center;
-      a {
+      &__link {
         color: $secondary-color;
         text-decoration: none;
+        font-size: 2.2rem;
+        line-height: 5.5rem;
+        text-align: center;
       }
     }
   }
-
-  &__text-box {
-    display: flex;
-    flex-direction: column;
+  &__design-info {
+    color: $accent-color-dark;
+    font-size: 2.5rem;
+    font-family: "Jost", sans-serif;
     position: relative;
-    bottom: -20rem;
-    font-style: normal;
-
-    &__design-by {
-      color: $accent-color-dark;
-      position: relative;
-      z-index: 1000;
-      display: block;
-      width: 100%;
-      text-align: center;
-      margin: 0 auto;
-      font-size: 2.2rem;
-      border-bottom: 3px solid $accent-color-dark;
-      line-height: 5rem;
-      margin-bottom: 1.5rem;
-    }
-
-    &__fotorygo {
-      font-size: 2.2rem;
-      -webkit-text-fill-color: $font-color-darkness; /* Will override color (regardless of order) */
-      -webkit-text-stroke-width: 2px;
-      -webkit-text-stroke-color: $font-color-bright;
-    }
-  }
-}
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .process {
-    margin-bottom: -40rem;
-    &__gear-img {
-      bottom: 40%;
-      width: 73rem;
-      left: 3rem;
-    }
-
-    &__gear__box {
-      top: -30rem;
-    }
-  }
-
-  .footer {
-    height: 33vh;
-    width: 100%;
-
-    &__desktop {
-      display: flex;
-      height: 100%;
-      width: 100%;
-    }
-  }
-
-  footer .footer__img {
-    left: 3rem;
-  }
-}
-@media screen and (min-width: 850px) {
-  .process {
-    margin-bottom: 0;
-    &__gear-img {
-      bottom: 10%;
-      left: 70px;
-      width: 73rem;
-    }
-
-    &__gear__box {
-      top: -8rem;
-    }
-  }
-
-  footer .footer__img {
-    left: 50px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .worth__title {
-    font-size: 6rem;
-    width: 60%;
-    height: 13rem;
-    border-radius: 0 10rem 0 10rem;
-    position: relative;
-
+    margin-bottom: 2rem;
     &::after {
       content: "";
-      border: 6px solid $secondary-color;
-      width: 125rem;
-      height: 75rem;
+      width: 100%;
+      height: 0.3rem;
+      background-color: $accent-color-dark;
+      width: 100%;
+      display: block;
       position: absolute;
-      top: 6rem;
-      z-index: -1;
-      border-radius: 0 15rem 0 15rem;
+      bottom: -10%;
+      left: 0;
     }
   }
-
-  .worth {
-    align-items: center;
-    position: relative;
-    margin-bottom: 10rem;
+  &__designer {
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px white;
   }
+}
 
-  .worth__big-box {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75%;
-    position: absolute;
-    top: 35%;
+@keyframes rotateFooterBorder {
+  0% {
+    transform: rotate(0);
   }
-
-  .worth__box {
-    width: 30%;
-    align-items: center;
-  }
-
-  .process__title {
-    width: 75%;
-    font-size: 5.5rem;
-    height: 10rem;
-    border-radius: 0 10rem 0 10rem;
-    padding: 2rem;
-  }
-
-  .process__gear-img {
-    width: 80rem;
-    bottom: 10%;
-    left: 30rem;
-  }
-
-  .process {
-    margin-bottom: 6rem;
-  }
-
-  .footer {
-    padding-top: 5rem;
-  }
-
-  footer .footer__img {
-    width: 120rem;
-    left: 10rem;
+  100% {
+    transform: rotate(360deg);
   }
 }
