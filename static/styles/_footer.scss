@@ -384,7 +384,7 @@
   .worth {
     &::after {
       border-radius: 0 20rem 0 20rem;
-      height: 90%;
+      height: 97%;
     }
     .worth__title {
       font-size: 5rem;
@@ -408,27 +408,40 @@
   }
 
   .process {
+    margin-bottom: 20rem;
+    overflow: visible;
     &__gear-img {
       width: 90rem;
-      bottom: 19%;
+      bottom: -17%;
       left: 29rem;
     }
-    &__gear__box {
-      top: -27rem;
 
-      &-btn {
-        width: 80%;
-      }
-    }
     &__title {
       width: 60%;
     }
     &__gear__box {
-      top: -22rem;
+      top: -3rem;
       gap: 2rem;
+
+      &-btn {
+        width: 80%;
+        color: $primary-color;
+        text-shadow: none;
+        font-size: 2rem;
+      }
     }
     &__gear__box__item-text {
       font-size: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .worth {
+    min-height: 100vh;
+    &::after {
+      border-radius: 0 20rem 0 20rem;
+      height: 100%;
     }
   }
 }
