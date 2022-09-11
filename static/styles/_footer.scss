@@ -7,6 +7,7 @@
   bottom: 0;
   overflow: hidden;
   padding-top: 20rem;
+  padding-bottom: 7rem;
 
   font-family: "Jost", sans-serif;
 
@@ -41,13 +42,39 @@
       }
     }
   }
-<<<<<<< HEAD
   &__design-info {
     color: $accent-color-dark;
     font-size: 2.5rem;
     font-family: "Jost", sans-serif;
-=======
+    position: relative;
+    margin-bottom: 2rem;
+    &::after {
+      content: "";
+      width: 100%;
+      height: 0.3rem;
+      background-color: $accent-color-dark;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+    }
+  }
+  &__designer {
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px white;
+  }
+}
 
+@keyframes rotateFooterBorder {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.footer {
   &__text-box {
     display: flex;
     flex-direction: column;
@@ -102,19 +129,40 @@
   }
 
   .footer {
-    height: 85vh;
-    padding-top: 2.5rem;
+    padding-top: 10rem;
     &__img {
-      left: -50%;
+      top: 2%;
+    }
+  }
+}
+@media screen and (min-width: 375px) {
+  .process {
+    margin-bottom: 0;
+
+    &__gear-img {
+      bottom: 3%;
+      left: -43%;
+    }
+
+    &__gear__box {
+      top: -5rem;
+    }
+  }
+
+  .footer {
+    padding-top: 20rem;
+    &__img {
+      top: 10%;
     }
   }
 }
 @media screen and (min-width: 390px) {
   .process {
     margin-bottom: 0;
+    height: 90vh;
 
     &__gear-img {
-      bottom: 20%;
+      bottom: 8%;
       left: -39%;
     }
 
@@ -128,10 +176,9 @@
   }
 
   .footer {
-    height: 85vh;
-    padding-top: 2.5rem;
+    padding-top: 10rem;
     &__img {
-      left: -50%;
+      top: 2%;
     }
   }
 }
@@ -139,9 +186,10 @@
 @media screen and (min-width: 412px) {
   .process {
     margin-bottom: 0;
+    height: 90vh;
 
     &__gear-img {
-      bottom: 25%;
+      bottom: 15%;
       left: -35%;
     }
 
@@ -153,14 +201,23 @@
       height: 90vh;
     }
   }
+
+  .footer {
+    padding-top: 10rem;
+    &__img {
+      top: 0;
+    }
+  }
 }
 @media screen and (min-width: 414px) {
   .process {
     margin-bottom: 0;
 
+    height: 90vh;
+
     &__gear-img {
-      bottom: 23%;
-      left: -35%;
+      bottom: 14%;
+      left: -33%;
     }
 
     &__gear__box {
@@ -171,19 +228,26 @@
       height: 90vh;
     }
   }
+
+  .footer {
+    padding-top: 10rem;
+    &__img {
+      top: 2%;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
   .process {
     margin-bottom: -40rem;
     &__gear-img {
-      bottom: 40%;
-      width: 73rem;
-      left: 3rem;
+      width: 75rem;
+      bottom: 30%;
+      left: 1rem;
     }
 
     &__gear__box {
-      top: -30rem;
+      top: -21rem;
     }
   }
 
@@ -197,9 +261,30 @@
       width: 100%;
     }
   }
+}
+@media screen and (min-width: 820px) {
+  .process {
+    margin-bottom: -40rem;
+    &__gear-img {
+      width: 75rem;
+      bottom: 37%;
+      left: 4rem;
+    }
 
-  footer .footer__img {
-    left: 3rem;
+    &__gear__box {
+      top: -27rem;
+    }
+  }
+
+  .footer {
+    height: 33vh;
+    width: 100%;
+
+    &__desktop {
+      display: flex;
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 @media screen and (min-width: 850px) {
@@ -215,9 +300,24 @@
       top: -8rem;
     }
   }
-
-  footer .footer__img {
-    left: 50px;
+}
+@media screen and (min-width: 912px) {
+  .offer {
+    min-height: 95vh;
+  }
+  .worth {
+    min-height: 77vh;
+  }
+  .process {
+    margin-bottom: 0;
+    &__gear-img {
+      width: 73rem;
+      bottom: 47%;
+      left: 9rem;
+    }
+    &__gear__box {
+      top: -38rem;
+    }
   }
 }
 
@@ -227,7 +327,6 @@
     width: 60%;
     height: 13rem;
     border-radius: 0 10rem 0 10rem;
->>>>>>> 03a071e85fef22063ba324f55345ea2ba099ba4a
     position: relative;
     margin-bottom: 2rem;
     &::after {
@@ -242,17 +341,13 @@
       left: 0;
     }
   }
-  &__designer {
-    font-size: 3.5rem;
-    -webkit-text-stroke: 1px white;
-  }
-}
 
-@keyframes rotateFooterBorder {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
+  @keyframes rotateFooterBorder {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
