@@ -1,0 +1,199 @@
+.about-us {
+  &__header {
+    width: 100%;
+    margin-top: 11rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+      color: white;
+      font-size: 2.2rem;
+      background-color: $secondary-color;
+      padding: 1.2rem 6rem;
+      border-radius: 0 6rem 0 6rem;
+      text-shadow: $text-shadow-mobile-menu;
+      box-shadow: 0 0.4rem 1.5rem -0.5rem #ffffff;
+    }
+    &__text-container,
+    .text-container {
+      width: 90%;
+      font-family: "jost";
+      color: $secondary-color;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-top: 4rem;
+      &__paragraph {
+        margin-bottom: 1.5rem;
+      }
+      .bold {
+        font-weight: 600;
+      }
+    }
+  }
+  &__team,
+  .team {
+    color: $secondary-color;
+    margin: 4rem auto;
+    display: inline-block;
+    text-align: center;
+
+    &__title {
+      font-size: 3rem;
+      margin-bottom: 3.8rem;
+      letter-spacing: 1rem;
+    }
+    &__member {
+      margin-bottom: 5rem;
+      &__photo {
+        width: 70%;
+      }
+      &__description,
+      .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__name {
+          color: $font-color-mobile-menu;
+          font-size: 2.2rem;
+          margin-bottom: 0rem;
+          line-height: 4.5rem;
+        }
+        &__job {
+          font-size: 2.2rem;
+          font-family: "Jost", sans-serif;
+          font-weight: 700;
+          margin-bottom: 2rem;
+          letter-spacing: 0.16rem;
+          line-height: 3.2rem;
+        }
+        &__text {
+          color: $font-color-mobile-menu;
+          font-size: 1.5rem;
+          font-family: "Jost", sans-serif;
+          line-height: 2.5rem;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 850px) {
+  .about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__header {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10rem 15.2rem 12rem 10.3rem;
+      margin-top: 40rem;
+      border: 5px solid $secondary-color;
+      position: relative;
+      border-radius: 0 30rem 0 30rem;
+      text-align: s;
+
+      &__title {
+        border-radius: 0 12rem 0 12rem;
+        padding: 2.1rem 10rem;
+        font-size: 3rem;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+      }
+
+      &__img {
+        width: 50rem;
+        position: absolute;
+        bottom: 0;
+        right: 1%;
+        transform: translateY(40%);
+      }
+      .text-container {
+        font-size: 2.2rem;
+        text-align: start;
+        &__paragraph {
+          &:last-child {
+            margin-right: 50%;
+          }
+        }
+      }
+    }
+    &__team,
+    .team {
+      &__title {
+        font-size: 8rem;
+        margin: 19rem;
+      }
+      &__members-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      &__member {
+        width: 50%;
+
+        &__photo {
+          width: 40%;
+        }
+        &__description,
+        .description {
+          &__name {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+          }
+          &__job {
+            font-size: 3rem;
+            margin-bottom: 2.5rem;
+          }
+          &__text {
+            font-size: 3rem;
+            line-height: 4.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__header {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10rem 15.2rem 12rem 10.3rem;
+      margin-top: 40rem;
+      border: 5px solid $secondary-color;
+      position: relative;
+      border-radius: 0 30rem 0 30rem;
+      text-align: s;
+
+      &__title {
+        border-radius: 0 12rem 0 12rem;
+        padding: 2.1rem 18rem;
+        font-size: 6rem;
+        text-align: center;
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+      }
+      .text-container {
+        font-size: 2.2rem;
+        text-align: start;
+        &__paragraph {
+          &:last-child {
+            margin-right: 30%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,16 +1,22 @@
 export const changeNavbar = () => {
   const hamburgerButton = document.querySelector(".hamburger");
-  const menu = document.querySelector(".navbar__menu-mobile");
-  const links = document.querySelectorAll(".link");
+  const mobileMenu = document.querySelector(".navbar__menu-mobile");
+  const currentPageTracker = document.querySelector(".current-page-tracker");
+  const navbarMenuDesktop = document.querySelector(".menu-desktop");
+  const titleMiddle = document.querySelector(".middle");
 
-  hamburgerButton.addEventListener("click", (e) => {
-    menu.classList.toggle("navbar__menu-mobile-open");
-    hamburgerButton.classList.toggle("hamburger-open");
+  // Open & close navbar menu.
+
+  hamburgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("navbar__menu-mobile--open");
+    hamburgerButton.classList.toggle("hamburger--open");
   });
-  links.forEach((link) =>
-    link.addEventListener("click", () => {
-      menu.classList.toggle("navbar__menu-mobile-open");
-      hamburgerButton.classList.toggle("hamburger-open");
-    })
-  );
+
+  // Move page tracker
+  navbarMenuDesktop.addEventListener("click", (e) => {
+    e.target.dataset.trackerpos;
+    currentPageTracker.style.transform = `translateX(${
+      e.target.dataset.trackerpos * 100
+    }%)`;
+  });
 };

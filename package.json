@@ -1,0 +1,25 @@
+{
+  "name": "buisness_card",
+  "version": "1.0.0",
+  "description": "Website with our first projekt.",
+  "scripts": {
+    "build:dev": "rm -rf dist && parcel templates/about_us.html",
+    "build:prod": "rm -rf dist && parcel build templates/main.html --public-url ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fornakter/buisness_card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fornakter/buisness_card/issues"
+  },
+  "homepage": "https://github.com/fornakter/buisness_card#readme",
+  "dependencies": {
+    "parcel": "^2.7.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0"
+  }
+}

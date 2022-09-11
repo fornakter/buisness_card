@@ -1,8 +1,31 @@
+@import "variables";
 @import "navbar";
-@import "hamburger";
 @import "header";
-@import "introSection";
+@import "main--offer";
+@import "why-worth-it";
+@import "process";
+@import "about-us";
+@import "footer";
 
-a {
-  color: black;
+@font-face {
+  font-family: "Helvetica-Nouel";
+  src: url(../source/fonts/Helvetica-NeueLTW0693BlkExtObl-2.ttf);
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font, sans-serif;
+  background-color: $primary-color;
+}
+
+html {
+  font-size: 62.5%;
+  width: 100%;
 }
