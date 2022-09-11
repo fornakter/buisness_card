@@ -276,26 +276,30 @@
     }
 
     &__box {
-      width: 35%;
+      width: 40%;
       padding: 3rem;
       margin: 2.5rem;
 
-      // &:nth-child(2) {
-      //   border-radius: 6rem 0 6rem 0;
-      // }
+      &__box-title {
+        margin-bottom: 2rem;
 
-      // &:nth-child(3) {
-      //   border-radius: 6rem 0 6rem 0;
-      // }
+        // &:nth-child(2) {
+        //   border-radius: 6rem 0 6rem 0;
+        // }
+
+        // &:nth-child(3) {
+        //   border-radius: 6rem 0 6rem 0;
+        // }
+      }
     }
   }
 
   .process {
-    margin-bottom: -40rem;
+    margin-bottom: -5rem;
     &__gear-img {
-      width: 75rem;
-      bottom: 21%;
-      left: 1rem;
+      bottom: 23%;
+      left: 3%;
+      width: 73rem;
     }
 
     &__gear__box {
@@ -374,32 +378,65 @@
 }
 
 @media (min-width: 1440px) {
-  .worth__title {
-    font-size: 6rem;
-    width: 60%;
-    height: 13rem;
-    border-radius: 0 10rem 0 10rem;
-    position: relative;
-    margin-bottom: 2rem;
+  .offer__form-link {
+    width: 45%;
+  }
+  .worth {
     &::after {
-      content: "";
-      width: 100%;
-      height: 0.3rem;
-      background-color: $accent-color-dark;
-      width: 100%;
-      display: block;
-      position: absolute;
-      bottom: -10%;
-      left: 0;
+      border-radius: 0 20rem 0 20rem;
+      height: 90%;
+    }
+    .worth__title {
+      font-size: 5rem;
+      width: 60%;
+      height: 13rem;
+      border-radius: 0 10rem 0 10rem;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    &__text {
+      margin: 0 auto 1rem;
+      font-size: 1.9rem;
+      padding: 2.5rem;
+    }
+
+    &__box {
+      width: 25%;
+      margin: 3rem;
     }
   }
 
-  @keyframes rotateFooterBorder {
-    0% {
-      transform: rotate(0);
+  .process {
+    &__gear-img {
+      width: 90rem;
+      bottom: 19%;
+      left: 29rem;
     }
-    100% {
-      transform: rotate(360deg);
+    &__gear__box {
+      top: -27rem;
+
+      &-btn {
+        width: 80%;
+      }
     }
+    &__title {
+      width: 60%;
+    }
+    &__gear__box {
+      top: -22rem;
+      gap: 2rem;
+    }
+    &__gear__box__item-text {
+      font-size: 3rem;
+    }
+  }
+}
+@keyframes rotateFooterBorder {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
