@@ -238,11 +238,63 @@
 }
 
 @media screen and (min-width: 768px) {
+  .offer__form-link {
+    width: 50%;
+  }
+  .worth {
+    margin-bottom: 5rem;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 100%;
+      background: none;
+      border: 5px solid $secondary-color;
+      top: 4rem;
+      left: 5%;
+      border-radius: 0 6rem 0 6rem;
+      z-index: -1;
+    }
+    &__title {
+      width: 75%;
+      height: 9rem;
+      border-radius: 0 9rem 0 9rem;
+      font-size: 2.5rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      margin: 0 auto 3rem;
+    }
+
+    &__big-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__box {
+      width: 35%;
+      padding: 3rem;
+      margin: 2.5rem;
+
+      // &:nth-child(2) {
+      //   border-radius: 6rem 0 6rem 0;
+      // }
+
+      // &:nth-child(3) {
+      //   border-radius: 6rem 0 6rem 0;
+      // }
+    }
+  }
+
   .process {
     margin-bottom: -40rem;
     &__gear-img {
       width: 75rem;
-      bottom: 30%;
+      bottom: 21%;
       left: 1rem;
     }
 
