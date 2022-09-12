@@ -52,7 +52,7 @@
   margin-bottom: 4.4rem;
 }
 
-.submit-btn {
+.submit-btn-box {
   width: 80%;
   text-align: center;
   color: #0000;
@@ -71,7 +71,7 @@
     height: 100%;
     color: #79ffd7;
     text-shadow: 0 3px 10px #0000008c;
-    border: 5px solid #79ffd7;
+    border: 3px solid #79ffd7;
     border-radius: 0 6rem;
     justify-content: center;
     align-items: center;
@@ -82,6 +82,10 @@
     top: 13%;
     left: 4%;
   }
+}
+
+.submit-btn {
+  visibility: hidden;
 }
 
 .footer {
@@ -105,7 +109,7 @@
         content: "";
         height: 0.3rem;
         background-color: $accent-color-dark;
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
         display: block;
         position: absolute;

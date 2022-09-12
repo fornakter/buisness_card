@@ -1312,7 +1312,7 @@ html {
   display: flex;
 }
 
-.submit-btn {
+.submit-btn-box {
   width: 80%;
   text-align: center;
   color: #0000;
@@ -1326,13 +1326,13 @@ html {
   position: relative;
 }
 
-.submit-btn:before {
+.submit-btn-box:before {
   content: "Wyślij";
   width: 100%;
   height: 100%;
   color: #79ffd7;
   text-shadow: 0 3px 10px #0000008c;
-  border: 5px solid #79ffd7;
+  border: 3px solid #79ffd7;
   border-radius: 0 6rem;
   justify-content: center;
   align-items: center;
@@ -1342,6 +1342,10 @@ html {
   position: absolute;
   top: 13%;
   left: 4%;
+}
+
+.submit-btn {
+  visibility: hidden;
 }
 
 .footer {
@@ -1368,7 +1372,7 @@ html {
 .footer__copy-design-info:after {
   content: "";
   height: .3rem;
-  width: 50%;
+  width: 70%;
   background-color: #ff630b;
   margin: 0 auto;
   display: block;
