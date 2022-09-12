@@ -1,13 +1,13 @@
 import { changeNavbar } from "./navbar.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const nav = document.querySelector(".navbar");
+  const navb = document.querySelector(".navbar");
 
   const addShadow = () => {
     if (window.scrollY >= 30) {
-      nav.classList.add("bg-shadow");
+      navb.classList.add("bg-shadow");
     } else {
-      nav.classList.remove("bg-shadow");
+      navb.classList.remove("bg-shadow");
     }
   };
 
