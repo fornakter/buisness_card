@@ -845,6 +845,40 @@
     text-align: start;
   }
 }
+.faq__header {
+  border: 2px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 7rem 0;
+}
+.faq__item {
+  border: 2px solid white;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 0 6rem 0 6rem;
+  border: 0.3rem solid rgb(121, 255, 215);
+  overflow: hidden;
+  margin-bottom: 7rem;
+}
+.faq__item:last-child {
+  margin-bottom: 9rem;
+}
+.faq__item__question {
+  background-color: rgb(121, 255, 215);
+  text-align: center;
+  padding: 3rem 4rem;
+  font-size: 2.5rem;
+  border-radius: 0 0 0 6rem;
+}
+.faq__item__answer {
+  color: white;
+  font-size: 2.2rem;
+  font-family: "Jost";
+  text-align: center;
+  padding: 2rem;
+}
+
 @font-face {
   font-family: "Helvetica-Nouel";
   src: url(../source/fonts/Helvetica-NeueLTW0693BlkExtObl-2.ttf);

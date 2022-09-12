@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/styles/main.css" />
+    <script src="../static/scriptJS/main.js" type="module" defer></script>
+    <title>FAQ</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <p class="logo">Logo</p>
+
+      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
+
+      <!-- Nav-mobile -->
+
+      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
+        <li class="menu__item">
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img
+          class="current-page-tracker"
+          src="../static/source/images/Vector.png"
+          alt=""
+        />
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="main.html" class="link" data-trackerPos="0">Home</a>
+        </li>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a
+            href="about_us.html"
+            class="link link-about-us"
+            data-trackerPos="0.9"
+            >O nas</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="2.5"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a href="#" class="link link-contact" data-trackerPos="3.55"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+    </nav>
+    <!-- end of navbar ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div class="faq">
+      <section class="faq__header">
+        <img
+          class="faq-header__image"
+          src="../static/source/images/faq-header-image.png"
+          alt=""
+        />
+      </section>
+      <article class="faq__item">
+        <h2 class="faq__item__question">Jak długo trwa projekt?</h2>
+        <p class="faq__item__answer">
+          Czas realizacji Twojego projektu jesteśmy w stanie oszacować w trakcie
+          pierwszej konsultacji.
+        </p>
+      </article>
+      <article class="faq__item">
+        <h2 class="faq__item__question">Jaka jest pula poprawek?</h2>
+        <p class="faq__item__answer">
+          W trakcie projektu obowiązują 2 pule poprawek w cenie. Pulę definiować
+          można jako set uwag podczas konsultacji online. Dotyczą one zakresu
+          zarówno graficznego jak i funkcjonalności strony. Istnieje możliwość
+          dokupienia pól poprawek.
+        </p>
+      </article>
+      <article class="faq__item">
+        <h2 class="faq__item__question">Czy wystawiacie faktury?</h2>
+        <p class="faq__item__answer">Tak, jak najbardziej.</p>
+      </article>
+    </div>
+
+    <!-- footer //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <footer class="footer">
+      <img
+        src="../static/source/images/Footer@3x.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
+      />
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="footer__logo">logo</div>
+        <div class="footer__design-wraper">
+          <p class="footer__design-info">Design by</p>
+          <p class="footer__designer">Fotorygo</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

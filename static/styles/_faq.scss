@@ -1,0 +1,35 @@
+.faq {
+  &__header {
+    border: 2px solid white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 7rem 0;
+  }
+  &__item {
+    border: 2px solid white;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0 6rem 0 6rem;
+    border: 0.3rem solid $secondary-color;
+    overflow: hidden;
+    margin-bottom: 7rem;
+    &:last-child {
+      margin-bottom: 9rem;
+    }
+    &__question {
+      background-color: $secondary-color;
+      text-align: center;
+      padding: 3rem 4rem;
+      font-size: 2.5rem;
+      border-radius: 0 0 0 6rem;
+    }
+    &__answer {
+      color: white;
+      font-size: 2.2rem;
+      font-family: "Jost";
+      text-align: center;
+      padding: 2rem;
+    }
+  }
+}
