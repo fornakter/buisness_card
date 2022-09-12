@@ -14,6 +14,8 @@ export const changeNavbar = () => {
 
   // Move page tracker
   navbarMenuDesktop.addEventListener("click", (e) => {
+    console.log(e.target);
+
     e.target.dataset.trackerpos;
     currentPageTracker.style.transform = `translateX(${
       e.target.dataset.trackerpos * 100
