@@ -1,3 +1,7 @@
+.bg-shadow {
+  background-color: rgba(26, 26, 26, 0.55);
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -7,9 +11,7 @@
   align-items: center;
   justify-content: space-between;
   height: 8rem;
-
   z-index: 100;
-  background-color: rgba(26, 26, 26, 0.55);
   transition: all 0.3s;
 
   .logo {
