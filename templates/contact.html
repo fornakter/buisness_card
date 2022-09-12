@@ -4,35 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/styles/contact/contact.scss" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/styles/contact.scss" />
     <script src="../static/scriptJS/contact.js" type="module" defer></script>
     <title>Contakt</title>
   </head>
   <body>
     <nav class="navbar">
-      <!-- <img src="../static/logo/logo.png" alt="logo" class="navbar__logo logo" /> -->
+      <!-- LOGO -->
       <p class="logo">Logo</p>
 
-      <ul class="navbar__menu-desktop menu-desktop">
+      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
+
+      <!-- Nav-mobile -->
+
+      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
         <li class="menu__item">
-          <a href="#" class="link link-about-us">O Nas</a>
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link-our-projects">Nasze Projekty</a>
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link-contact">Kontakt</a>
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
-      <ul class="navbar__menu-mobile menu-mobile">
-        <li class="menu__item">
-          <a href="#" class="link link-about-us">O Nas</a>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img
+          class="current-page-tracker"
+          src="../static/source/images/Vector.png"
+          alt=""
+        />
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="#" class="link link-our-projects" data-trackerPos="0"
+            >Home</a
+          >
         </li>
-        <li class="menu__item">
-          <a href="#" class="link link-our-projects">Nasze Projekty</a>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a href="#" class="link link-about-us" data-trackerPos="0.9">O nas</a>
         </li>
-        <li class="menu__item">
-          <a href="#" class="link link-contact">Kontakt</a>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="2.5"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a href="#" class="link link-contact" data-trackerPos="3.55"
+            >Kontakt</a
+          >
         </li>
       </ul>
 
@@ -42,61 +84,78 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
-    <h1 class="contakt-title">Contakt Us</h1>
-
+    <div class="contact__header">
+      <img
+        src="../static/source/images/kontakt.png"
+        alt="sluchawka telefonu z mietowa zebatka"
+        class="contact__header-img"
+      />
+    </div>
     <div class="contact__conntainer contact">
       <div class="contact__error-mesages"></div>
       <form class="form" method="post" action="/send/">
         <div class="input-container inputs-name">
-          <label class="label" for="form__name label">*Your Name</label>
-          <input
-            class="input__name input"
-            placeholder="Name"
-            type="text"
-            name="client_name"
-          />
+          <label class="label" for="form__name label">Imię</label>
+          <input class="input__name input" type="text" name="client_name" />
         </div>
 
         <div class="input-container">
-          <label class="label" for="form-phone">Phone</label>
-          <input
-            class="input__phone input"
-            placeholder="e.g 123-123-123"
-            type="tel"
-            name="_"
-          />
+          <label class="label" for="form-phone">Numer Kontaktowy</label>
+          <input class="input__phone input" type="tel" name="_" />
         </div>
 
         <div class="input-container">
-          <label class="label" for="form-email label ">*Your Email</label>
-          <input
-            class="input__email input"
-            placeholder="e.g hello@contact.com"
-            type="email"
-            name="mail"
-          />
+          <label class="label" for="form-email label ">Email</label>
+          <input class="input__email input" type="email" name="mail" />
         </div>
         <div class="input-container">
-          <label class="label" for="form-message-title">Message Title</label>
-          <input
-            class="form__mesage-title input"
-            placeholder="Title"
-            type="text"
-            name="_"
-          />
+          <label class="label" for="form-message-title">Rodzaj usługi:</label>
+          <input class="form__mesage-title input" type="text" name="_" />
         </div>
 
         <div class="input-container">
-          <label for="input__message " class="label">*Message</label>
+          <label for="input__message" class="label">Twoja wiadomość</label>
           <textarea class="input__message input" name="message"></textarea>
           <input class="button submit-btn" type="submit" name="submit" />
         </div>
       </form>
     </div>
-    <div class="overlay"></div>
+    <footer class="footer">
+      <img
+        src="../static/source/images/Footer@3x.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
+      />
+      <div class="footer__container">
+        <p class="footer__logo">logo</p>
+        <ul class="footer__list">
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="footer__copy">
+          <p class="footer__copy-design-info">Design by</p>
+
+          <p class="footer__copy-designer">Fotorygo</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="overlay"></div>
     <div class="confirmation">
       <button class="confirmation__btn-close">
-        <!-- <img src="../static/Icons/icon-close.svg" alt="close popup" /> -->
+        <img src="../static/Icons/icon-close.svg" alt="close popup" />
       </button>
       <p class="confimation__message">Wiadomość została wysłana</p>
       <button class="button confirmation__btn-back-to-home-page">
@@ -104,6 +163,6 @@
           >Back to home page</a
         >
       </button>
-    </div>
+    </div> -->
   </body>
 </html>

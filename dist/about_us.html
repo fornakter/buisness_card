@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/main.fc893c01.css">
+    <script src="/main.04528a29.js" defer=""></script>
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <p class="logo">Logo</p>
+
+      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
+
+      <!-- Nav-mobile -->
+
+      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
+        <li class="menu__item">
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects">Projekty</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img class="current-page-tracker" src="/Vector.320295ab.png" alt="">
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="#" class="link link-our-projects" data-trackerpos="0">Home</a>
+        </li>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a href="#" class="link link-about-us" data-trackerpos="0.9">O nas</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="#" class="link link-contact" data-trackerpos="1.65">Faq</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a href="#" class="link link-contact" data-trackerpos="2.5">Projekty</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a href="#" class="link link-contact" data-trackerpos="3.55">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+    </nav>
+    <div class="about-us">
+      <header class="about-us__header">
+        <h1 class="about-us__header__title">Kim jesteśmy</h1>
+        <img src="/who_we_are.adb5c5ae.png" srcset="/who_we_are.adb5c5ae.png 850W, /who_we_are@2x.019186dc.png" alt="" class="about-us__header__img">
+
+        <article class="about-us__header__text-container text-container">
+          <p class="text-container__paragraph">
+               Teamem, który połączył siły z ogromnej chęci rozwoju oraz teamem kierującym się filozofią <span class="bold">WIN-WIN</span> . Kiedy Ty wygrywasz to także nasz sukces, a solidnie wykonana strona www stanowi jeden z jego niezbędnych elementów.
+          </p>
+       
+          <p class="text-container__paragraph">Jesteśmy zespołem młodych, zaangażowanych osób z coraz bogatszym doświadczeniem. Cechuje nas <span class="bold">odpowiedzialność</span> , elastyczność członek 
+          i ogromne <span class="bold">zamiłowanie</span>  do tego co robimy. Każdy z nas codzień rozwija swoje umiejętności, a jako team preferujemy otwartą komunikację.</p>
+          
+          <p class="text-container__paragraph"> <span class="bold">Odciążymy Cię</span> Odciążymy Cię z koniecznności zastanawiania się jak wyróżnić się na tle konkurencji - zrobimy to my oraz stworzymy unikatową stronę, która 
+          z całą pewnością wyróżni Twój biznes. <br> <span class="place"></span></p>
+          </article>
+      </header>
+      <section class="about-us__team team">
+        <h2 class="team__title">Team</h2>
+        <div class="team__members-wraper">
+
+
+
+          <article class="team__member-container team__member">
+            <img src="/Adam%20Szeryf.053b8365.png" alt="" class="team__member__photo">
+            <div class="team__member__description">
+              <h3 class="description__name">Adam</h3>
+              <h4 class="description__job">Back-end</h4>
+              <div class="description__text">Iniciator projektu ForgeDevelopers. Pasjonat nowinek technologicznych, poszukiwacz kreatywnych rozwiązań, w wolnych 
+                chwilach - gry, książka oraz film.</div>
+              
+            </div>
+          </article>
+          <article class="team__member-container team__member">
+            <img src="/Krzysiek.b5ae9adb.png" alt="" class="team__member__photo">
+            <div class="team__member__description">
+              <h3 class="description__name">Krzysiek</h3>
+              <h4 class="description__job">Front-end</h4>
+              <div class="description__text">W projektach odpowiedzialny za warstwę frontendową. Wolne chwile spędza 
+                na uprawianiu sportu i gotowaniu. 
+                Technologie w których się rozwija 
+                to HTML CSS/SASS, Type-Script.</div>
+              
+            </div>
+          </article>
+          <article class="team__member-container team__member">
+            <img src="/Adam.4de98c61.png" alt="" class="team__member__photo">
+            <div class="team__member__description">
+              <h3 class="description__name">Adam</h3>
+              <h4 class="description__job">Front-end</h4>
+              <div class="description__text"> W naszym zespole zajmuje się warstwą wizualną. W wolnych chwilach lubi słuchać muzyki oraz oglądać filmy katastroficzne.</div>
+              
+            </div>
+          </article>
+          <article class="team__member-container team__member">
+            <img src="/Gabi.5d4da80d.png" alt="" class="team__member__photo">
+            <div class="team__member__description">
+              <h3 class="description__name">Katarzyna</h3>
+              <h4 class="description__job">Designer</h4>
+              <div class="description__text">Graficzno UI’owa dusza, dla której nie ma niemożliwych misji. Zajmuje się także zdjęciami wizerunkowymi oraz 
+                kreowaniem i wcielaniem 
+                w życie sesji modowych.</div>
+              
+            </div>
+          </article>
+          <article class="team__member-container team__member">
+            <img src="/Łukaniu.f5b2eceb.png" alt="" class="team__member__photo">
+            <div class="team__member__description">
+              <h3 class="description__name">Łukasz</h3>
+              <h4 class="description__job">Front-end</h4>
+              <div class="description__text">Pracowity, dokładny oraz niezwykle 
+                efektywny. Nie boi się zmian, uwielbia nowe umiejętności, a także zarządzanie czasem. Komunikatywny i samodzielny. Nigdy 
+                nie zawodzi.</div>
+              
+            </div>
+          </article>
+
+
+
+        </div>
+        
+      </section>
+      <!-- footer ////////////////////////// -->
+      <footer class="footer">
+        <img src="/Footer@3x.7280d28d.png" alt="Miętowa zębatka" class="footer__img">
+        <div class="footer__container">
+ <p class="footer__logo">logo</p>
+        <ul class="footer__list ">
+          <li class="footer__list__item"><a class="footer__list__item__link" href="#">Home</a></li>
+          <li class="footer__list__item"><a class="footer__list__item__link" href="#">O nas</a></li>
+          <li class="footer__list__item"><a class="footer__list__item__link" href="#">Projekt</a></li>
+          <li class="footer__list__item"><a class="footer__list__item__link" href="#">FAQ</a></li>
+          <li class="footer__list__item"><a class="footer__list__item__link" href="#">Kontakt</a></li>
+        </ul>
+        <p class="footer__design-info">Design by</p>
+        
+        <p class="footer__designer">Fotorygo</p>
+
+
+        </div>
+       
+      </footer>
+    
+  </div></body>
+</html>

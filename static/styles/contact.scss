@@ -1,0 +1,122 @@
+@import "main.scss";
+
+.contact__header {
+  margin-top: 10rem;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &-img {
+    position: absolute;
+    left: 57%;
+    transform: translateX(-50%);
+  }
+}
+
+.input {
+  height: 8rem;
+  padding: 2rem;
+  background: none;
+  border: 3px solid $secondary-color;
+  transition: all 0.3s;
+  color: $font-color-bright;
+  font-size: 2.7rem;
+
+  &:hover,
+  &:focus {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+
+  &__message {
+    height: 38rem;
+    margin-bottom: 4.4rem;
+  }
+}
+
+.label {
+  color: $secondary-color;
+  font-family: "Jost", sans-serif;
+  font-size: 2.2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1rem;
+  margin-bottom: 4.4rem;
+}
+
+.submit-btn {
+  width: 80%;
+  text-align: center;
+  color: #0000;
+  background-color: #ff630b;
+  border-radius: 0 6rem;
+  margin: 0 auto;
+  padding: 2rem;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  position: relative;
+
+  &::before {
+    content: "Wyślij";
+    width: 100%;
+    height: 100%;
+    color: #79ffd7;
+    text-shadow: 0 3px 10px #0000008c;
+    border: 5px solid #79ffd7;
+    border-radius: 0 6rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    transition: all 0.2s;
+    display: flex;
+    position: absolute;
+    top: 13%;
+    left: 4%;
+  }
+}
+
+.footer {
+  padding-top: 6rem;
+
+  &__list {
+    margin: 0;
+  }
+
+  &__copy {
+    margin-top: 2rem;
+
+    &-design-info {
+      color: $accent-color-dark;
+      font-size: 3rem;
+      font-family: "Jost", sans-serif;
+      position: relative;
+      margin-bottom: 2rem;
+      text-align: center;
+      &::after {
+        content: "";
+        height: 0.3rem;
+        background-color: $accent-color-dark;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &-designer {
+      font-size: 3rem;
+      -webkit-text-stroke: 1px white;
+    }
+  }
+}
