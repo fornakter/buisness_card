@@ -4,34 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/styles/contact.css" />
-    <script src="../static/scriptJS/contact.js" type="module" defer></script>
+    <link rel="stylesheet" href="../static/styles/main.scss" />
+    <script src="../static/scriptJS/main.js" type="module" defer></script>
     <title>Document</title>
   </head>
   <body>
     <nav class="navbar">
-      <img src="../static/logo/logo.png" alt="logo" class="navbar__logo logo" />
+      <!-- LOGO -->
+      <p class="logo">Logo</p>
 
-      <ul class="navbar__menu-desktop menu-desktop">
+      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
+
+      <!-- Nav-mobile -->
+
+      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
         <li class="menu__item">
-          <a href="#" class="link link-about-us">O Nas</a>
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="link link-our-projects">Nasze Projekty</a>
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="contact.html" class="link link-contact">Kontakt</a>
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
-      <ul class="navbar__menu-mobile menu-mobile">
-        <li class="menu__item">
-          <a href="#" class="link link-about-us">O Nas</a>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img
+          class="current-page-tracker"
+          src="../static/source/images/Vector.png"
+          alt=""
+        />
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="#" class="link link-our-projects" data-trackerPos="0"
+            >Home</a
+          >
         </li>
-        <li class="menu__item">
-          <a href="#" class="link link-our-projects">Nasze Projekty</a>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a href="#" class="link link-about-us" data-trackerPos="0.9">O nas</a>
         </li>
-        <li class="menu__item">
-          <a href="#" class="link link-contact">Kontakt</a>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a href="#" class="link link-contact" data-trackerPos="2.5"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a href="#" class="link link-contact" data-trackerPos="3.55"
+            >Kontakt</a
+          >
         </li>
       </ul>
 
@@ -41,68 +80,6 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
-    <h1 class="contakt-title">Contakt Us</h1>
-
-    <div class="contact__conntainer contact">
-      <div class="contact__error-mesages"></div>
-      <form class="form" method="post" action="/send/">
-        <div class="input-container inputs-name">
-          <label class="label" for="form__name label">*Your Name</label>
-          <input
-            class="input__name input"
-            placeholder="Name"
-            type="text"
-            name="client_name"
-          />
-        </div>
-
-        <div class="input-container">
-          <label class="label" for="form-phone">Phone</label>
-          <input
-            class="input__phone input"
-            placeholder="e.g 123-123-123"
-            type="tel"
-            name="_"
-          />
-        </div>
-
-        <div class="input-container">
-          <label class="label" for="form-email label ">*Your Email</label>
-          <input
-            class="input__email input"
-            placeholder="e.g hello@contact.com"
-            type="email"
-            name="mail"
-          />
-        </div>
-        <div class="input-container">
-          <label class="label" for="form-message-title">Message Title</label>
-          <input
-            class="form__mesage-title input"
-            placeholder="Title"
-            type="text"
-            name="_"
-          />
-        </div>
-
-        <div class="input-container">
-          <label for="input__message " class="label">*Message</label>
-          <textarea class="input__message input" name="message"></textarea>
-          <input class="button submit-btn" type="submit" name="submit" />
-        </div>
-      </form>
-    </div>
-    <div class="overlay"></div>
-    <div class="confirmation">
-      <button class="confirmation__btn-close">
-        <img src="../static/Icons/icon-close.svg" alt="close popup" />
-      </button>
-      <p class="confimation__message">Wiadomość została wysłana</p>
-      <button class="button confirmation__btn-back-to-home-page">
-        <a href="main.html" class="confirmation__link--to-home"
-          >Back to home page</a
-        >
-      </button>
-    </div>
+    <form class="form" method="post" action="/send/"></form>
   </body>
 </html>
