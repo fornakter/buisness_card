@@ -1,26 +1,27 @@
 .process {
-  border: 2px solid white;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  margin-bottom: 2rem;
+  
 
   &__title {
     margin: 0 auto;
     background-color: $primary-color;
     border: 3px solid $secondary-color;
-    width: 80%;
+    width: 50%;
     color: $secondary-color;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     text-align: center;
     border-radius: 0 6rem 0 6rem;
     font-size: 2rem;
     position: relative;
     z-index: 10;
-
-    transform: translateY(50%);
+    transform: translateY(80%);
   }
 
   &__gear {
@@ -43,7 +44,7 @@
       &__item {
         display: flex;
         gap: 2.5rem;
-        border: 2px solid red;
+
 
         &-number {
           font-size: 5rem;
@@ -51,13 +52,10 @@
           -webkit-text-stroke-width: 3px;
           -webkit-text-stroke-color: $secondary-color;
           text-align: end;
-          border: 2px solid green;
+       
           width: 5rem;
 
-          // &--bigger {
-          //   border: 2px solid red;
-          //   font-size: 5.7rem;
-          // }
+       
         }
 
         &-text {
@@ -115,29 +113,12 @@
   }
 }
 
-@media screen and (min-width: 414px) {
-  .process__gear-img {
-    bottom: 25%;
-    left: -35%;
+@media screen and (min-width: 850px) {
+  .process{
+    &__title{
+    
+      width: 40%;
+    }
   }
 
-  .process__gear__box {
-    // top: -16rem;
-  }
-
-  .process {
-    margin-bottom: -16rem;
-  }
-
-  // footer .footer__img {
-  //   left: -40%;
-  // }
-
-  // footer .footer__mobile {
-  //   top: -1rem;
-  // }
-
-  // footer .footer__text-box {
-  //   bottom: -15rem;
-  // }
 }
