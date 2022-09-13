@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 94846049
 1662986466264052000
+=======
+95006293
+1663006950644007000
+>>>>>>> caa6641 (added contact section without selection input)

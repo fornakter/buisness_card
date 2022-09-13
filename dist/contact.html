@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -145,3 +146,157 @@
     </div> -->
   </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/contact.856296c7.css">
+    <script src="/contact.22989c7d.js" defer=""></script>
+    <title>Contakt</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- LOGO -->
+      <p class="logo">Logo</p>
+
+      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
+
+      <!-- Nav-mobile -->
+
+      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
+        <li class="menu__item">
+          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('projects')}}" class="link link-our-projects">Projekty</a>
+        </li>
+        <li class="menu__item">
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img class="current-page-tracker" src="/Vector.320295ab.png" alt="">
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="#" class="link link-our-projects" data-trackerpos="0">Home</a>
+        </li>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a href="#" class="link link-about-us" data-trackerpos="0.9">O nas</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="#" class="link link-contact" data-trackerpos="1.65">Faq</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a href="#" class="link link-contact" data-trackerpos="2.5">Projekty</a>
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a href="#" class="link link-contact" data-trackerpos="3.55">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+    </nav>
+    <div class="contact__header">
+      <img src="/kontakt.2fcd4f8b.png" alt="sluchawka telefonu z mietowa zebatka" class="contact__header-img">
+    </div>
+    <div class="contact__container contact">
+      <div class="contact__error-messages"></div>
+      <form class="form" method="post" action="/send/">
+        <div class="input-container inputs-name">
+          <label class="label" for="form__name label">Imię</label>
+          <input class="input__name input" type="text" name="client_name">
+        </div>
+
+        <div class="input-container">
+          <label class="label" for="form-phone">Numer Kontaktowy</label>
+          <input class="input__phone input" type="tel" name="_">
+        </div>
+
+        <div class="input-container">
+          <label class="label" for="form-email label ">Email</label>
+          <input class="input__email input" type="email" name="mail">
+        </div>
+        <div class="input-container">
+          <label class="label" for="form-message-title">Rodzaj usługi:</label>
+          <div class="input-container__box">
+            <input class="form__mesage-title input" type="text" name="_">
+            <div class="box-img">
+              <img src="/Vector%201.45d233ea.png" alt="strzalka" class="input-container__box-img">
+            </div>
+          </div>
+        </div>
+
+        <div class="input-container">
+          <label for="input__message" class="label">Twoja wiadomość</label>
+          <textarea class="input__message input" name="message"></textarea>
+          <div class="submit-btn-box">
+            <input class="button submit-btn" type="submit" name="submit">
+          </div>
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+      <img src="/Footer@3x.7280d28d.png" alt="Miętowa zębatka" class="footer__img">
+      <div class="footer__container">
+        <p class="footer__logo">logo</p>
+        <ul class="footer__list">
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="footer__copy">
+          <p class="footer__copy-design-info">Design by</p>
+
+          <p class="footer__copy-designer">Fotorygo</p>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="overlay"></div>
+    <div class="confirmation">
+      <button class="confirmation__btn-close">
+        <img src="../static/Icons/icon-close.svg" alt="close popup" />
+      </button>
+      <p class="confimation__message">Wiadomość została wysłana</p>
+      <button class="button confirmation__btn-back-to-home-page">
+        <a href="main.html" class="confirmation__link--to-home"
+          >Back to home page</a
+        >
+      </button>
+    </div> -->
+  </body>
+</html>
+>>>>>>> caa6641 (added contact section without selection input)

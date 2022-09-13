@@ -1,4 +1,19 @@
 import { changeNavbar } from "./navbar.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const navb = document.querySelector(".navbar");
+
+  const addShadow = () => {
+    if (window.scrollY >= 30) {
+      navb.classList.add("bg-shadow");
+    } else {
+      navb.classList.remove("bg-shadow");
+    }
+  };
+
+  window.addEventListener("scroll", addShadow);
+});
+
 const validateForm = () => {
   const btnSubmit = document.querySelector(".submit-btn");
   const inputEmail = document.querySelector(".input__email");
