@@ -25,13 +25,13 @@
 
       <ul class="navbar__menu-mobile menu-mobile shadow-bg">
         <li class="menu__item">
-          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+          <a href="main.html" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+          <a href="about_us.html" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+          <a href="faq.html" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
           <a href="{{url_for('projects')}}" class="link link-our-projects"
@@ -39,7 +39,7 @@
           >
         </li>
         <li class="menu__item">
-          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+          <a href="contact.html" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -67,7 +67,9 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('faq')}} -->
-          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+            >Faq</a
+          >
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('projects')}} -->
@@ -77,7 +79,10 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('kontakt')}}-->
-          <a href="#" class="link link-contact" data-trackerPos="3.55"
+          <a
+            href="contact.html"
+            class="link link-contact"
+            data-trackerPos="3.55"
             >Kontakt</a
           >
         </li>
@@ -279,30 +284,34 @@
     </section>
     <footer class="footer">
       <img
-      src="../static/source/images/Footer@3x.png"
-      alt="Miętowa zębatka"
-      class="footer__img"
+        src="../static/source/images/Footer@3x.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
       />
       <div class="footer__container">
-   
-        <ul class="footer__list ">
-          <li class="footer__list__item"><a class="footer__list__item__link" href="#">Home</a></li>
-          <li class="footer__list__item"><a class="footer__list__item__link" href="#">O nas</a></li>
-          <li class="footer__list__item"><a class="footer__list__item__link" href="#">Projekt</a></li>
-          <li class="footer__list__item"><a class="footer__list__item__link" href="#">FAQ</a></li>
-          <li class="footer__list__item"><a class="footer__list__item__link" href="#">Kontakt</a></li>
+        <ul class="footer__list">
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Kontakt</a>
+          </li>
         </ul>
-        <div class="footer__logo" >logo</div>
+        <div class="footer__logo">logo</div>
         <div class="footer__design-wraper">
-
-<p class="footer__design-info">Design by</p>
-      <p class="footer__designer">Fotorygo</p>
-
+          <p class="footer__design-info">Design by</p>
+          <p class="footer__designer">Fotorygo</p>
+        </div>
       </div>
-     
-      </div>
-     
     </footer>
-  
   </body>
 </html>

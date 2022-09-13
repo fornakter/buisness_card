@@ -25,13 +25,13 @@
 
       <ul class="navbar__menu-mobile menu-mobile shadow-bg">
         <li class="menu__item">
-          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+          <a href="main.html" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+          <a href="about_us.html" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+          <a href="faq.html" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
           <a href="{{url_for('projects')}}" class="link link-our-projects"
@@ -39,7 +39,7 @@
           >
         </li>
         <li class="menu__item">
-          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
+          <a href="contact.html" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -67,7 +67,9 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('faq')}} -->
-          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+            >Faq</a
+          >
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('projects')}} -->
@@ -77,7 +79,10 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('kontakt')}}-->
-          <a href="#" class="link link-contact" data-trackerPos="3.55"
+          <a
+            href="contact.html"
+            class="link link-contact"
+            data-trackerPos="3.55"
             >Kontakt</a
           >
         </li>
@@ -91,33 +96,66 @@
     </nav>
     <!-- end of navbar ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <div class="faq">
-      <section class="faq__header">
+      <header class="faq__header">
         <img
           class="faq-header__image"
           src="../static/source/images/faq-header-image.png"
+          srcset="
+            ../static/source/images/faq-header-image.png    400w,
+            ../static/source/images/faq-header-image@2x.png
+          "
           alt=""
         />
+      </header>
+      <section class="faq__items">
+        <article class="faq__item" data-index ="1">
+            <div class="faq__item__question-container">
+                <div class="faq__item__question-container__question">Jak długo trwa projekt?</div>
+                <div class="faq__item__question-container__status-marker status-marker">
+                    <div class="  status-marker__bar "></div>
+                    <div class="  status-marker__bar"></div>
+                </div>
+            </div>
+            <div class="faq__item__answer-container">
+                <p class="faq__item__answer-container__answer">Czas realizacji Twojego projektu jesteśmy w stanie oszacować w trakcie 
+                    pierwszej konsultacji.</p>
+            </div>
+          
+           
+        </article>
+        <article class="faq__item" data-index ="2">
+            <div class="faq__item__question-container">
+                <div class="faq__item__question-container__question">Jaka jest pula poprawek?</div>
+                <div class="faq__item__question-container__status-marker status-marker">
+                    <div class="status-marker__bar "></div>
+                    <div class="status-marker__bar"></div>
+                </div>
+            </div>
+            <div class="faq__item__answer-container">
+                <p class="faq__item__answer-container__answer">Czas W trakcie projektu obowiązują 2 pule poprawek w cenie. Pulę definiować 
+                    można jako set uwag podczas konsultacji online. Dotyczą one zakresu 
+                    zarównograficznego jak i funkcjonalności strony. Istnieje możliwość 
+                    dokupienia pul poprawek..</p>
+            </div>
+          
+           
+        </article>
+        <article class="faq__item" data-index ="3">
+            <div class="faq__item__question-container">
+                <div class="faq__item__question-container__question">Czy wystawiacie faktury?</div>
+                <div class="faq__item__question-container__status-marker status-marker">
+                    <div class="  status-marker__bar "></div>
+                    <div class="  status-marker__bar"></div>
+                </div>
+            </div>
+            <div class="faq__item__answer-container">
+                <p class="faq__item__answer-container__answer">Czas Tak, jak najbardziej..</p>
+            </div>
+          
+            </div>
+          </div>
+        </article>
       </section>
-      <article class="faq__item">
-        <h2 class="faq__item__question">Jak długo trwa projekt?</h2>
-        <p class="faq__item__answer">
-          Czas realizacji Twojego projektu jesteśmy w stanie oszacować w trakcie
-          pierwszej konsultacji.
-        </p>
-      </article>
-      <article class="faq__item">
-        <h2 class="faq__item__question">Jaka jest pula poprawek?</h2>
-        <p class="faq__item__answer">
-          W trakcie projektu obowiązują 2 pule poprawek w cenie. Pulę definiować
-          można jako set uwag podczas konsultacji online. Dotyczą one zakresu
-          zarówno graficznego jak i funkcjonalności strony. Istnieje możliwość
-          dokupienia pól poprawek.
-        </p>
-      </article>
-      <article class="faq__item">
-        <h2 class="faq__item__question">Czy wystawiacie faktury?</h2>
-        <p class="faq__item__answer">Tak, jak najbardziej.</p>
-      </article>
     </div>
 
     <!-- footer //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
