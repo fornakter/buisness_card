@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Website with our first projekt.",
   "scripts": {
-    "build:dev": "rm -rf dist && parcel templates/contact.html",
+    "build:dev": "rm -rf dist && parcel templates/main.html",
     "build:prod": "rm -rf dist && parcel build templates/main.html --public-url ."
   },
   "repository": {

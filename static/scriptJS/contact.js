@@ -1,4 +1,8 @@
 import { changeNavbar } from "./navbar.js";
+import { faq } from "./faq.js";
+
+changeNavbar();
+faq();
 
 document.addEventListener("DOMContentLoaded", () => {
   const navb = document.querySelector(".navbar");
