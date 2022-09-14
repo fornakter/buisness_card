@@ -32,9 +32,7 @@
           <a href="faq.html" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('projects')}}" class="link link-our-projects"
-            >Projekty</a
-          >
+          <a href="projects.html" class="link link-our-projects">Projekty</a>
         </li>
         <li class="menu__item">
           <a href="contact.html" class="link link-contact">Kontakt</a>
@@ -73,7 +71,10 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('projects')}} -->
-          <a href="#" class="link link-contact" data-trackerPos="2.5"
+          <a
+            href="projects.html"
+            class="link link-contact"
+            data-trackerPos="2.5"
             >Projekty</a
           >
         </li>
@@ -94,7 +95,7 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
-    <div class="contact__header">
+    <div class="contact__header header">
       <img
         src="../static/source/images/kontakt.png"
         alt="sluchawka telefonu z mietowa zebatka"
@@ -139,7 +140,6 @@
         class="footer__img"
       />
       <div class="footer__container">
-        <p class="footer__logo">logo</p>
         <ul class="footer__list">
           <li class="footer__list__item">
             <a class="footer__list__item__link" href="#">Home</a>
@@ -157,10 +157,10 @@
             <a class="footer__list__item__link" href="#">Kontakt</a>
           </li>
         </ul>
-        <div class="footer__copy">
-          <p class="footer__copy-design-info">Design by</p>
-
-          <p class="footer__copy-designer">Fotorygo</p>
+        <div class="footer__logo">logo</div>
+        <div class="footer__design-wraper">
+          <p class="footer__design-info">Design by</p>
+          <p class="footer__designer">Fotorygo</p>
         </div>
       </div>
     </footer>

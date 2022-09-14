@@ -5,6 +5,7 @@
   justify-content: center;
   height: 63rem;
   position: relative;
+
   overflow: hidden;
   &__logo {
     display: none;
@@ -16,7 +17,7 @@
   &__container {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 60%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica-nouel--normal", sans-serif;
     font-size: 2.5rem;
@@ -77,13 +78,14 @@
 @media screen and (min-width: 850px) {
   .footer {
     padding-top: 1rem;
+
     &__container {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-around;
-
       height: 50%;
       min-width: 50%;
+      top: 50%;
     }
     &__logo {
       display: block;
@@ -94,7 +96,6 @@
     }
     &__list {
       align-self: center;
-
       align-self: flex-end;
       height: 50%;
       margin: 0;
@@ -104,7 +105,6 @@
       align-self: flex-end;
       flex-direction: column;
       color: $secondary-color;
-
       height: 50%;
     }
     &__design-info {

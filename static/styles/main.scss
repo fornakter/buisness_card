@@ -7,20 +7,16 @@
 @import "about-us";
 @import "faq";
 @import "contact";
+@import "projects";
 @import "footer";
 
 @font-face {
-  font-family: "Helvetica-nouel--normal";
-  src: url(../source/fonts/Helvetica-Neue-Medium-Extended.ttf);
-}
-@font-face {
-<<<<<<< HEAD
   font-family: "Helvetica-Nouel";
   src: url(../source/fonts/Helvetica-NeueLTW0693BlkExtObl-2.ttf);
-=======
+}
+@font-face {
   font-family: "Helvetica-nouel--normal";
   src: url(../source/fonts/Helvetica-Neue-Medium-Extended.ttf);
->>>>>>> 3b131a966376640a8e754ec72621446966328b9d
 }
 
 *,
