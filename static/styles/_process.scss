@@ -1,5 +1,4 @@
 .process {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,13 +6,12 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 2rem;
-  
 
   &__title {
     margin: 0 auto;
     background-color: $primary-color;
     border: 3px solid $secondary-color;
-    width: 50%;
+    width: 80%;
     color: $secondary-color;
     padding: 1.5rem 1rem;
     text-align: center;
@@ -45,17 +43,14 @@
         display: flex;
         gap: 2.5rem;
 
-
         &-number {
           font-size: 5rem;
           -webkit-text-fill-color: $primary-color; /* Will override color (regardless of order) */
           -webkit-text-stroke-width: 3px;
           -webkit-text-stroke-color: $secondary-color;
           text-align: end;
-       
-          width: 5rem;
 
-       
+          width: 5rem;
         }
 
         &-text {
@@ -114,11 +109,9 @@
 }
 
 @media screen and (min-width: 850px) {
-  .process{
-    &__title{
-    
-      width: 40%;
+  .process {
+    &__title {
+      width: 50%;
     }
   }
-
 }

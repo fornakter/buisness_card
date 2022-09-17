@@ -7,7 +7,7 @@
     margin-bottom: 5.35rem;
 
     &__img {
-      max-width: 80%;
+      width: 80%;
     }
   }
   &__container {
@@ -46,7 +46,7 @@
               rgb(121, 255, 215) 0%,
               rgb(121, 255, 215) 100%
             );
-            transition: all 0.3s ease;
+            transition: all 1s ease;
             mix-blend-mode: color;
           }
           &:hover {
@@ -54,6 +54,13 @@
               opacity: 0;
               transition: all 0.3s ease;
             }
+          }
+        }
+
+        .project__img-filter--clear {
+          &::after {
+            opacity: 0;
+            transition: all 1s ease;
           }
         }
         .project__img-miniature {
@@ -129,6 +136,9 @@
     &__header {
       margin-top: 15rem;
       margin-bottom: 3rem;
+      &__img {
+        max-width: 60rem;
+      }
     }
     &__container {
       flex-direction: row;

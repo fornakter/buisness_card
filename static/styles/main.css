@@ -336,6 +336,7 @@
     height: 8rem;
     font-size: 2rem;
     padding: 2rem;
+    transition: 0.3s font-size ease;
     top: 65%;
   }
   .offer__form-link {
@@ -346,10 +347,11 @@
 @media screen and (min-width: 1200px) {
   .offer__item__text {
     width: 100%;
-    height: 14rem;
-    font-size: 3.5rem;
+    height: 10rem;
+    font-size: 2.5rem;
     padding: 2rem;
     top: 65%;
+    transition: 0.3s font-size ease;
   }
   .offer__form-link {
     font-size: 3rem;
@@ -357,7 +359,6 @@
   }
 }
 .worth {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -408,6 +409,91 @@
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .worth {
+    position: relative;
+    height: 65vh;
+    margin: 3rem 0 6rem;
+  }
+  .worth::before {
+    content: "";
+    position: absolute;
+    background: none;
+    border: 5px solid rgb(121, 255, 215);
+    width: 90%;
+    height: 90%;
+    border-radius: 0 15rem 0 15rem;
+    top: 8rem;
+    z-index: -1;
+  }
+  .worth__title {
+    width: 60%;
+    height: 10rem;
+    font-size: 4rem;
+    border-radius: 0 10rem 0 10rem;
+  }
+  .worth__text {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .worth__big-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .worth__box {
+    width: 25%;
+    margin: 2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .worth {
+    position: relative;
+    height: 100vh;
+    margin: 3rem 0 6rem;
+  }
+  .worth::before {
+    content: "";
+    width: 90%;
+    height: 100%;
+    z-index: -1;
+    background: none;
+    border: 5px solid #79ffd7;
+    border-radius: 0 15rem;
+    position: absolute;
+    top: 5rem;
+  }
+  .worth__title {
+    width: auto;
+    padding: 3rem 10rem;
+    border-radius: 0 12rem;
+    font-size: 7rem;
+  }
+  .worth__text {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .worth__big-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 5rem;
+  }
+  .worth__box {
+    width: 23%;
+    margin: 2rem;
+    padding: 2rem;
+  }
+  .worth__box-title {
+    font-size: 2.2rem;
+  }
+  .worth__box-text {
+    font-size: 1.7rem;
+    width: 100%;
+  }
+}
 .process {
   display: flex;
   flex-direction: column;
@@ -421,7 +507,7 @@
   margin: 0 auto;
   background-color: #000;
   border: 3px solid rgb(121, 255, 215);
-  width: 50%;
+  width: 80%;
   color: rgb(121, 255, 215);
   padding: 1.5rem 1rem;
   text-align: center;
@@ -509,7 +595,7 @@
 
 @media screen and (min-width: 850px) {
   .process__title {
-    width: 40%;
+    width: 50%;
   }
 }
 .about-us__header {
@@ -1194,7 +1280,7 @@
   margin-bottom: 5.35rem;
 }
 .projects__header__img {
-  max-width: 80%;
+  width: 80%;
 }
 .projects__container {
   display: flex;
@@ -1231,12 +1317,16 @@
   width: 100%;
   opacity: 1;
   background: linear-gradient(to bottom, rgb(121, 255, 215) 0%, rgb(121, 255, 215) 100%);
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   mix-blend-mode: color;
 }
 .projects__container .project__img-wraper .project__img-filter:hover::after {
   opacity: 0;
   transition: all 0.3s ease;
+}
+.projects__container .project__img-wraper .project__img-filter--clear::after {
+  opacity: 0;
+  transition: all 1s ease;
 }
 .projects__container .project__img-wraper .project__img-miniature {
   max-width: 100%;
@@ -1305,6 +1395,9 @@
   .projects__header {
     margin-top: 15rem;
     margin-bottom: 3rem;
+  }
+  .projects__header__img {
+    max-width: 60rem;
   }
   .projects__container {
     flex-direction: row;
