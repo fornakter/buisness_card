@@ -1,11 +1,25 @@
 .bg-shadow {
   background-color: rgba(26, 26, 26, 0.55);
 }
+.logo__container-mobile {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  .logo {
+    height: 90%;
+    align-self: flex-end;
+  }
+}
+.logo__container-desktop {
+  display: none;
+}
 
 .navbar {
   position: fixed;
   top: 0;
-  min-width: 100%;
+  width: 100%;
   padding: 0 2rem;
   display: flex;
   align-items: center;
@@ -13,13 +27,6 @@
   height: 8rem;
   z-index: 100;
   transition: all 0.3s;
-
-  .logo {
-    color: transparent;
-    font-size: 2rem;
-    -webkit-text-stroke: 1px white;
-    z-index: 10;
-  }
 
   .hamburger {
     height: 3rem;
@@ -97,15 +104,23 @@
   body {
     background-color: white;
   }
+  .logo__container-mobile {
+    display: none;
+  }
+  .logo__container-desktop {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3.8rem;
+  }
   .navbar {
-    min-width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 5rem;
-    position: fixed;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 4rem;
     background-color: $secondary-color;
     justify-content: space-around;
     flex-direction: column;
+    position: static;
 
     .hamburger {
       display: none;
