@@ -1,10 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-  Projekty
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/styles/main.scss" />
+    <script src="../static/scriptJS/main.js" type="module" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="logo__container-desktop">
+      <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+    </div>
+
+    <nav class="navbar">
+      <!-- Nav-mobile -->
+      <div class="logo__container-mobile">
+        <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+      </div>
+      <ul class="navbar__menu-mobile menu-mobile">
+        <li class="menu__item">
+          <a href="main.html" class="link link-about-us">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="about_us.html" class="link link-about-us">O nas</a>
+        </li>
+        <li class="menu__item">
+          <a href="faq.html" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="projects.html" class="link link-our-projects">Projekty</a>
+        </li>
+        <li class="menu__item">
+          <a href="contact.html" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img
+          class="current-page-tracker"
+          src="../static/source/images/Vector.png"
+          alt=""
+        />
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="main.html" class="link" data-trackerPos="0">Home</a>
+        </li>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a
+            href="about_us.html"
+            class="link link-about-us"
+            data-trackerPos="0.9"
+            >O nas</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+            >Faq</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a
+            href="projects.html"
+            class="link link-contact"
+            data-trackerPos="2.5"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a
+            href="contact.html"
+            class="link link-contact"
+            data-trackerPos="3.55"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+    </nav>
+    <!--  -->
+    <div class="projects">
+      <header class="projects__header">
+        <img
+          class="projects__header__img"
+          src="../static/source/images/projects-imgs/projects-header.png"
+          srcset="
+            ../static/source/images/projects-imgs/projects-header.png    850w,
+            ../static/source/images/projects-imgs/projects-header@2x.png
+          "
+          alt="nasze projekty"
+        />
+      </header>
+      <section class="projects__container">
+        <article class="project">
+          <div class="project__img-wraper">
+            <div class="project__img-filter a1">
+              <img
+                src="../static/source/images/projects-imgs/project-website-for-agency.jpg"
+                alt="miniaturka projektu strony internetowej agencji marketingowej"
+                class="project__img-miniature"
+              />
+            </div>
+
+            <img
+              src="../static/source/images/projects-imgs/gear.png"
+              alt=""
+              class="project__img-gear"
+            />
+          </div>
+          <h2 class="project__title">Strona dla agencji marketingowej</h2>
+          <p class="project__info">
+            W tym wpisie chcemy przedstawić case studies projektu oraz wdrożenia
+            strony internetowej dla agencji PR & Digital marketingu & Social
+            Media.
+          </p>
+          <button class="project__button">Czytaj więcej</button>
+        </article>
+        <article class="project">
+          <div class="project__img-wraper">
+            <div class="project__img-filter">
+              <img
+                src="../static/source/images/projects-imgs/project-website-for-business-packages.jpg"
+                alt="miniaturka projektu strony internetowej agencji marketingowej"
+                class="project__img-miniature"
+              />
+            </div>
+
+            <img
+              src="../static/source/images/projects-imgs/gear.png"
+              alt=""
+              class="project__img-gear"
+            />
+          </div>
+          <h2 class="project__title">Strona dla marki paczek biznesowych</h2>
+          <p class="project__info">
+            Nowopowstała marka zajmująca się tworzeniem paczek biznesowych dla
+            działów hr, marketingu, office managerów oraz właścicieli i
+            zarządców firm.
+          </p>
+          <button class="project__button">Czytaj więcej</button>
+        </article>
+      </section>
+    </div>
+
+    <!--  -->
+
+    <footer class="footer">
+      <img
+        src="../static/source/images/Footer@3x.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
+      />
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="footer__logo">logo</div>
+        <div class="footer__design-wraper">
+          <p class="footer__design-info">Design by</p>
+          <p class="footer__designer">Fotorygo</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

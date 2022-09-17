@@ -1,7 +1,8 @@
 .worth {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   &__title {
     font-size: 2.2rem;
@@ -39,8 +40,7 @@
 
     &-title {
       font-size: 2rem;
-      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.35);
-      color: $font-color-mobile-menu;
+      color: $primary-color;
       text-align: center;
       margin-bottom: 1rem;
     }
@@ -50,6 +50,101 @@
       font-size: 1.4rem;
       font-family: "Jost", sans-serif;
       text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .worth {
+    position: relative;
+    height: 65vh;
+    margin: 3rem 0 6rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background: none;
+      border: 5px solid $secondary-color;
+      width: 90%;
+      height: 90%;
+      border-radius: 0 15rem 0 15rem;
+      top: 8rem;
+      z-index: -1;
+    }
+    &__title {
+      width: 60%;
+      height: 10rem;
+      font-size: 4rem;
+      border-radius: 0 10rem 0 10rem;
+    }
+
+    &__text {
+      width: 80%;
+      font-size: 2rem;
+    }
+
+    &__big-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+
+    &__box {
+      width: 25%;
+      margin: 2rem;
+    }
+  }
+}
+@media screen and (min-width: 1440px) {
+  .worth {
+    position: relative;
+    height: 100vh;
+    margin: 3rem 0 6rem;
+
+    &::before {
+      content: "";
+      width: 90%;
+      height: 100%;
+      z-index: -1;
+      background: none;
+      border: 5px solid #79ffd7;
+      border-radius: 0 15rem;
+      position: absolute;
+      top: 5rem;
+    }
+    &__title {
+      width: 80%;
+      border-radius: 0 12rem;
+      padding: 3rem 10rem;
+      font-size: 6rem;
+    }
+
+    &__text {
+      width: 80%;
+      font-size: 2rem;
+    }
+
+    &__big-box {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      gap: 5rem;
+    }
+
+    &__box {
+      width: 23%;
+      margin: 2rem;
+      padding: 2rem;
+
+      &-title {
+        font-size: 2.2rem;
+      }
+
+      &-text {
+        font-size: 1.7rem;
+        width: 100%;
+      }
     }
   }
 }

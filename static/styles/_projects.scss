@@ -1,0 +1,178 @@
+.projects {
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9.2rem;
+    margin-bottom: 5.35rem;
+
+    &__img {
+      width: 80%;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .project {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 13.7rem;
+      height: 100%;
+      &__img-wraper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 5.6rem;
+        .project__img-filter {
+          position: relative;
+          overflow: hidden;
+          &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            background: linear-gradient(
+              to bottom,
+              rgb(121, 255, 215) 0%,
+              rgb(121, 255, 215) 100%
+            );
+            transition: all 1s ease;
+            mix-blend-mode: color;
+          }
+          &:hover {
+            &::after {
+              opacity: 0;
+              transition: all 0.3s ease;
+            }
+          }
+        }
+
+        .project__img-filter--clear {
+          &::after {
+            opacity: 0;
+            transition: all 1s ease;
+          }
+        }
+        .project__img-miniature {
+          max-width: 100%;
+        }
+        .project__img-gear {
+          width: 85%;
+          position: absolute;
+          top: -10%;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: -1;
+        }
+      }
+      &__title {
+        font-size: 2.4rem;
+        color: $secondary-color;
+        text-align: center;
+        line-height: 3rem;
+        max-width: 85%;
+        margin-bottom: 3.5rem;
+      }
+      &__info {
+        font-size: 2.2rem;
+        color: white;
+        font-family: Jost, sans-serif;
+        width: 80%;
+        text-align: center;
+        line-height: 3rem;
+        margin-bottom: 4.5rem;
+      }
+
+      // export to button
+      &__button {
+        border: 3px solid $secondary-color;
+        color: $secondary-color;
+        background: none;
+        border-radius: 0 13rem;
+        font-family: Helvetica-Nouel, sans-serif;
+        font-size: 2.2rem;
+        padding: 1.3rem 5.9rem 1.86rem 5.9rem;
+        text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
+        transition: all 0.5s ease;
+        position: relative;
+        &::before {
+          transition: all 0.5s ease;
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background-color: $accent-color-dark;
+          left: -4%;
+          top: -15%;
+          z-index: -1;
+          border-radius: 0 13rem;
+          box-shadow: 0px 0.5rem 1.5rem rgba(255, 255, 255, 0.3);
+        }
+        &:hover {
+          color: white;
+          transition: all 0.5s ease;
+          &::before {
+            transition: all 0.5s ease;
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 850px) {
+  .projects {
+    &__header {
+      margin-top: 4.2rem;
+      margin-bottom: 3rem;
+      &__img {
+        max-width: 60rem;
+      }
+    }
+    &__container {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      width: auto;
+      width: 95%;
+      margin: 0 auto;
+      margin-bottom: 145rem; /// KURWA !!!!!
+      // margin-bottom: 25rem; // docelowy margines
+
+      .project {
+        display: flex;
+        justify-content: space-between;
+        min-height: 100%;
+
+        margin-bottom: 0;
+        &__img-wraper {
+          width: 85%;
+          margin-bottom: 10rem;
+          .project__img-miniature {
+            width: 100%;
+          }
+        }
+        &__title {
+          margin-bottom: 3rem;
+          font-size: 3.5rem;
+          line-height: 4.4rem;
+        }
+        &__info {
+          margin-bottom: 5rem;
+          font-size: 2.5rem;
+          line-height: 3.6rem;
+        }
+      }
+    }
+  }
+}
