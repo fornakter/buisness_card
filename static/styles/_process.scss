@@ -38,7 +38,7 @@
       left: 50%;
       transform: translate(-50%, 50%);
       gap: 1rem;
-
+      width: 70%;
       &__item {
         display: flex;
         gap: 2.5rem;
@@ -108,6 +108,16 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .process {
+    &__title {
+      width: 50%;
+    }
+  }
+  .process__gear__box {
+    width: auto;
+  }
+}
 @media screen and (min-width: 850px) {
   .process {
     &__title {
