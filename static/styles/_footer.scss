@@ -7,9 +7,7 @@
   position: relative;
 
   overflow: hidden;
-  &__logo {
-    display: none;
-  }
+
   &__img {
     width: 200%;
     animation: "rotateFooterBorder" 100s linear infinite;
@@ -23,11 +21,6 @@
     font-size: 2.5rem;
   }
   &__logo {
-    color: transparent;
-    display: inline-block;
-    -webkit-text-stroke: 2px black;
-    font-size: 2rem;
-    background-color: $secondary-color;
     display: none;
   }
   &__list {
@@ -88,11 +81,10 @@
       top: 50%;
     }
     &__logo {
-      display: block;
+      display: flex;
       align-self: flex-start;
-      font-size: 5.5rem;
-      padding: 1.1rem 3.8rem;
-      letter-spacing: 1rem;
+      width: 22rem;
+      height: 13rem;
     }
     &__list {
       align-self: center;
