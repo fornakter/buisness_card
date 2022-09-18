@@ -160,52 +160,52 @@
     }
 
     // navbar after scrool down
-    .navbar--small {
-      position: fixed;
-      top: 0;
-      left: 0%;
-      margin-top: 0;
-      background: none;
-      width: auto;
-      height: auto;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
+  }
+  .navbar--small {
+    position: fixed;
+    top: 0;
+    left: 0%;
+    margin-top: 0;
+    background: none;
+    width: auto;
+    height: auto;
+    padding: 0;
+    // display: flex;
+    // flex-direction: column;
 
-      &__open-button {
-        background-color: rgba(0, 0, 0, 0.435);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 3.82rem;
+    &__open-button {
+      background-color: rgba(0, 0, 0, 0.435);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.82rem;
+      display: none;
+    }
+    .navbar__menu-desktop {
+      height: 100%;
+      width: auto;
+      position: relative;
+      background-color: $secondary-color;
+      box-shadow: 0 1rem 2rem -1rem black;
+      border-radius: 0 0 2rem 0rem;
+      padding: 1rem 2rem 1rem 2rem;
+      animation: slideDownNav;
+      animation-duration: 0.5s;
+      .current-page-tracker {
         display: none;
       }
-      .navbar__menu-desktop {
+      .menu__item {
         height: 100%;
-        width: auto;
-        position: relative;
-        background-color: $secondary-color;
-        box-shadow: 0 1rem 2rem -1rem black;
-        border-radius: 0 0 2rem 0rem;
-        padding: 1rem 2rem 1rem 2rem;
-        animation: slideDownNav;
-        animation-duration: 0.5s;
-        .current-page-tracker {
-          display: none;
-        }
-        .menu__item {
-          height: 100%;
-          a {
-            padding: 1rem;
-            font-size: 1.5rem;
-            color: black;
-            text-decoration: none;
+        a {
+          padding: 1rem;
+          font-size: 1.5rem;
+          color: black;
+          text-decoration: none;
+          transition: 0.2s all ease;
+          height: 95%;
+          &:hover {
             transition: 0.2s all ease;
-            height: 95%;
-            &:hover {
-              transition: 0.2s all ease;
-              border-bottom: 3px solid $accent-color-dark;
-            }
+            border-bottom: 3px solid $accent-color-dark;
           }
         }
       }

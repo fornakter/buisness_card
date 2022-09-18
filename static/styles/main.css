@@ -152,7 +152,7 @@
     color: black;
     text-decoration: none;
   }
-  .navbar .navbar--small {
+  .navbar--small {
     position: fixed;
     top: 0;
     left: 0%;
@@ -161,10 +161,8 @@
     width: auto;
     height: auto;
     padding: 0;
-    display: flex;
-    flex-direction: column;
   }
-  .navbar .navbar--small__open-button {
+  .navbar--small__open-button {
     background-color: rgba(0, 0, 0, 0.435);
     display: flex;
     align-items: center;
@@ -172,7 +170,7 @@
     height: 3.82rem;
     display: none;
   }
-  .navbar .navbar--small .navbar__menu-desktop {
+  .navbar--small .navbar__menu-desktop {
     height: 100%;
     width: auto;
     position: relative;
@@ -185,13 +183,13 @@
     -webkit-animation-duration: 0.5s;
             animation-duration: 0.5s;
   }
-  .navbar .navbar--small .navbar__menu-desktop .current-page-tracker {
+  .navbar--small .navbar__menu-desktop .current-page-tracker {
     display: none;
   }
-  .navbar .navbar--small .navbar__menu-desktop .menu__item {
+  .navbar--small .navbar__menu-desktop .menu__item {
     height: 100%;
   }
-  .navbar .navbar--small .navbar__menu-desktop .menu__item a {
+  .navbar--small .navbar__menu-desktop .menu__item a {
     padding: 1rem;
     font-size: 1.5rem;
     color: black;
@@ -199,7 +197,7 @@
     transition: 0.2s all ease;
     height: 95%;
   }
-  .navbar .navbar--small .navbar__menu-desktop .menu__item a:hover {
+  .navbar--small .navbar__menu-desktop .menu__item a:hover {
     transition: 0.2s all ease;
     border-bottom: 3px solid rgb(255, 99, 11);
   }
