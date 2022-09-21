@@ -1,10 +1,10 @@
 import { changeNavbar } from "./navbar.js";
 import { faq } from "./faq.js";
-import { projectObserver } from "./projects.js";
+// import { projectObserver } from "./projects.js";
 
 changeNavbar();
 faq();
-projectObserver();
+// projectObserver();
 
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".navbar");
