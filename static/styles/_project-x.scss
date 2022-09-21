@@ -90,11 +90,20 @@
       }
     }
     &__image-container {
+<<<<<<< HEAD
       width: 100%;
 
       margin-top: 6rem;
       .work__image {
         max-width: 100%;
+=======
+      width: 90%;
+      margin: 0 auto;
+
+      margin-top: 6rem;
+      .work__image {
+        width: 100%;
+>>>>>>> 2bb434bfba191691e22d45123f437d19529c6c7e
       }
     }
     // STEPS
@@ -266,7 +275,11 @@
         }
       }
       &__image-container {
+<<<<<<< HEAD
         width: 60%;
+=======
+        width: 90%;
+>>>>>>> 2bb434bfba191691e22d45123f437d19529c6c7e
         margin: 0 auto;
 
         margin-top: 6rem;
