@@ -2121,6 +2121,7 @@
   text-decoration: none;
   text-transform: uppercase;
   line-height: 2.2rem;
+  padding-bottom: 2rem;
 }
 .project__botom-navigation .project-navigation__link:last-child {
   transform: translateX(3%);
@@ -2131,6 +2132,9 @@
 .project__botom-navigation .project-navigation__link .next-project__icon {
   transform: rotate(180deg);
   margin-left: 0.7rem;
+}
+.project .unavailable-link {
+  color: rgba(255, 255, 255, 0.338);
 }
 
 @media screen and (min-width: 750px) {
