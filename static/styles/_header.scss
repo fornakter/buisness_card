@@ -10,9 +10,9 @@
     align-items: center;
     color: $secondary-color;
     font-size: 3rem;
-    font-weight: 900;
+
     span {
-      color: var(--secondary-color);
+      color: var($secondary-color);
 
       &:nth-child(2) {
         -webkit-text-stroke: 0.2rem $secondary-color;
@@ -21,6 +21,7 @@
         position: relative;
         line-height: 100%;
         margin-bottom: 1.2rem;
+
         z-index: -1;
         &::before {
           content: "";
@@ -31,6 +32,7 @@
           height: 100%;
           background-color: $primary-color;
           z-index: -2;
+          border-radius: 20%;
         }
         &::after {
           content: "stron";
@@ -49,31 +51,31 @@
   }
 }
 
-@media screen and (min-width: 850px) {
-  .header {
+@media screen and (min-width: 650px) {
+  .main-header {
     flex-direction: column;
-    margin-top: 25rem;
+    margin-top: 0rem;
     max-width: 100%;
     align-items: center;
     justify-content: center;
     padding: 2rem;
 
     &__main-title {
-      font-size: 8.5rem;
+      font-size: 5.5rem;
       width: 100%;
       padding: 5rem;
 
       span {
         &:nth-child(1) {
-          align-self: flex-start;
+          align-self: center;
         }
         &:nth-child(2) {
-          font-size: 19rem;
+          font-size: 5.5rem;
           line-height: 95%;
-          margin-bottom: 5rem;
+          margin-bottom: 1rem;
         }
         &:nth-child(3) {
-          align-self: flex-end;
+          align-self: center;
         }
       }
     }
@@ -83,22 +85,69 @@
     }
   }
 }
-@media screen and (min-width: 1600px) {
-  .header {
+@media screen and (min-width: 1000px) {
+  .main-header {
     flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 20rem;
-    height: 80rem;
+    margin-top: 5rem;
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem;
+
+    position: relative;
     &__main-title {
+      font-size: 6.5rem;
+      width: 60%;
+      padding: 10rem;
+
+      margin: 0;
+
       span {
+        &:nth-child(1) {
+          align-self: flex-start;
+        }
+        &:nth-child(2) {
+          font-size: 10rem;
+          line-height: 95%;
+          margin-bottom: 2rem;
+          transform: translateX(-10%);
+        }
+        &:nth-child(3) {
+          transform: translateX(25%);
+          align-self: flex-end;
+        }
+      }
+    }
+    &__image {
+      height: 100%;
+      width: auto;
+      position: absolute;
+      right: 8%;
+    }
+  }
+}
+@media screen and (min-width: 1400px) {
+  .main-header {
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 5rem;
+
+    &__main-title {
+      font-size: 8.5rem;
+      span {
+        &:nth-child(2) {
+          font-size: 18rem;
+          margin-bottom: 5rem;
+          // transform: translateX(10rem);
+        }
         &:nth-child(3) {
           transform: translateX(10rem);
         }
       }
     }
     &__image {
-      width: 80%;
+      right: 5%;
     }
   }
 }

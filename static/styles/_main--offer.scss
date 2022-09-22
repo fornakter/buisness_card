@@ -32,7 +32,7 @@
       align-items: center;
       justify-content: center;
       background-color: $secondary-color;
-      color: $accent-color-dark;
+      color: $primary-color;
       position: absolute;
       font-size: 1.6rem;
       font-family: "Jost", sans-serif;
@@ -46,11 +46,11 @@
   }
   &__form-link {
     background-color: $accent-color-dark;
-    width: 80%;
+    // width: 80%;
     margin: 11.6rem auto;
     text-decoration: none;
     border-radius: 0 6rem 0 6rem;
-
+    display: block;
     padding: 2rem;
     text-align: center;
     font-size: 1.4rem;
@@ -61,7 +61,7 @@
     &:hover {
       background-color: $secondary-color;
       &::after {
-        color: $font-color-mobile-menu;
+        color: $primary-color;
 
         transition: 0.2s all ease;
       }
@@ -86,16 +86,17 @@
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 750px) {
   .offer {
     &__title {
-      font-size: 5.5rem;
+      font-size: 2.5rem;
+      width: 70%;
     }
     &__container {
       grid-template-columns: repeat(2, 1fr);
     }
     &__item {
-      width: 70%;
+      width: 90%;
       margin: 0 auto;
       margin-top: 9rem;
       &__text {
@@ -108,15 +109,15 @@
     }
     &__form-link {
       font-size: 3rem;
-      width: 80%;
+      padding: 2rem 6rem;
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1300px) {
   .offer {
     &__item {
       &__text {
-        width: 100%;
+        width: 90%;
         height: 10rem;
 
         font-size: 2.5rem;
@@ -126,8 +127,8 @@
       }
     }
     &__form-link {
-      font-size: 3rem;
-      width: 50%;
+      // font-size: 3rem;
+      // width: 30%;
     }
   }
 }
