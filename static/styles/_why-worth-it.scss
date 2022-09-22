@@ -68,7 +68,7 @@
       position: absolute;
       top: 0;
       transform: translateY(-50%);
-      font-size: 7rem;
+      font-size: 6rem;
       padding: 1rem 10rem;
       border-radius: 0 10rem 0 10rem;
     }
@@ -76,7 +76,7 @@
     &__text {
       width: 80%;
       font-size: 2.5rem;
-      margin-top: 17rem;
+      margin-top: 12rem;
     }
 
     &__big-box {
@@ -85,6 +85,7 @@
       width: 100%;
       justify-content: center;
       margin-bottom: 10rem;
+      gap: 2rem;
     }
 
     &__box {

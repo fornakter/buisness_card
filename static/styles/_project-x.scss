@@ -409,17 +409,21 @@
           .describe {
             text-align: start;
             width: 100%;
+            margin-top: 4rem;
           }
           .arow-down-image {
-            margin-top: 4.7rem;
+            margin-top: 5rem;
             align-self: center;
+            transition: transform 0.5s ease-in-out;
           }
           .arow-down-image--left {
             margin-left: 10%;
+            transform: rotate(-45deg);
             align-self: flex-start;
           }
           .arow-down-image--right {
-            margin-right: 10%;
+            transform: rotate(45deg);
+            margin-right: 20%;
             align-self: flex-end;
           }
         }
@@ -429,7 +433,7 @@
     .write-to-us {
       &__title {
         font-size: 3.5rem;
-        margin-top: 5.5rem;
+        margin-top: 10rem;
       }
       &__message {
         font-size: 2.5rem;

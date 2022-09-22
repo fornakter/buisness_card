@@ -515,14 +515,14 @@
     position: absolute;
     top: 0;
     transform: translateY(-50%);
-    font-size: 7rem;
+    font-size: 6rem;
     padding: 1rem 10rem;
     border-radius: 0 10rem 0 10rem;
   }
   .worth__text {
     width: 80%;
     font-size: 2.5rem;
-    margin-top: 17rem;
+    margin-top: 12rem;
   }
   .worth__big-box {
     display: flex;
@@ -530,6 +530,7 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 10rem;
+    gap: 2rem;
   }
   .worth__box {
     width: 25%;
@@ -611,7 +612,7 @@
   width: 100%;
   margin-top: 3.5rem;
   padding: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: #000;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -1445,6 +1446,13 @@
   text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
   transition: all 0.5s ease;
   position: relative;
+}
+.projects__container .project__button a {
+  color: rgb(121, 255, 215);
+  text-decoration: none;
+}
+.projects__container .project__button a:hover {
+  color: white;
 }
 .projects__container .project__button::before {
   transition: all 0.5s ease;
@@ -2309,22 +2317,26 @@
   .project .work__info__step .describe {
     text-align: start;
     width: 100%;
+    margin-top: 4rem;
   }
   .project .work__info__step .arow-down-image {
-    margin-top: 4.7rem;
+    margin-top: 5rem;
     align-self: center;
+    transition: transform 0.5s ease-in-out;
   }
   .project .work__info__step .arow-down-image--left {
     margin-left: 10%;
+    transform: rotate(-45deg);
     align-self: flex-start;
   }
   .project .work__info__step .arow-down-image--right {
-    margin-right: 10%;
+    transform: rotate(45deg);
+    margin-right: 20%;
     align-self: flex-end;
   }
   .project .write-to-us__title {
     font-size: 3.5rem;
-    margin-top: 5.5rem;
+    margin-top: 10rem;
   }
   .project .write-to-us__message {
     font-size: 2.5rem;

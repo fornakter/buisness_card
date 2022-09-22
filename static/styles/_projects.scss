@@ -104,6 +104,13 @@
         text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
         transition: all 0.5s ease;
         position: relative;
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+        a:hover {
+          color: white;
+        }
         &::before {
           transition: all 0.5s ease;
           position: absolute;
