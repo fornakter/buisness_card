@@ -906,7 +906,7 @@
   bottom: 40%;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
   .faq__header {
     margin-top: 15rem;
     margin-bottom: 10rem;
