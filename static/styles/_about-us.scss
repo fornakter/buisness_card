@@ -1,34 +1,36 @@
 .about-us {
   &__header {
     width: 100%;
-    margin-top: 11rem;
+    margin-top: 13.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__img {
-      width: 70%;
     }
 
     &__title {
       color: white;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.857);
       font-size: 2.2rem;
       background-color: $secondary-color;
       padding: 1.2rem 6rem;
       border-radius: 0 6rem 0 6rem;
-      text-shadow: $text-shadow-mobile-menu;
       box-shadow: 0 0.4rem 1.5rem -0.5rem #ffffff;
+      margin-bottom: 2rem;
     }
     &__text-container,
     .text-container {
-      width: 90%;
-      font-family: "jost";
+      // width: 100%;
+      padding: 5rem 5rem;
+      font-family: "jost", sans-serif;
       color: $secondary-color;
       font-size: 1.5rem;
       text-align: center;
       margin-top: 4rem;
       &__paragraph {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+        line-height: 2.5rem;
       }
       .bold {
         font-weight: 600;
@@ -50,7 +52,7 @@
     &__member {
       margin-bottom: 5rem;
       &__photo {
-        width: 70%;
+        width: 20rem;
       }
       &__description,
       .description {
@@ -82,46 +84,42 @@
     }
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 750px) {
   .about-us {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
     &__header {
       width: 90%;
       margin: 0 auto;
-      padding: 10rem 15.2rem 12rem 10.3rem;
-      margin-top: 40rem;
+      margin-top: 80rem;
       border: 5px solid $secondary-color;
       position: relative;
-      border-radius: 0 30rem 0 30rem;
-      text-align: s;
+      border-radius: 0 10rem 0 10rem;
+      text-align: center;
 
       &__title {
-        border-radius: 0 12rem 0 12rem;
-        padding: 2.1rem 10rem;
-        font-size: 3rem;
-        text-align: center;
+        max-width: 80%;
+        font-size: 5.5rem;
+
         position: absolute;
         top: 0;
         transform: translateY(-50%);
       }
 
       &__img {
-        width: 50rem;
         position: absolute;
-        bottom: 0;
-        right: 1%;
-        transform: translateY(40%);
+        top: -70rem;
+        width: 70%;
+        transition: 0.5s ease-in-out all;
       }
       .text-container {
         font-size: 2.2rem;
         text-align: start;
+        padding: 10rem 8rem;
         &__paragraph {
           &:last-child {
-            margin-right: 50%;
           }
         }
       }
@@ -130,7 +128,7 @@
     .team {
       &__title {
         font-size: 8rem;
-        margin: 19rem;
+        margin: 15rem;
       }
       &__members-wraper {
         display: flex;
@@ -141,7 +139,7 @@
         width: 50%;
 
         &__photo {
-          width: 40%;
+          width: 30rem;
         }
         &__description,
         .description {
@@ -163,7 +161,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   .about-us {
     width: 100%;
     display: flex;
@@ -172,31 +170,42 @@
     justify-content: center;
     &__header {
       width: 90%;
-      margin: 0 auto;
-      padding: 10rem 15.2rem 12rem 10.3rem;
-      margin-top: 40rem;
+      margin-top: 20rem;
       border: 5px solid $secondary-color;
       position: relative;
-      border-radius: 0 30rem 0 30rem;
-      text-align: s;
+      border-radius: 0 20rem 0 20rem;
+
+      &__img {
+        position: absolute;
+        max-width: 45rem;
+        top: unset;
+        bottom: 0;
+        right: 1%;
+        transform: translateY(50%);
+      }
 
       &__title {
-        border-radius: 0 12rem 0 12rem;
-        padding: 2.1rem 18rem;
+        width: 60%;
         font-size: 6rem;
         text-align: center;
         position: absolute;
         top: 0;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
       }
       .text-container {
         font-size: 2.2rem;
         text-align: start;
+        // padding: 10rem 3rem;
         &__paragraph {
           &:last-child {
-            margin-right: 30%;
+            margin-right: 50%;
           }
         }
+      }
+    }
+    .team {
+      &__title {
+        margin-top: 25rem;
       }
     }
   }
