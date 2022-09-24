@@ -1,6 +1,5 @@
-export const projectObserver = () => {
+export const projectObserver = (elementToObserve) => {
   const projectsMiniatures = document.querySelectorAll(".project__img-filter");
-  const sectionContainer = document.querySelector(".projects__container");
 
   // intersection Observer
   const options = {
@@ -9,8 +8,6 @@ export const projectObserver = () => {
   };
 
   const removeFilter = (entries) => {
-    console.log(entries[0].isIntersecting);
-
     entries[0].isIntersecting
       ? entries[0].target.classList.add("project__img-filter--clear")
       : entries[0].target.classList.remove("project__img-filter--clear");
@@ -32,5 +29,5 @@ export const projectObserver = () => {
     //
   });
 
-  resizeObserver.observe(sectionContainer);
+  resizeObserver.observe(elementToObserve);
 };
