@@ -56,30 +56,27 @@
 @media screen and (min-width: 1200px) {
   .worth {
     position: relative;
-    height: 65vh;
-    margin: 3rem 0 6rem;
+    border: 3px solid $secondary-color;
+    width: 90%;
+    border-radius: 0 15rem 0 15rem;
+    margin: 0 auto;
+    margin-top: 2rem;
 
-    &::before {
-      content: "";
-      position: absolute;
-      background: none;
-      border: 5px solid $secondary-color;
-      width: 90%;
-      height: 90%;
-      border-radius: 0 15rem 0 15rem;
-      top: 8rem;
-      z-index: -1;
-    }
     &__title {
-      width: 60%;
-      height: 10rem;
-      font-size: 4rem;
+      width: auto;
+      height: auto;
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      font-size: 6rem;
+      padding: 1rem 10rem;
       border-radius: 0 10rem 0 10rem;
     }
 
     &__text {
       width: 80%;
-      font-size: 2rem;
+      font-size: 2.5rem;
+      margin-top: 12rem;
     }
 
     &__big-box {
@@ -87,64 +84,71 @@
       flex-wrap: wrap;
       width: 100%;
       justify-content: center;
+      margin-bottom: 10rem;
+      gap: 2rem;
     }
 
     &__box {
       width: 25%;
       margin: 2rem;
     }
-  }
-}
-@media screen and (min-width: 1440px) {
-  .worth {
-    position: relative;
-    height: 100vh;
-    margin: 3rem 0 6rem;
-
-    &::before {
-      content: "";
-      width: 90%;
-      height: 100%;
-      z-index: -1;
-      background: none;
-      border: 5px solid #79ffd7;
-      border-radius: 0 15rem;
-      position: absolute;
-      top: 5rem;
+    &__box-title {
+      font-size: 2.2rem;
     }
-    &__title {
-      width: 80%;
-      border-radius: 0 12rem;
-      padding: 3rem 10rem;
-      font-size: 6rem;
-    }
-
-    &__text {
-      width: 80%;
+    &__box-text {
       font-size: 2rem;
     }
-
-    &__big-box {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      justify-content: center;
-      gap: 5rem;
-    }
-
-    &__box {
-      width: 23%;
-      margin: 2rem;
-      padding: 2rem;
-
-      &-title {
-        font-size: 2.2rem;
-      }
-
-      &-text {
-        font-size: 1.7rem;
-        width: 100%;
-      }
-    }
   }
 }
+// @media screen and (min-width: 1440px) {
+//   .worth {
+//     position: relative;
+//     height: 100vh;
+//     margin: 3rem 0 6rem;
+
+//     &::before {
+//       content: "";
+//       width: 90%;
+//       height: 100%;
+//       z-index: -1;
+//       background: none;
+//       border: 5px solid #79ffd7;
+//       border-radius: 0 15rem;
+//       position: absolute;
+//       top: 5rem;
+//     }
+//     &__title {
+//       width: 80%;
+//       border-radius: 0 12rem;
+//       padding: 3rem 10rem;
+//       font-size: 6rem;
+//     }
+
+//     &__text {
+//       width: 80%;
+//     }
+
+//     &__big-box {
+//       display: flex;
+//       flex-wrap: wrap;
+//       width: 100%;
+//       justify-content: center;
+//       gap: 5rem;
+//     }
+
+//     &__box {
+//       width: 23%;
+//       margin: 2rem;
+//       padding: 2rem;
+
+//       &-title {
+//         font-size: 2.2rem;
+//       }
+
+//       &-text {
+//         font-size: 1.7rem;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../static/styles/main.css" />
+    <script src="../static/scriptJS/main.js" type="module" defer></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="logo__container-desktop">
+      <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+    </div>
+
+    <nav class="navbar">
+      <!-- Nav-mobile -->
+      <div class="logo__container-mobile">
+        <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+      </div>
+      <ul class="navbar__menu-mobile menu-mobile">
+        <li class="menu__item">
+          <a href="main.html" class="link link-about-us">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="about_us.html" class="link link-about-us">O nas</a>
+        </li>
+        <li class="menu__item">
+          <a href="faq.html" class="link link-about-us">Faq</a>
+        </li>
+        <li class="menu__item">
+          <a href="projects.html" class="link link-our-projects">Projekty</a>
+        </li>
+        <li class="menu__item">
+          <a href="contact.html" class="link link-contact">Kontakt</a>
+        </li>
+      </ul>
+
+      <!-- Nav-Desktop -->
+
+      <ul class="navbar__menu-desktop menu-desktop">
+        <img
+          class="current-page-tracker"
+          src="../static/source/images/Vector.png"
+          alt=""
+        />
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('main')}} -->
+          <a href="main.html" class="link" data-trackerPos="0">Home</a>
+        </li>
+
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('about_us')}}-->
+          <a
+            href="about_us.html"
+            class="link link-about-us"
+            data-trackerPos="0.9"
+            >O nas</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+            >Faq</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('projects')}} -->
+          <a
+            href="projects.html"
+            class="link link-contact"
+            data-trackerPos="2.5"
+            >Projekty</a
+          >
+        </li>
+        <li class="menu__item-desktop menu__item">
+          <!--  {{url_for('kontakt')}}-->
+          <a
+            href="contact.html"
+            class="link link-contact"
+            data-trackerPos="3.55"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+
+      <div class="hamburger">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </div>
+    </nav>
+    <!-- ////////////////// -->
+    <div class="project">
+      <header class="project__header">
+        <h1 class="project__header__main-title">
+          Strona dla marki paczek biznesowych
+        </h1>
+        <a href="./projects.html" class="project__header__link"
+          >Wróć do reszty projektów
+          <span class="link__current-site"
+            >< Strona dla marki paczek biznesowych</span
+          >
+        </a>
+      </header>
+      <img
+        src="../static/source/images/projects-imgs/project-website-for-agency.jpg"
+        alt=""
+        class="project__miniature"
+      />
+      <!-- ////////////////////////////// -->
+      <section class="client">
+        <div class="client__title-container">
+          <h2 class="project__section-title client__title">Klient</h2>
+        </div>
+        <div class="client__info">
+          Nowopowstała marka zajmująca się tworzeniem paczek biznesowych dla
+          działów hr, marketingu, office managerów oraz właścicieli i zarządców
+          firm.
+        </div>
+      </section>
+      <!-- ////////////////////////////// -->
+      <section class="work">
+        <div class="work__text-wraper">
+          <div class="work__title-container">
+            <h2 class="project__section-title work__title">Projekt</h2>
+          </div>
+          <div class="work__info-container">
+            <article class="work__info__step">
+              <h3 class="title">Cel współpracy</h3>
+              <p class="describe">
+                Wyłamanie się poza przyjęte standardy wizualne. Stworzenie
+                przemyślanego user experience strony procentującego wygodą
+                użytkowania, marką zostającą w pamięci, a także przynoszącą
+                wyniki sprzedażowe oraz wdrożenie w pełni funkcjonalnej strony.
+              </p>
+              <img
+                class="arow-down-image arow-down-image--left"
+                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                alt=""
+              />
+            </article>
+            <article class="work__info__step">
+              <h3 class="title">W jaki sposób działaliśmy?</h3>
+              <p class="describe">
+                Solidna analiza konkurencji polskiej jak i zagranicznej
+                wykazująca, że rynek jest jeszcze raczkujący oraz, że większość
+                marek bazuje na uniwersalnych szablonach. Stworzyliśmy
+                interesujący key visual dedykowany obranej grupie docelowej z
+                dopieszczeniem najmniejszych szczegółów.
+              </p>
+              <img
+                class="arow-down-image arow-down-image--right"
+                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                alt=""
+              />
+            </article>
+            <article class="work__info__step">
+              <h3 class="title">Efekty współpracy</h3>
+              <p class="describe">
+                Wyniki pracy to powstanie działającej z charakterystycznym
+                przykuwającym uwagę key visualem. Strona o szerokiej strukturze
+                wraz z zakładką kalendarz, o nas, kontakt, proces powstawania
+                oraz inne. Warto także zwrócić uwagę na blog dla którego
+                przygotowane zostały specjalne grafiki uspojnoajace całość oraz
+                tworzące flow strony. Ta część wizualna świetnie wpisuje się
+                także w budowanie kanałowe social media marki.
+              </p>
+              <img
+                class="arow-down-image"
+                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                alt=""
+              />
+            </article>
+            <article class="work__info__step">
+              <h3 class="title">Opinia klienta</h3>
+              <p class="describe">
+                Mimo wcześniejszych obiekcji obserwujemy ze nasi klienci chętnie
+                wracają na nasze www oraz social media oraz często podkreślają,
+                że zapamiętali naszą strone.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="work__image-container">
+          <img
+            src="../static/source/images/projects-imgs/buisnes-packages-project-view.svg"
+            alt="strona agencji pełen widok"
+            class="work__image"
+          />
+        </div>
+      </section>
+      <!-- /////////////////////////////// -->
+      <section class="write-to-us">
+        <h3 class="write-to-us__title">Spodobał Ci sie projekt?</h3>
+        <p class="write-to-us__message">Zamów swój!</p>
+        <button class="write-to-us__button button">Napisz do nas</button>
+      </section>
+      <!-- /////////////////// -->
+      <section class="project__botom-navigation">
+        <a
+          href="./project_agency-site.html"
+          class="previous-project project-navigation__link"
+        >
+          <img
+            src="../static/source/images/projects-imgs/botom-navigation-arrow.png"
+            alt=""
+            class="previous-project__icon"
+          />poprzedni project</a
+        >
+        <a
+          href="#"
+          class="next-project project-navigation__link unavailable-link"
+          >następny project<img
+            src="../static/source/images/projects-imgs/botom-navigation-arrow.png"
+            alt=""
+            class="next-project__icon"
+        /></a>
+      </section>
+    </div>
+
+    <!-- ////////////////// -->
+    <footer class="footer">
+      <img
+        src="../static/source/images/Footer@3x.png"
+        alt="Miętowa zębatka"
+        class="footer__img"
+      />
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <div class="footer__logo">
+          <img src="../static/source/images/LOGO.png" alt="" />
+        </div>
+        <div class="footer__design-wraper">
+          <p class="footer__design-info">Design by</p>
+          <p class="footer__designer">Fotorygo</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

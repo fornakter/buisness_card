@@ -10,20 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Space+Grotesk:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/styles/main.scss" />
+    <link rel="stylesheet" href="../static/styles/main.css" />
     <script src="../static/scriptJS/main.js" type="module" defer></script>
     <title>About Us</title>
   </head>
   <body>
+    <div class="logo__container-desktop">
+      <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+    </div>
     <nav class="navbar">
-      <!-- LOGO -->
-      <p class="logo">Logo</p>
-
-      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
-
       <!-- Nav-mobile -->
-
-      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
+      <div class="logo__container-mobile">
+        <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+      </div>
+      <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
           <a href="main.html" class="link link-about-us">Home</a>
         </li>
@@ -34,7 +34,7 @@
           <a href="faq.html" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
-          <a href="projects.html" class="link link-our-projects"
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
             >Projekty</a
           >
         </li>
@@ -53,28 +53,36 @@
         />
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('main')}} -->
-          <a href="main.html" class="link link-our-projects" data-trackerPos="0"
-            >Home</a
-          >
+          <a href="main.html" class="link" data-trackerPos="0">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('about_us')}}-->
-          <a href="about_us.html" class="link link-about-us" data-trackerPos="0.9">O nas</a>
+          <a
+            href="about_us.html"
+            class="link link-about-us"
+            data-trackerPos="0.9"
+            >O nas</a
+          >
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('faq')}} -->
-          <a href="faq.html" class="link link-contact" data-trackerPos="1.65">Faq</a>
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+            >Faq</a
+          >
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('projects')}} -->
-          <a href="projects.html" class="link link-contact" data-trackerPos="2.5"
+          <a href="#" class="link link-contact" data-trackerPos="2.5"
             >Projekty</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('kontakt')}}-->
-          <a href="contact.html" class="link link-contact" data-trackerPos="3.55"
+          <a
+            href="contact.html"
+            class="link link-contact"
+            data-trackerPos="3.55"
             >Kontakt</a
           >
         </li>
@@ -101,7 +109,7 @@
           <p class="text-container__paragraph">Jesteśmy zespołem młodych, zaangażowanych osób z coraz bogatszym doświadczeniem. Cechuje nas <span class="bold">odpowiedzialność</span> , elastyczność członek 
           i ogromne <span class="bold">zamiłowanie</span>  do tego co robimy. Każdy z nas codzień rozwija swoje umiejętności, a jako team preferujemy otwartą komunikację.</p>
           
-          <p class="text-container__paragraph"> <span class="bold">Odciążymy Cię</span> Odciążymy Cię z koniecznności zastanawiania się jak wyróżnić się na tle konkurencji - zrobimy to my oraz stworzymy unikatową stronę, która 
+          <p class="text-container__paragraph"> <span class="bold">Odciążymy Cię</span>  z koniecznności zastanawiania się jak wyróżnić się na tle konkurencji - zrobimy to my oraz stworzymy unikatową stronę, która 
           z całą pewnością wyróżni Twój biznes. <br> <span class="place"></span></p>
           </article>
       </header>
@@ -173,29 +181,36 @@
       <!-- footer ////////////////////////// -->
       <footer class="footer">
         <img
-        src="../static/source/images/Footer@3x.png"
-        alt="Miętowa zębatka"
-        class="footer__img"
+          src="../static/source/images/Footer@3x.png"
+          alt="Miętowa zębatka"
+          class="footer__img"
         />
         <div class="footer__container">
-     
-          <ul class="footer__list ">
-            <li class="footer__list__item"><a class="footer__list__item__link" href="#">Home</a></li>
-            <li class="footer__list__item"><a class="footer__list__item__link" href="#">O nas</a></li>
-            <li class="footer__list__item"><a class="footer__list__item__link" href="#">Projekt</a></li>
-            <li class="footer__list__item"><a class="footer__list__item__link" href="#">FAQ</a></li>
-            <li class="footer__list__item"><a class="footer__list__item__link" href="#">Kontakt</a></li>
+          <ul class="footer__list">
+            <li class="footer__list__item">
+              <a class="footer__list__item__link" href="#">Home</a>
+            </li>
+            <li class="footer__list__item">
+              <a class="footer__list__item__link" href="#">O nas</a>
+            </li>
+            <li class="footer__list__item">
+              <a class="footer__list__item__link" href="#">Projekt</a>
+            </li>
+            <li class="footer__list__item">
+              <a class="footer__list__item__link" href="#">FAQ</a>
+            </li>
+            <li class="footer__list__item">
+              <a class="footer__list__item__link" href="#">Kontakt</a>
+            </li>
           </ul>
-          <div class="footer__logo" >logo</div>
+          <div class="footer__logo">
+            <img src="../static/source/images/LOGO.png" alt="" />
+          </div>
           <div class="footer__design-wraper">
-
- <p class="footer__design-info">Design by</p>
-        <p class="footer__designer">Fotorygo</p>
-
+            <p class="footer__design-info">Design by</p>
+            <p class="footer__designer">Fotorygo</p>
+          </div>
         </div>
-       
-        </div>
-       
       </footer>
     
   </body>

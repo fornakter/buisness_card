@@ -38,7 +38,7 @@
       left: 50%;
       transform: translate(-50%, 50%);
       gap: 1rem;
-      width: 70%;
+
       &__item {
         display: flex;
         gap: 2.5rem;
@@ -73,7 +73,7 @@
         margin-top: 3.5rem;
         padding: 1.5rem;
 
-        color: $font-color-mobile-menu;
+        color: $primary-color;
         text-align: center;
         display: flex;
         justify-content: center;

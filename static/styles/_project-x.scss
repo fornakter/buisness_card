@@ -1,0 +1,481 @@
+.project {
+  max-width: 300rem;
+  margin: 0 auto;
+  &__header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 12rem;
+    &__main-title {
+      max-width: 90%;
+      color: $secondary-color;
+      font-size: 3rem;
+    }
+    &__link,
+    .link {
+      text-decoration: none;
+      color: white;
+      font-family: "jost";
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+
+      &__current-site {
+        display: none;
+      }
+    }
+  }
+  &__miniature {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  //Titles witch shadow
+
+  &__section-title {
+    color: $secondary-color;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 4.5rem;
+    -webkit-text-stroke: 2.5px $secondary-color;
+    color: black;
+    background-color: rgb(0, 0, 0);
+    line-height: 100%;
+    position: relative;
+    margin-bottom: 9rem;
+    margin-top: 5.5rem;
+    &::after {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 2rem;
+      z-index: -1;
+      background-color: rgb(0, 0, 0);
+    }
+    &::before {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      top: 4rem;
+      z-index: -1;
+    }
+  }
+  .client {
+    &__title {
+      &::after {
+        content: "Klient";
+      }
+      &::before {
+        content: "Klient";
+      }
+    }
+    &__info {
+      color: white;
+      font-family: "Jost";
+      font-size: 2.2rem;
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+  .work {
+    &__title {
+      &::after {
+        content: "Projekt";
+      }
+      &::before {
+        content: "Projekt";
+      }
+    }
+    &__image-container {
+      width: 100%;
+      display: flex;
+      margin-top: 6rem;
+      .work__image {
+        max-width: 100%;
+      }
+    }
+    // STEPS
+    &__info {
+      &__step {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title {
+          color: $secondary-color;
+          text-align: center;
+          font-size: 2.5rem;
+          margin-top: 5rem;
+        }
+        .describe {
+          color: white;
+          font-family: "Jost", sans-serif;
+          font-size: 2.2rem;
+          text-align: center;
+          width: 80%;
+          margin: 0 auto;
+          margin-top: 4rem;
+        }
+        .arow-down-image {
+          margin-top: 4.7rem;
+        }
+      }
+    }
+  }
+  // Write to us
+  .write-to-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+      color: $secondary-color;
+      text-align: center;
+      font-size: 2.5rem;
+      width: 75%;
+      margin-top: 5.5rem;
+    }
+    &__message {
+      color: white;
+      font-family: "Jost", sans-serif;
+      font-size: 2.5rem;
+      margin-top: 2.5rem;
+    }
+    &__button {
+      color: black;
+      font-size: 2rem;
+      padding: 0.5rem 6rem 3rem 4rem;
+      margin-top: 4rem;
+
+      &::before {
+        background-color: $secondary-color;
+      }
+    }
+  }
+  &__botom-navigation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+    .project-navigation__link {
+      color: white;
+      font-size: 1.5rem;
+      font-family: "Jost", sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 2.2rem;
+      padding-bottom: 2rem;
+
+      &:last-child {
+        transform: translateX(3%);
+      }
+      .previous-project__icon {
+        margin-right: 0.7rem;
+      }
+      .next-project__icon {
+        transform: rotate(180deg);
+        margin-left: 0.7rem;
+      }
+    }
+  }
+  .unavailable-link {
+    color: rgba(255, 255, 255, 0.338);
+  }
+}
+@media screen and (min-width: 750px) {
+  .project {
+    &__header {
+      margin-top: 20rem;
+      &__main-title {
+        width: 80%;
+        font-size: 5.5rem;
+      }
+      &__link,
+      .link {
+        // text-decoration: none;
+        // color: white;
+        // font-family: "jost";
+        // font-size: 1.5rem;
+        // margin-top: 1.5rem;
+        display: none;
+        &__current-site {
+          display: none;
+        }
+      }
+    }
+    &__miniature {
+      margin-top: 10rem;
+    }
+
+    //Titles witch shadow
+
+    &__section-title {
+      font-size: 5rem;
+    }
+    .client {
+      &__info {
+        font-size: 3rem;
+      }
+    }
+    .work {
+      &__title {
+        &::after {
+          content: "Projekt";
+        }
+        &::before {
+          content: "Projekt";
+        }
+      }
+
+      // project full view
+      &__image-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 8rem;
+        .work__image {
+          max-width: 60rem;
+        }
+      }
+      // STEPS
+      &__info {
+        &__step {
+          .title {
+            font-size: 4rem;
+          }
+          .describe {
+            font-size: 3rem;
+          }
+          .arow-down-image {
+            margin-top: 5rem;
+          }
+        }
+      }
+    }
+    // Write to us
+    .write-to-us {
+      &__title {
+        font-size: 4rem;
+        width: 40%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project {
+    &__header {
+      flex-direction: column-reverse;
+      margin-top: 15rem;
+      &__main-title {
+        font-size: 6.5rem;
+        margin-top: 3rem;
+      }
+      &__link,
+      .link {
+        font-size: 2.5rem;
+        display: inline;
+        &__current-site {
+          display: inline;
+        }
+      }
+    }
+    &__miniature {
+      display: none;
+    }
+
+    //Titles witch shadow
+    .client__title-container {
+      height: 50rem;
+      min-width: 50rem;
+      background-image: url(../source/images/projects-imgs/gear-title-border.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+      }
+    }
+
+    &__section-title {
+      width: 90%;
+      font-size: 6.5rem;
+      position: relative;
+
+      &::before {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 2rem;
+        z-index: -10;
+        background-color: rgb(0, 0, 0);
+      }
+      &::before {
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 4rem;
+        z-index: -5;
+      }
+    }
+    .client {
+      display: flex;
+      align-items: center;
+      padding: 0 10rem;
+      gap: 5rem;
+      margin-top: 10rem;
+      &__title {
+        &::after {
+          content: "Klient";
+        }
+        &::before {
+          content: "Klient";
+        }
+      }
+      &__info {
+        color: white;
+        font-family: "Jost";
+        font-size: 2.5rem;
+        width: 60%;
+        padding: 0;
+        margin: 0 auto;
+        text-align: start;
+      }
+    }
+
+    /// section work /////////////
+    .work {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 2rem;
+
+      &__text-wraper {
+        transform: translateY(-2%);
+        max-width: 100%;
+        width: 100%;
+      }
+
+      &__title-container {
+        height: 50rem;
+        max-width: 50rem;
+        background-image: url(../source/images/projects-imgs/gear-title-border.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6.5rem;
+      }
+
+      &__title {
+        &::after {
+          content: "Projekt";
+        }
+        &::before {
+          content: "Projekt";
+        }
+      }
+      &__image-container {
+        margin-right: 6rem;
+        align-self: baseline;
+
+        margin-top: 15rem;
+        max-width: 100%;
+
+        .work__image {
+          width: 100%;
+        }
+      }
+      // STEPS
+      &__info {
+        &__step {
+          align-items: flex-start;
+          .title {
+            font-size: 3.5rem;
+            margin-top: 5rem;
+          }
+          .describe {
+            text-align: start;
+            width: 100%;
+            margin-top: 4rem;
+          }
+          .arow-down-image {
+            margin-top: 5rem;
+            align-self: center;
+            transition: transform 0.5s ease-in-out;
+          }
+          .arow-down-image--left {
+            margin-left: 10%;
+            transform: rotate(-45deg);
+            align-self: flex-start;
+          }
+          .arow-down-image--right {
+            transform: rotate(45deg);
+            margin-right: 20%;
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+    // Write to us
+    .write-to-us {
+      &__title {
+        font-size: 3.5rem;
+        margin-top: 10rem;
+      }
+      &__message {
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
+      }
+      &__button {
+        font-size: 2.5rem;
+
+        margin-top: 6rem;
+
+        &::before {
+          background-color: $secondary-color;
+        }
+      }
+    }
+    &__botom-navigation {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5rem;
+      width: 100%;
+      margin-top: 6rem;
+      .project-navigation__link {
+        font-size: 2.5rem;
+        line-height: 2.2rem;
+        &:last-child {
+          transform: translateX(0);
+        }
+        .previous-project__icon {
+          height: 2rem;
+          margin-right: 0.7rem;
+        }
+        .next-project__icon {
+          transform: rotate(180deg);
+          height: 2rem;
+          margin-left: 0.7rem;
+        }
+      }
+    }
+  }
+}
