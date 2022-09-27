@@ -1,15 +1,28 @@
 export const contact = () => {
-  const inputServiceType = document.querySelector(".service-type");
+  const inputServiceType = document.querySelector(".service-type-input-wraper");
+  const inputServiceTypeArrow = document.querySelector(".service-type-arrow");
   const serviceOptionContainer = document.querySelector(".options-wraper");
   const serviceOptions = document.querySelectorAll(".options-wraper input");
+  const messageToUser = document.querySelector(".after-submit");
+  const sendbutton = document.querySelector(".button-send-form");
 
   // opening and closing container witch options
   const showServiceOptions = () => {
     serviceOptionContainer.classList.toggle("options-wraper--hide");
     serviceOptions.forEach((option) => option.classList.toggle("option--hide"));
+    inputServiceTypeArrow.classList.toggle("arrow--open");
   };
   inputServiceType.addEventListener("click", (e) => {
     showServiceOptions();
+  });
+
+  // actions for send form button
+
+  const openModal = () => {
+    messageToUser.classList.add("after-submit--open");
+  };
+  sendbutton.addEventListener("click", () => {
+    openModal();
   });
 };
 

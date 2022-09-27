@@ -75,11 +75,18 @@
       bottom: 50%;
       right: 5%;
       transform: translateY(75%);
-
       height: 7.7rem;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+    .service-type-arrow {
+      transition: 0.5s all ease-in-out;
+      fill: white;
+    }
+    .arrow--open {
+      transform: rotateX(180deg);
+      transition: 0.5s all ease-in-out;
     }
   }
 
@@ -141,6 +148,52 @@
   width: 80%;
   margin-bottom: 8.5rem;
 }
+// Modal message
+.after-submit {
+  display: none;
+}
+.after-submit--open {
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.672);
+  &__message-wraper {
+    width: 95%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__title {
+    color: white;
+    background-color: $secondary-color;
+    text-align: center;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+    font-size: 2rem;
+    padding: 1.5rem 8rem;
+    border-radius: 0 8rem 0 8rem;
+    z-index: 1;
+  }
+  &__message {
+    background-color: white;
+    font-family: "Jost", sans-serif;
+    text-align: center;
+    padding: 7rem 1rem 4rem 1rem;
+    font-size: 1.5rem;
+    transform: translateY(-20%);
+    width: 90%;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    border-radius: 0 0 0 6rem;
+    line-height: 3rem;
+  }
+}
 
 // Tablets
 
@@ -184,7 +237,7 @@
         bottom: 0;
         right: 0;
         transform: translateY(0);
-        height: 12.8rem;
+        height: 12.3rem;
 
         background-color: $secondary-color;
       }
@@ -224,6 +277,18 @@
     display: block;
     font-size: 3rem;
     width: 40%;
+  }
+  // Modal message
+  .after-submit--open {
+    &__message-wraper {
+      width: 50%;
+    }
+    &__title {
+      font-size: 3rem;
+    }
+    &__message {
+      font-size: 2rem;
+    }
   }
 }
 
