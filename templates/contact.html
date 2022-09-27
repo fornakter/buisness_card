@@ -4,38 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../static/styles/main.css" />
     <script src="../static/scriptJS/contact.js" type="module" defer></script>
-    <title>Contakt</title>
+    <title>Home</title>
   </head>
   <body>
+    <div class="logo__container-desktop">
+      <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+    </div>
     <nav class="navbar">
-      <!-- LOGO -->
-      <p class="logo">Logo</p>
-
-      <!-- <img src="" alt="logo" class="navbar__logo logo" /> -->
-
       <!-- Nav-mobile -->
-
-      <ul class="navbar__menu-mobile menu-mobile shadow-bg">
+      <div class="logo__container-mobile">
+        <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+      </div>
+      <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
-          <a href="{{url_for('main')}}" class="link link-about-us">Home</a>
+          <a href="main.html" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('about_us')}}" class="link link-about-us">O nas</a>
+          <a href="about_us.html" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
+          <a href="faq.html" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
           <a href="projects.html" class="link link-our-projects">Projekty</a>
         </li>
         <li class="menu__item">
-          <a href="{{url_for('contact')}}" class="link link-contact">Kontakt</a>
+          <a href="contact.html" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -49,18 +51,23 @@
         />
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('main')}} -->
-          <a href="#" class="link link-our-projects" data-trackerPos="0"
-            >Home</a
-          >
+          <a href="main.html" class="link" data-trackerPos="0">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('about_us')}}-->
-          <a href="#" class="link link-about-us" data-trackerPos="0.9">O nas</a>
+          <a
+            href="about_us.html"
+            class="link link-about-us"
+            data-trackerPos="0.9"
+            >O nas</a
+          >
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('faq')}} -->
-          <a href="#" class="link link-contact" data-trackerPos="1.65">Faq</a>
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+            >Faq</a
+          >
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('projects')}} -->
@@ -73,7 +80,10 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('kontakt')}}-->
-          <a href="#" class="link link-contact" data-trackerPos="3.55"
+          <a
+            href="contact.html"
+            class="link link-contact"
+            data-trackerPos="3.55"
             >Kontakt</a
           >
         </li>
@@ -85,63 +95,77 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
-    <div class="contact__header">
+    <!-- /////////////////////////////// -->
+    <header class="contact-header">
+      <h1 class="contact-header__title">Kontakt</h1>
       <img
-        src="../static/source/images/kontakt.png"
-        alt="sluchawka telefonu z mietowa zebatka"
-        class="contact__header-img"
+        src="../static/source/images/contact-imgs/header-gear.png"
+        alt=""
+        class="contact-header__image--gear"
       />
-    </div>
-    <div class="contact__container contact">
-      <div class="contact__error-messages"></div>
-      <form class="form" method="post" action="/send/">
-        <div class="input-container inputs-name">
-          <label class="label" for="form__name label">Imię</label>
-          <input class="input__name input" type="text" name="client_name" />
-        </div>
+      <img
+        src="../static/source/images/contact-imgs/header-phone.png"
+        alt=""
+        class="contact-header__image--phone"
+      />
+    </header>
 
-        <div class="input-container">
-          <label class="label" for="form-phone">Numer Kontaktowy</label>
-          <input class="input__phone input" type="tel" name="_" />
-        </div>
+    <!-- FORM  -->
 
-        <div class="input-container">
-          <label class="label" for="form-email label ">Email</label>
-          <input class="input__email input" type="email" name="mail" />
-        </div>
-        <div class="input-container">
-          <label class="label" for="form-message-title">Rodzaj usługi:</label>
-          <div class="input-container__box">
-            <!-- <input class="form__mesage-title input" type="text" name="_" /> -->
-            <select
-              name="form-message-title"
-              id="form-message-title"
-              class="form__mesage-title"
-            >
-              <option>Projekt strony internetowej</option>
-              <option>Zaprogramowanie i wdrożenie</option>
-              <option>Odświeżenie istniejącej strony</option>
-              <option>Inne</option>
-            </select>
-            <div class="box-img">
-              <img
-                src="../static/source/images/Vector 1.png"
-                alt="strzalka"
-                class="input-container__box-img"
-              />
-            </div>
-          </div>
-        </div>
+    <form class="contact-form" action="#">
+      <label for=".name">Imię</label>
+      <input type="text" class="name" />
+      <label for=".phone">Numer kontaktowy</label>
+      <input type="tel" class="phone" />
+      <label for=".email">Email</label>
+      <input type="email" class="email" />
 
-        <div class="input-container">
-          <label for="input__message" class="label">Twoja wiadomość</label>
-          <textarea class="input__message input" name="message"></textarea>
-          <div class="submit-btn-box">
-            <input class="button submit-btn" type="submit" name="submit" />
-          </div>
+      <div class="service-type-input-wraper">
+        <label for="service-type">Rodzaj usługi</label>
+        <input name="service-type" class="service-type" readonly="true"></input>
+        <div class="service-type-arrow-container">
+          <img class="service-type-arrow" src="../static/source/images/contact-imgs/options-arrow.png" alt="">
         </div>
-      </form>
-    </div>
+      </div>
+      
+
+      <!-- Options -->
+      <div class="options-wraper options-wraper--hide">
+        <div  class="option-container  option--hide ">
+          <label for="checkbox-project">Project strony internetowej</label>
+          <input
+            type="checkbox"
+            id="checkbox-project"
+            value=" Project strony internetowej"
+          />
+        </div>
+        <div class="option-container option--hide">
+          <label for="checkbox-progam">Zaprogramowanie i wdrożenie</label>
+          <input
+            type="checkbox"
+            id="checkbox-progam"
+            value=" Zaprogramowanie i wdrożenie"
+          />
+        </div>
+        <div class="option-container option--hide">
+          <label for="checkbox-refresh">Odświeżenie istniejącej strony</label>
+          <input
+            type="checkbox"
+            id="checkbox-refresh"
+            value=" Odświeżenie istniejącej strony"
+          />
+        </div>
+        <div class="option-container option--hide">
+          <label for="checkbox-other">Inne</label>
+          <input type="checkbox" id="checkbox-other" value=" Inne" />
+        </div>
+      </div>
+      <label for="form-message">Twoja wiadomość</label>
+      <textarea class=".form-message" type="text-area"></textarea>
+    </form>
+
+    <!-- /////////////////////////////// -->
+
     <footer class="footer">
       <img
         src="../static/source/images/Footer@3x.png"
@@ -166,24 +190,14 @@
             <a class="footer__list__item__link" href="#">Kontakt</a>
           </li>
         </ul>
-        <div class="footer__logo">logo</div>
+        <div class="footer__logo">
+          <img src="../static/source/images/LOGO.png" alt="" />
+        </div>
         <div class="footer__design-wraper">
           <p class="footer__design-info">Design by</p>
           <p class="footer__designer">Fotorygo</p>
         </div>
       </div>
     </footer>
-    <!-- <div class="overlay"></div>
-    <div class="confirmation">
-      <button class="confirmation__btn-close">
-        <img src="../static/Icons/icon-close.svg" alt="close popup" />
-      </button>
-      <p class="confimation__message">Wiadomość została wysłana</p>
-      <button class="button confirmation__btn-back-to-home-page">
-        <a href="main.html" class="confirmation__link--to-home"
-          >Back to home page</a
-        >
-      </button>
-    </div> -->
   </body>
 </html>
