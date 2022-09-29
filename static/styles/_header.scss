@@ -12,7 +12,7 @@
     font-size: 3rem;
 
     span {
-      color: var($secondary-color);
+      color: $secondary-color;
       &:nth-child(2) {
         -webkit-text-stroke: 0.2rem $secondary-color;
         color: transparent;
@@ -130,8 +130,6 @@
           margin-bottom: 5rem;
         }
       }
-    }
-    &__image {
     }
   }
 }
