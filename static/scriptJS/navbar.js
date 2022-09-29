@@ -4,9 +4,32 @@ export const changeNavbar = () => {
   const currentPageTracker = document.querySelector(".current-page-tracker");
   const navbarMenuDesktop = document.querySelector(".menu-desktop");
   const navbar = document.querySelector(".navbar");
-  console.log(navbar);
-
   const headers = document.querySelector(".header");
+
+  // move tracking loop
+
+  const moveTrackingLoop = (e) => {
+    const trackerPosition = e.target.dataset.trackerpos;
+    currentPageTracker.style.transition = "0.3s all ";
+    currentPageTracker.style.transform = `translateX(${
+      trackerPosition * 100
+    }%)`;
+  };
+
+  const navbarChildren = document.querySelectorAll(".navbar a");
+  navbarChildren.forEach((el) => {
+    el.addEventListener("mouseover", (e) => {
+      moveTrackingLoop(e);
+    });
+  });
+  // set pageTracker on current element
+  window.addEventListener("load", () => {
+    const trackerPosition = navbar.dataset.currentpos;
+
+    currentPageTracker.style.transform = `translateX(${
+      trackerPosition * 100
+    }%)`;
+  });
 
   // Open & close navbar menu.
 
@@ -22,5 +45,4 @@ export const changeNavbar = () => {
       e.target.dataset.trackerpos * 100
     }%)`;
   });
-  // Move navbar to top of viewport
 };
