@@ -9,6 +9,7 @@
   text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
   transition: all 0.5s ease;
   position: relative;
+
   &::before {
     transition: all 0.5s ease;
     position: absolute;
@@ -28,6 +29,8 @@
     &::before {
       transition: all 0.5s ease;
       background-color: $secondary-color;
+
+      color: white;
     }
   }
 }

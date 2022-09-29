@@ -10,7 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/styles/main.css" />
+    <link rel="stylesheet" href="../static/styles/main.scss" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/intl-tel-input/build/css/intlTelInput.css"
+    />
+    <script
+      src="../node_modules/intl-tel-input/build/js/intlTelInput.js"
+      defer
+    ></script>
     <script src="../static/scriptJS/main.js" type="module" defer></script>
     <script src="../static/scriptJS/contact.js" type="module" defer></script>
     <title>Home</title>
@@ -26,7 +34,7 @@
       </div>
       <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
-          <a href="main.html" class="link link-about-us">Home</a>
+          <a href="index.html" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
           <a href="about_us.html" class="link link-about-us">O nas</a>
@@ -52,7 +60,7 @@
         />
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('main')}} -->
-          <a href="main.html" class="link" data-trackerPos="0">Home</a>
+          <a href="index.html" class="link" data-trackerPos="0">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
@@ -101,15 +109,19 @@
       <h1 class="contact-header__title">Kontakt</h1>
       <img
         src="../static/source/images/contact-imgs/header-gear.png"
-        srcset="../static/source/images/contact-imgs/header-gear.png 750w,
-        ../static/source/images/contact-imgs/header-gear@2x.png 1000w"
+        srcset="
+          ../static/source/images/contact-imgs/header-gear.png     750w,
+          ../static/source/images/contact-imgs/header-gear@2x.png 1000w
+        "
         alt=""
         class="contact-header__image--gear"
       />
       <img
         src="../static/source/images/contact-imgs/header-phone.png"
-        srcset="../static/source/images/contact-imgs/header-phone.png 750w,
-        ../static/source/images/contact-imgs/header-phone@2x.png 1000w"
+        srcset="
+          ../static/source/images/contact-imgs/header-phone.png     750w,
+          ../static/source/images/contact-imgs/header-phone@2x.png 1000w
+        "
         alt=""
         class="contact-header__image--phone"
       />
@@ -117,61 +129,78 @@
 
     <!-- FORM  -->
 
-    <form class="contact-form" action="#">
-      <label for=".name">Imię</label>
-      <input type="text" class="name" />
-      <label for=".phone">Numer kontaktowy</label>
-      <input type="tel" class="phone" />
-      <label for=".email">Email</label>
-      <input type="email" class="email" />
+    <form class="form" method="post" action="#">
+      <div class="form__row">
+        <label class="form__label" for="form__name ">Imie</label>
+        <input type="text" class="form__name form__input" required />
+        <div class="error-message"></div>
+      </div>
 
-      <div class="service-type-input-wraper">
-        <label for="service-type">Rodzaj usługi</label>
-        <input name="service-type" class="service-type" readonly="true"></input>
-        <div class="service-type-arrow-container">
-          <img class="service-type-arrow" src="../static/source/images/contact-imgs/options-arrow.png" alt="">
+      <div class="form__row">
+        <label class="form__label" for="form__phone ">Numer kontaktowy</label>
+        <input type="tel" id="phone" class="form__phone form__input" />
+        <div class="error-message"></div>
+      </div>
+      <div class="form__row">
+        <label class="form__label" for="form__email ">Email</label>
+        <input type="email" class="form__email form__input" />
+        <div class="error-message"></div>
+      </div>
+      <div class="form__row options-container">
+        <label class="form__label" for="form__service-type"
+          >Rodzaj usługi:</label
+        >
+        <div class="wraper">
+          <input
+            type="text"
+            readonly="true"
+            class="form__service-type form__input"
+          />
+          <div class="img-container">
+            <img
+              class="show-options"
+              src="../static/source/images/contact-imgs/options-arrow.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Options -->
+        <div class="service-types">
+          <div class="type-wraper">
+            <input type="checkbox" id="project" />
+            <label for="project">Projekt strony internetowej</label>
+          </div>
+          <div class="type-wraper">
+            <input type="checkbox" id="develop" />
+            <label for="develop">Zaprogramowanie i wdrożenie </label>
+          </div>
+          <div class="type-wraper">
+            <input type="checkbox" id="refresh" />
+            <label for="refresh">Odświeżenie istniejącej strony</label>
+          </div>
+          <div class="type-wraper">
+            <input type="checkbox" id="other" />
+            <label for="other">Inne</label>
+          </div>
         </div>
       </div>
-      
-
-      <!-- Options -->
-      <div class="options-wraper options-wraper--hide">
-        <div  class="option-container  option--hide ">
-          <label for="checkbox-project">Project strony internetowej</label>
-          <input
-            type="checkbox"
-            id="checkbox-project"
-            value=" Project strony internetowej"
-          />
-        </div>
-        <div class="option-container option--hide">
-          <label for="checkbox-progam">Zaprogramowanie i wdrożenie</label>
-          <input
-            type="checkbox"
-            id="checkbox-progam"
-            value=" Zaprogramowanie i wdrożenie"
-          />
-        </div>
-        <div class="option-container option--hide">
-          <label for="checkbox-refresh">Odświeżenie istniejącej strony</label>
-          <input
-            type="checkbox"
-            id="checkbox-refresh"
-            value=" Odświeżenie istniejącej strony"
-          />
-        </div>
-        <div class="option-container option--hide">
-          <label for="checkbox-other">Inne</label>
-          <input type="checkbox" id="checkbox-other" value=" Inne" />
-        </div>
+      <div class="form__row">
+        <label class="form__label" for="form__message">Wiadomość:</label>
+        <textarea type="text" class="form__message form__input"> </textarea>
+        <div class="error-message"></div>
       </div>
-      <label for="form-message">Twoja wiadomość</label>
-      <textarea class=".form-message" type="text-area"></textarea>
+      <div class="form__row">
+        <button type="submit" class="button">Wyślij</button>
+      </div>
     </form>
-
-    <!-- BUTTON SEND FORM -->
-
-    <button class="button button-send-form" >Wyślij</button>
+    <div class="contact__overlay"></div>
+    <div class="confirmation">
+      <h3 class="confirmation__title">Dziękujemy!</h3>
+      <p class="confirmation__message">
+        Wiadomość została wysłana! <br />
+        Wkrótce się z Tobą skontaktujemy.
+      </p>
+    </div>
 
     <!-- /////////////////////////////// -->
 
@@ -182,6 +211,10 @@
         class="footer__img"
       />
       <div class="footer__container">
+        <div class="footer__logo">
+          <img src="../static/source/images/LOGO.png" alt="" />
+        </div>
+
         <ul class="footer__list">
           <li class="footer__list__item">
             <a class="footer__list__item__link" href="#">Home</a>
@@ -199,9 +232,6 @@
             <a class="footer__list__item__link" href="#">Kontakt</a>
           </li>
         </ul>
-        <div class="footer__logo">
-          <img src="../static/source/images/LOGO.png" alt="" />
-        </div>
         <div class="footer__design-wraper">
           <p class="footer__design-info">Design by</p>
           <p class="footer__designer">Fotorygo</p>
@@ -213,10 +243,10 @@
     <div class="after-submit">
       <div class="after-submit--open__message-wraper">
         <h3 class="after-submit--open__title">Dziękujemy!</h3>
-        <p class="after-submit--open__message">Wiadomość wysłana! <br>Wkrótce się z tobą skontaktujemy.</p>
+        <p class="after-submit--open__message">
+          Wiadomość wysłana! <br />Wkrótce się z tobą skontaktujemy.
+        </p>
       </div>
-      
-
     </div>
   </body>
 </html>

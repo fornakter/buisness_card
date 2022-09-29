@@ -10,7 +10,6 @@
 
   &__img {
     width: 200%;
-    animation: "rotateFooterBorder" 100s linear infinite;
   }
   &__container {
     position: absolute;
@@ -21,7 +20,14 @@
     font-size: 2.5rem;
   }
   &__logo {
-    display: none;
+    display: block;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -10rem;
+    img {
+      width: 15rem;
+    }
   }
   &__list {
     list-style: none;
@@ -68,43 +74,51 @@
   }
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1000px) {
   .footer {
+    height: 80rem;
     padding-top: 1rem;
+    &__img {
+      animation: "rotateFooterBorder" 100s linear infinite;
+    }
 
     &__container {
-      display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-around;
       height: 50%;
-      min-width: 50%;
+      width: 70rem;
       top: 50%;
     }
     &__logo {
       display: flex;
-      align-self: flex-start;
-      width: 22rem;
-      height: 13rem;
+      align-self: center;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        width: 30rem;
+      }
     }
     &__list {
-      align-self: center;
-      align-self: flex-end;
-      height: 50%;
+      position: absolute;
+      right: 15%;
+      bottom: -45%;
+
+      text-align: start;
       margin: 0;
     }
     &__design-wraper {
+      width: 33%;
       display: flex;
-      align-self: flex-end;
+      align-items: flex-start;
       flex-direction: column;
+      font-size: 2.5rem;
       color: $secondary-color;
-      height: 50%;
+      left: 15%;
+      position: absolute;
+      bottom: 0;
     }
     &__design-info {
-      color: $secondary-color;
-
-      &::after {
-        display: none;
-      }
+      color: $accent-color-dark;
     }
     &__designer {
       text-align: start;

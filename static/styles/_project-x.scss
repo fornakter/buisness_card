@@ -94,9 +94,10 @@
     &__image-container {
       width: 100%;
       display: flex;
+      justify-content: center;
       margin-top: 6rem;
       .work__image {
-        max-width: 100%;
+        width: 100%;
       }
     }
     // STEPS
@@ -149,6 +150,7 @@
       font-size: 2rem;
       padding: 0.5rem 6rem 3rem 4rem;
       margin-top: 4rem;
+      cursor: pointer;
 
       &::before {
         background-color: $secondary-color;

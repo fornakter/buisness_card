@@ -1,144 +1,155 @@
 export const contact = () => {
-  const inputServiceType = document.querySelector(".service-type-input-wraper");
-  const inputServiceTypeArrow = document.querySelector(".service-type-arrow");
-  const serviceOptionContainer = document.querySelector(".options-wraper");
-  const serviceOptions = document.querySelectorAll(".options-wraper input");
-  const messageToUser = document.querySelector(".after-submit");
-  const sendbutton = document.querySelector(".button-send-form");
+  const form = document.querySelector(".form");
+  const confirmCloseBtn = document.querySelector(
+    ".confirm-container__btn-close"
+  );
+  const confirmContainer = document.querySelector(".confirmation");
+  const overlay = document.querySelector(".contact__overlay");
+  const submitBtn = document.querySelector(".button");
 
-  // opening and closing container witch options
-  const showServiceOptions = () => {
-    serviceOptionContainer.classList.toggle("options-wraper--hide");
-    serviceOptions.forEach((option) => option.classList.toggle("option--hide"));
-    inputServiceTypeArrow.classList.toggle("arrow--open");
-  };
-  inputServiceType.addEventListener("click", (e) => {
-    showServiceOptions();
+  //inputs
+  const inputs = document.querySelectorAll(".form__input");
+
+  const inputName = document.querySelector(".form__name");
+  const inputPhone = document.querySelector(".form__phone");
+  const inputEmail = document.querySelector(".form__email");
+  const inputMessage = document.querySelector(".form__message");
+
+  // Open/close service options
+  const serviceOptions = document.querySelector(".wraper");
+  const optionsTypesContainer = document.querySelector(".service-types");
+  const serviceOptionsImg = document.querySelector(".show-options");
+
+  serviceOptions.addEventListener("click", () => {
+    optionsTypesContainer.classList.toggle("service-typse-activ");
+    serviceOptionsImg.classList.toggle("show-options-active");
   });
 
-  // actions for send form button
+  let formErrors = [];
 
-  const openModal = () => {
-    messageToUser.classList.add("after-submit--open");
+  // errors info
+
+  //show error messag
+  const displayError = (parentElement, message) => {
+    const errorField = parentElement.parentNode.lastElementChild;
+    errorField.style.display = "block";
+    errorField.innerText = message;
   };
-  sendbutton.addEventListener("click", () => {
-    openModal();
+
+  // hide error message
+  const hideError = (parentElement) => {
+    parentElement.parentNode.lastElementChild.style.display = "none";
+  };
+
+  // reset warnings
+  const resetWarnings = () => {
+    inputs.forEach((input) => {
+      input.classList.remove("input-error");
+      input.classList.remove("input-error-2");
+    });
+  };
+
+  // inputs vailidation functions
+
+  // validate name
+  const checkName = () => {
+    let errorMessage = "";
+    const name = [...inputName.value];
+    return name.length > 0
+      ? (true, hideError(inputName), true)
+      : (false,
+        (errorMessage = "Name field is empty"),
+        displayError(inputName, errorMessage),
+        inputName.classList.add("input-error"));
+  };
+
+  // validate phone
+
+  const phoneInput = window.intlTelInput(inputPhone, {
+    utilsScript: "../../node_modules/intl-tel-input/build/js/utils.js",
+    initialCountry: "PL",
+  });
+
+  function checkPhone(e) {
+    const phoneNumber = phoneInput.getNumber();
+    if (phoneInput.isValidNumber(e)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  // validate Email
+  const checkEmail = (mail) => {
+    const mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (inputEmail.value.match(mailFormat)) {
+      return true;
+    }
+    return false;
+  };
+
+  // check phone and email
+  const checkContact = () => {
+    let errorMessage = "";
+    if (checkEmail() || checkPhone()) {
+      true, hideError(inputEmail);
+      return true;
+    } else {
+      errorMessage = "Please leave some contact";
+      displayError(inputEmail, errorMessage);
+      inputPhone.classList.add("input-error-2");
+      inputEmail.classList.add("input-error-2");
+      return false;
+    }
+  };
+
+  //check message
+  const checkMessage = () => {
+    let errorMessage = "";
+    const text = [...inputMessage.value];
+
+    if (text.length > 1) {
+      hideError(inputMessage);
+      return true;
+    } else {
+      errorMessage = "Message field is empty";
+      displayError(inputMessage, errorMessage);
+      inputMessage.classList.add("input-error");
+      return false;
+    }
+  };
+
+  // showing and hiding confirmation message
+  const showHideConfirmMessage = () => {
+    confirmContainer.classList.toggle("confirmation-active");
+    overlay.classList.toggle("contact__overlay--active");
+  };
+
+  //validate all contitions
+  const validate = () => {
+    if (checkName() && checkContact() && checkMessage()) {
+      return true;
+    } else {
+      checkContact();
+      checkMessage();
+      return false;
+    }
+  };
+
+  // listener for close button in confirm message
+  // confirmCloseBtn.addEventListener("click", () => showHideConfirmMessage());
+
+  //listener for submit button
+  submitBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    resetWarnings();
+    if (validate()) {
+      showHideConfirmMessage();
+      setTimeout(() => {
+        form.submit();
+      }, 4000);
+    } else return false;
   });
 };
 
 contact();
-// import { changeNavbar } from "./navbar.js";
-// import { faq } from "./faq.js";
-
-// changeNavbar();
-// faq();
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   const navb = document.querySelector(".navbar");
-
-//   const addShadow = () => {
-//     if (window.scrollY >= 30) {
-//       navb.classList.add("bg-shadow");
-//     } else {
-//       navb.classList.remove("bg-shadow");
-//     }
-//   };
-
-//   window.addEventListener("scroll", addShadow);
-// });
-
-// const validateForm = () => {
-//   const btnSubmit = document.querySelector(".submit-btn");
-//   const inputEmail = document.querySelector(".input__email");
-//   const inputPhone = document.querySelector(".input__phone");
-//   const inputName = document.querySelector(".input__name");
-//   const inputMessage = document.querySelector(".input__message");
-//   const inputs = document.querySelectorAll(".input");
-//   const errorField = document.querySelector(".contact__error-mesages");
-//   const confirmMessage = document.querySelector(".confirmation");
-//   const confirmMessageOverlay = document.querySelector(".overlay");
-//   const btnCloseMessage = document.querySelector(".confirmation__btn-close");
-
-//   let message = [];
-
-//   //hellpers functions
-//   // reset warnings
-//   const removeWarnings = () => {
-//     inputs.forEach((input) =>
-//       input.classList.remove("wrong", "weaker-warning")
-//     );
-//   };
-
-//   //check name
-//   const checkName = () => {
-//     const name = [...inputName.value];
-//     return name.length <= 0
-//       ? (inputName.classList.add("wrong"),
-//         message.push("The name field is empty"))
-//       : true;
-//   };
-
-//   //check phone
-//   const checkPhone = () => {
-//     const phone = [...inputPhone.value];
-
-//     return phone.length === 9 || phone.length === 12 ? true : false;
-//   };
-
-//   //check email
-//   const chackEmail = () => {
-//     const email = [...inputEmail.value];
-//     return email.includes("@") && email.includes(".") ? true : false;
-//   };
-//   //   check if email  or phone are filled
-//   const checkContact = () => {
-//     return chackEmail() || checkPhone()
-//       ? true
-//       : (message.push("Please leave any contact to you "),
-//         inputPhone.classList.add("weaker-warning"),
-//         inputEmail.classList.add("weaker-warning"));
-//   };
-//   // check message
-//   const checkMessage = () => {
-//     const text = [...inputMessage.value];
-
-//     return text.length > 0
-//       ? true
-//       : (message.push("Message field is empty"),
-//         inputMessage.classList.add("wrong"));
-//   };
-//   // showing error messages
-//   const showErrorMessage = () => {
-//     errorField.textContent = "";
-//     message.forEach((mes) =>
-//       errorField.insertAdjacentText("afterbegin", ` *-${mes} `)
-//     );
-//   };
-//   // showing confirmation message
-//   const showConfirmeMessage = () => {
-//     confirmMessage.classList.toggle("confirmation--show");
-//     confirmMessageOverlay.classList.toggle("overlay-show");
-//   };
-//   // close confirmation message
-//   btnCloseMessage.addEventListener("click", () => {
-//     showConfirmeMessage();
-//   });
-
-//   btnSubmit.addEventListener("click", (e) => {
-//     message = [];
-//     removeWarnings();
-
-//     if ((checkName(), checkContact(), checkMessage())) {
-//       // e.preventDefault();
-//       showConfirmeMessage();
-//       errorField.textContent = "";
-//       //   return true;
-//     } else {
-//       e.preventDefault();
-//       showErrorMessage();
-//       console.log(message);
-//     }
-//   });
-// };
-// validateForm();
-// changeNavbar();
