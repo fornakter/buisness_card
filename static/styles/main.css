@@ -176,6 +176,7 @@
     position: absolute;
     top: 0;
     left: -2rem;
+    transform: translateX(0%);
     transition: 0.3s transform ease-in-out;
   }
   .navbar .navbar__menu-desktop .menu__item {
@@ -667,6 +668,7 @@
 .about-us__header__text-container .bold,
 .about-us__header .text-container .bold {
   font-weight: 600;
+  transform: translateX();
 }
 .about-us__team,
 .about-us .team {
