@@ -1565,7 +1565,6 @@
 }
 .footer {
   width: 100%;
-  min-height: 60rem;
   position: relative;
   overflow: hidden;
 }
@@ -1685,6 +1684,7 @@
 @media screen and (min-width: 1150px) {
   .footer {
     max-width: 160rem;
+    margin: 0 auto;
   }
   .footer__img {
     width: 100%;

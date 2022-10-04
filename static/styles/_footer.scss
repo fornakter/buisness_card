@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  min-height: 60rem;
+  // min-height: 60rem;
   position: relative;
   overflow: hidden;
 
@@ -124,8 +124,8 @@
 @media screen and (min-width: 1150px) {
   .footer {
     max-width: 160rem;
-    // height: auto;
-    // margin: 0 auto;
+
+    margin: 0 auto;
     &__img {
       width: 100%;
     }
