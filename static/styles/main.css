@@ -1682,6 +1682,31 @@
     top: 3.5rem;
   }
 }
+@media screen and (min-width: 1150px) {
+  .footer {
+    max-width: 160rem;
+  }
+  .footer__img {
+    width: 100%;
+  }
+  .footer__logo img {
+    width: 22rem;
+  }
+  .footer__container {
+    width: 70%;
+    margin: 5rem auto 0;
+  }
+  .footer__design-wraper {
+    align-items: flex-start;
+  }
+  .footer__design-wraper .footer__design-info {
+    margin-bottom: 2rem;
+    color: #79ffd7;
+  }
+  .footer__design-wraper .footer__design-info::after {
+    display: none;
+  }
+}
 .contact-header {
   width: 90%;
   margin: 15rem auto 8rem;

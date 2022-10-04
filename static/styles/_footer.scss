@@ -121,3 +121,34 @@
     }
   }
 }
+@media screen and (min-width: 1150px) {
+  .footer {
+    max-width: 160rem;
+    // height: auto;
+    // margin: 0 auto;
+    &__img {
+      width: 100%;
+    }
+    &__logo {
+      img {
+        width: 22rem;
+      }
+    }
+    &__container {
+      width: 70%;
+      margin: 5rem auto 0;
+    }
+
+    &__design-wraper {
+      align-items: flex-start;
+      .footer__design-info {
+        margin-bottom: 2rem;
+        color: $secondary-color;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
