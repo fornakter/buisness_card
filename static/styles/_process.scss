@@ -109,6 +109,44 @@
   }
 }
 
+@media screen and (min-width: 412px) {
+  .process {
+    &__title {
+      width: 80%;
+      color: #79ffd7;
+      text-align: center;
+      z-index: 10;
+      background-color: #000;
+      border: 3px solid #79ffd7;
+      border-radius: 0 6rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem;
+      font-size: 2rem;
+      position: relative;
+      transform: translateY(95%);
+      line-height: 2.7rem;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .process {
+    &__title {
+      width: 80%;
+      color: #79ffd7;
+      text-align: center;
+      z-index: 10;
+      background-color: #000;
+      border: 3px solid #79ffd7;
+      border-radius: 0 6rem;
+      margin: 0 auto;
+      padding: 1.5rem 1.5rem;
+      font-size: 2rem;
+      position: relative;
+      transform: translateY(95%);
+      line-height: 2.7rem;
+    }
+  }
+}
 @media screen and (min-width: 768px) {
   .process {
     &__title {
