@@ -46,7 +46,7 @@
   }
   &__form-link {
     background-color: $accent-color-dark;
-    // width: 80%;
+    width: 80%;
     margin: 11.6rem auto;
     text-decoration: none;
     border-radius: 0 6rem 0 6rem;
@@ -69,12 +69,12 @@
     &::after {
       content: "Przejdź do formularza";
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
       position: absolute;
       width: 100%;
       height: 100%;
-      top: 13%;
+      top: 20%;
       left: 4%;
       padding: 2rem;
       border: 5px solid $secondary-color;
