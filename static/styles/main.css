@@ -129,50 +129,6 @@
   line-height: 3rem;
   margin-bottom: 4.5rem;
 }
-.projects__container .project__button {
-  border: 3px solid #79ffd7;
-  color: #79ffd7;
-  background: none;
-  border-radius: 0 13rem;
-  font-family: Helvetica-Nouel, sans-serif;
-  font-size: 2.2rem;
-  padding: 1.3rem 5.9rem 1.86rem 5.9rem;
-  text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
-  transition: all 0.5s ease;
-  position: relative;
-}
-.projects__container .project__button:hover {
-  color: white;
-}
-.projects__container .project__button a {
-  color: #79ffd7;
-  text-decoration: none;
-}
-.projects__container .project__button a:hover {
-  color: white;
-}
-.projects__container .project__button::before {
-  transition: all 0.5s ease;
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: #ff630b;
-  left: -4%;
-  top: -15%;
-  z-index: -1;
-  border-radius: 0 13rem;
-  box-shadow: 0px 0.5rem 1.5rem rgba(255, 255, 255, 0.3);
-}
-.projects__container .project__button:hover a {
-  transition: all 0.5s ease;
-  color: white !important;
-}
-.projects__container .project__button:hover a::before {
-  transition: all 0.5s ease;
-  background-color: #79ffd7;
-}
-
 @media screen and (min-width: 850px) {
   .projects__header {
     margin-top: 4.2rem;
