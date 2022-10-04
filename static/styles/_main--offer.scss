@@ -77,11 +77,18 @@
       }
     }
     &__form-link {
-      font-size: 1.7rem;
+      font-size: 2rem;
+      padding: 2rem 6rem;
       width: 50%;
-      margin-top: 7rem;
-      margin-bottom: 15rem;
-      // padding: 2rem 6rem;
+      border-radius: 0 10rem 0 10rem;
+      height: 7.5rem;
+
+      &::after {
+        align-items: center;
+        border-radius: 0 10rem 0 10rem;
+        top: 16%;
+        left: 5%;
+      }
     }
   }
 }
