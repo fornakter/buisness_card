@@ -5,7 +5,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 10.2rem;
 
   &__title {
     margin: 0 auto;
@@ -38,6 +38,7 @@
       left: 50%;
       transform: translate(-50%, 50%);
       gap: 1rem;
+      width: 80%;
 
       &__item {
         display: flex;
