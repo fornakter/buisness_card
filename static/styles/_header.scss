@@ -133,3 +133,17 @@
     }
   }
 }
+@media screen and (max-width: 300px) {
+  .main-header {
+    &__main-title {
+      font-size: 2.5rem;
+
+      span {
+        &:nth-child(2) {
+          font-size: 3rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
