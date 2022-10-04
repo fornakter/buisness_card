@@ -19,7 +19,7 @@
         font-size: 5.5rem;
         position: relative;
         line-height: 100%;
-        margin-bottom: 1.2rem;
+        margin-bottom: 2rem;
 
         z-index: -1;
         &::before {
@@ -36,7 +36,7 @@
           content: "stron";
           position: absolute;
           left: -0.1rem;
-          bottom: -20%;
+          bottom: -22%;
           color: transparent;
           z-index: -3;
         }
@@ -45,7 +45,7 @@
   }
   &__image {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
   }
 }
 
