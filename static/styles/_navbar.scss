@@ -237,10 +237,10 @@
     margin: 0 auto;
     margin-top: 4rem;
     background-color: $secondary-color;
-    justify-content: space-around;
-    flex-direction: column;
+    justify-content: center;
+
     position: static;
-    padding: 0;
+    box-shadow: 0px 1px 15px rgba(255, 255, 255, 0.55);
 
     .hamburger {
       display: none;
@@ -251,7 +251,6 @@
     .navbar__menu-desktop {
       height: 100%;
       width: 100rem;
-
       list-style: none;
       text-decoration: none;
       display: flex;
