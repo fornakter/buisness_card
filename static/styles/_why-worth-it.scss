@@ -111,6 +111,13 @@
     }
   }
 }
+@media screen and (min-width: 940px) {
+  .worth {
+    &__title {
+      width: 70%;
+    }
+  }
+}
 @media screen and (min-width: 992px) {
   .worth {
     &::before {
