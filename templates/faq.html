@@ -59,7 +59,7 @@
         <li class="menu__item-desktop menu__item">
 
           <a
-            href="{url_for('about')}}"
+            href="{{url_for('about')}}"
             class="link link-about-us"
             data-trackerPos="0.9"
             >O nas</a
@@ -119,11 +119,11 @@
                 </div>
             </div>
             <div class="faq__item__answer-container">
-                <p class="faq__item__answer-container__answer">Czas realizacji Twojego projektu jesteśmy w stanie oszacować w trakcie 
+                <p class="faq__item__answer-container__answer">Czas realizacji Twojego projektu jesteśmy w stanie oszacować w trakcie
                     pierwszej konsultacji.</p>
             </div>
-          
-           
+
+
         </article>
         <article class="faq__item" data-index ="2">
             <div class="faq__item__question-container">
@@ -134,13 +134,13 @@
                 </div>
             </div>
             <div class="faq__item__answer-container">
-                <p class="faq__item__answer-container__answer">W trakcie projektu obowiązują 2 pule poprawek w cenie. Pulę definiować 
-                    można jako set uwag podczas konsultacji online. Dotyczą one zakresu 
-                    zarównograficznego jak i funkcjonalności strony. Istnieje możliwość 
+                <p class="faq__item__answer-container__answer">W trakcie projektu obowiązują 2 pule poprawek w cenie. Pulę definiować
+                    można jako set uwag podczas konsultacji online. Dotyczą one zakresu
+                    zarównograficznego jak i funkcjonalności strony. Istnieje możliwość
                     dokupienia pul poprawek..</p>
             </div>
-          
-           
+
+
         </article>
         <article class="faq__item" data-index ="3">
             <div class="faq__item__question-container">
@@ -153,7 +153,7 @@
             <div class="faq__item__answer-container">
                 <p class="faq__item__answer-container__answer">Tak, jak najbardziej..</p>
             </div>
-            
+
           </div>
           </div>
         </article>
@@ -170,19 +170,19 @@
       <div class="footer__container">
         <ul class="footer__list">
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Home</a>
+            <a class="footer__list__item__link" href="{{url_for('index')}}">Home</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">O nas</a>
+            <a class="footer__list__item__link" href="{{url_for('about')}}">O nas</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Projekt</a>
+            <a class="footer__list__item__link" href="{{url_for('projects')}}">Projekt</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">FAQ</a>
+            <a class="footer__list__item__link" href="{{url_for('faq')}}">FAQ</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Kontakt</a>
+            <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
         </ul>
         <div class="footer__logo">logo</div>

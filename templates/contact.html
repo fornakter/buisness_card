@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/styles/main.scss" />
+    <link rel="stylesheet" href="../static/styles/main.css" />
     <link
       rel="stylesheet"
       href="../node_modules/intl-tel-input/build/css/intlTelInput.css"
@@ -32,21 +32,23 @@
       <div class="logo__container-mobile">
         <img src="../static/source/images/LOGO.png" alt="" class="logo" />
       </div>
-      <ul class="navbar__menu-mobile menu-mobile">
+       <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
-          <a href="index.html" class="link link-about-us">Home</a>
+          <a href="{{url_for('index')}}" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="about_us.html" class="link link-about-us">O nas</a>
+          <a href="{{url_for('about')}}" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="faq.html" class="link link-about-us">Faq</a>
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
-          <a href="projects.html" class="link link-our-projects">Projekty</a>
+          <a href="{{url_for('projects')}}" class="link link-our-projects"
+            >Projekty</a
+          >
         </li>
         <li class="menu__item">
-          <a href="contact.html" class="link link-contact">Kontakt</a>
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -60,12 +62,12 @@
         />
         <li class="menu__item-desktop menu__item">
 
-          <a href="index.html" class="link" data-trackerPos="0">Home</a>
+          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
           <a
-            href="about_us.html"
+            href="{{url_for('about')}}"
             class="link link-about-us"
             data-trackerPos="0.9"
             >O nas</a
@@ -73,14 +75,14 @@
         </li>
         <li class="menu__item-desktop menu__item">
 
-          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
             >Faq</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
 
           <a
-            href="projects.html"
+            href="{{url_for('projects')}}"
             class="link link-contact"
             data-trackerPos="2.5"
             >Projekty</a
@@ -89,7 +91,7 @@
         <li class="menu__item-desktop menu__item">
 
           <a
-            href="contact.html"
+            href="{{url_for('kontakt')}}"
             class="link link-contact"
             data-trackerPos="3.55"
             >Kontakt</a
@@ -216,19 +218,19 @@
 
         <ul class="footer__list">
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Home</a>
+            <a class="footer__list__item__link" href="{{url_for('index')}}">Home</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">O nas</a>
+            <a class="footer__list__item__link" href="{{url_for('about')}}">O nas</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Projekt</a>
+            <a class="footer__list__item__link" href="{{url_for('projects')}}">Projekt</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">FAQ</a>
+            <a class="footer__list__item__link" href="{{url_for('faq')}}">FAQ</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Kontakt</a>
+            <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
         </ul>
         <div class="footer__design-wraper">
