@@ -111,6 +111,13 @@
     }
   }
 }
+@media screen and (min-width: 992px) {
+  .worth {
+    &::before {
+      top: 7rem;
+    }
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .worth {
@@ -120,6 +127,10 @@
     border-radius: 0 15rem 0 15rem;
     margin: 0 auto;
     margin-top: 2rem;
+
+    &::before {
+      display: none;
+    }
 
     &__title {
       width: auto;
