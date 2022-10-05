@@ -149,7 +149,11 @@
 @media screen and (min-width: 768px) {
   .process {
     &__title {
-      width: 50%;
+      width: 80%;
+      height: 8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .process__gear__box {

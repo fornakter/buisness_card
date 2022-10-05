@@ -76,12 +76,15 @@
         top: 60%;
       }
     }
+
     &__form-link {
       font-size: 2rem;
       padding: 2rem 6rem;
-      width: 50%;
+      width: 60%;
       border-radius: 0 10rem 0 10rem;
       height: 7.5rem;
+      align-items: flex-start;
+      display: flex;
 
       &::after {
         align-items: center;
