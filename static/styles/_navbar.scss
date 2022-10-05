@@ -266,7 +266,8 @@
         position: absolute;
         left: -2rem;
         transform: translateX(0%);
-        transition: 0.3s transform ease-in-out;
+        opacity: 0;
+        transition: 0.3s opacity ease-in-out;
       }
       .menu__item {
         text-align: center;

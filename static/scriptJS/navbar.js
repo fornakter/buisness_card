@@ -34,6 +34,7 @@ export const changeNavbar = () => {
     currentPageTracker.style.transform = `translateX(${
       trackerPosition * 100
     }%)`;
+    currentPageTracker.style.opacity = "1";
   });
 
   // Open & close navbar menu.
