@@ -40,6 +40,10 @@ def projects():
 def faq():
     return render_template('faq.html')
 
+@app.route('/project_agency-site/')
+def project_agency_site():
+    return render_template('project_agency-site.html')
+
 
 
 if __name__ == '__main__':

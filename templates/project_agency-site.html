@@ -55,13 +55,13 @@
         />
         <li class="menu__item-desktop menu__item">
 
-          <a href="index.html" class="link" data-trackerPos="0">Home</a>
+          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
 
           <a
-            href="about_us.html"
+            href="{{url_for('about')}}"
             class="link link-about-us"
             data-trackerPos="0.9"
             >O nas</a
@@ -69,14 +69,14 @@
         </li>
         <li class="menu__item-desktop menu__item">
 
-          <a href="faq.html" class="link link-contact" data-trackerPos="1.65"
+          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
             >Faq</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
 
           <a
-            href="projects.html"
+            href="{{url_for('projects')}}"
             class="link link-contact"
             data-trackerPos="2.5"
             >Projekty</a
@@ -85,7 +85,7 @@
         <li class="menu__item-desktop menu__item">
 
           <a
-            href="contact.html"
+            href="{{url_for('kontakt')}}"
             class="link link-contact"
             data-trackerPos="3.55"
             >Kontakt</a
@@ -105,7 +105,7 @@
         <h1 class="project__header__main-title">
           Strona dla agencji marketingowej
         </h1>
-        <a href="./projects.html" class="project__header__link"
+        <a href="{{url_for('projects')}}" class="project__header__link"
           >Wróć do reszty projektów
           <span class="link__current-site"
             >< Strona dla agencji marketingowej</span
@@ -204,7 +204,7 @@
       <!-- /////////////////// -->
       <section class="project__botom-navigation">
         <a
-          href="./projects.html"
+          href="{{url_for('projects')}}"
           class="previous-project project-navigation__link"
         >
           <img
