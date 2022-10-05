@@ -427,6 +427,10 @@
   .navbar .navbar__menu-desktop .menu__item {
     text-align: center;
     position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
   .navbar .navbar__menu-desktop .menu__item a {
     font-size: 2rem;
@@ -434,6 +438,11 @@
     text-decoration: none;
     font-family: "Jost", sans-serif;
     font-weight: 900;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
