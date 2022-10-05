@@ -651,10 +651,19 @@
     top: 60%;
   }
   .offer__form-link {
-    font-size: 1.7rem;
-    width: 50%;
-    margin-top: 7rem;
-    margin-bottom: 15rem;
+    font-size: 2rem;
+    padding: 2rem 6rem;
+    width: 60%;
+    border-radius: 0 10rem 0 10rem;
+    height: 7.5rem;
+    align-items: flex-start;
+    display: flex;
+  }
+  .offer__form-link::after {
+    align-items: center;
+    border-radius: 0 10rem 0 10rem;
+    top: 16%;
+    left: 5%;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -723,6 +732,53 @@
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .worth {
+    position: relative;
+    margin-bottom: 10rem;
+  }
+  .worth::before {
+    content: "";
+    width: 95%;
+    height: 95%;
+    z-index: -1;
+    background: none;
+    border: 5px solid #79ffd7;
+    border-radius: 0 13rem;
+    position: absolute;
+    top: 10rem;
+  }
+  .worth__title {
+    width: 75%;
+    font-size: 5.5rem;
+    height: auto;
+    padding: 1.8rem 3rem;
+    border-radius: 0 7rem 0 7rem;
+  }
+  .worth__big-box {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .worth__box {
+    width: 40%;
+    height: 25rem;
+    margin: 0 0 3rem;
+  }
+  .worth__text {
+    font-size: 2.5rem;
+    width: 64%;
+    margin: 2.5rem 0 6rem;
+  }
+  .worth__box-title {
+    font-size: 2.2rem;
+  }
+  .worth__box-text {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: 1200px) {
   .worth {
     position: relative;
@@ -901,7 +957,11 @@
 }
 @media screen and (min-width: 768px) {
   .process__title {
-    width: 50%;
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .process__gear__box {
     width: auto;

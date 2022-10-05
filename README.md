@@ -1,2 +1,2 @@
 # buisness_card
-Website with our first projekt.
+Website with our first project.
