@@ -127,32 +127,25 @@
       padding: 1.5rem 1.5rem;
       font-size: 2rem;
       position: relative;
-      transform: translateY(95%);
+      transform: translateY(80%);
       line-height: 2.7rem;
+      margin-top: 12rem;
     }
   }
 }
 @media screen and (min-width: 414px) {
   .process {
     &__title {
-      width: 80%;
-      color: #79ffd7;
-      text-align: center;
-      z-index: 10;
-      background-color: #000;
-      border: 3px solid #79ffd7;
-      border-radius: 0 6rem;
-      margin: 0 auto;
-      padding: 1.5rem 1.5rem;
+      max-width: 57.5rem;
+      border-radius: 0 8rem;
+      padding: 1rem 1rem;
       font-size: 2rem;
-      position: relative;
-      transform: translateY(95%);
-      line-height: 2.7rem;
     }
   }
 }
 @media screen and (min-width: 768px) {
   .process {
+    margin-bottom: 15rem;
     &__title {
       width: 80%;
       height: 8rem;
@@ -163,12 +156,31 @@
   }
   .process__gear__box {
     width: auto;
+    &-btn {
+      max-width: 35rem;
+      margin: 6.5rem auto;
+    }
+    &__item {
+      gap: 4rem;
+    }
+    &__item-text {
+      font-size: 2rem;
+    }
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1050px) {
   .process {
     &__title {
-      width: 80%;
+      max-width: 100rem;
+    }
+    &__gear__box__item {
+      gap: 4rem;
+    }
+    &__gear__box__item-text {
+      font-size: 2.4rem;
+    }
+    &__gear-img {
+      width: 95rem;
     }
   }
 }

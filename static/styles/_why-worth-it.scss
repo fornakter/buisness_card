@@ -63,6 +63,7 @@
   .worth {
     position: relative;
     margin-bottom: 10rem;
+
     &::before {
       content: "";
       width: 95%;
@@ -162,7 +163,6 @@
       width: 100%;
       justify-content: center;
       margin-bottom: 10rem;
-      // gap: 2rem;
     }
 
     &__box {

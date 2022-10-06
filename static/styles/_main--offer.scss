@@ -91,7 +91,7 @@
   .offer {
     &__title {
       font-size: 4.5rem;
-      width: 90%;
+      min-width: 100rem;
     }
     &__container {
       margin-bottom: 10rem;
@@ -113,7 +113,7 @@
       max-width: 57rem;
       font-size: 2.5rem;
       padding: 1.5rem 4rem 1.86rem;
-      margin-bottom: 12rem;
+      margin-bottom: 15rem;
     }
   }
 }
