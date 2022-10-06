@@ -162,18 +162,23 @@
       width: 100%;
       justify-content: center;
       margin-bottom: 10rem;
-      gap: 2rem;
+      // gap: 2rem;
     }
 
     &__box {
       width: 25%;
       margin: 2rem;
+      height: 33rem;
+
+      &:nth-child(3) {
+        justify-content: flex-start;
+      }
     }
     &__box-title {
-      font-size: 2.2rem;
+      font-size: 2rem;
     }
     &__box-text {
-      font-size: 2rem;
+      font-size: 1.7rem;
     }
   }
 }
