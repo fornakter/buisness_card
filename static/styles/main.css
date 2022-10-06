@@ -375,10 +375,7 @@
     line-height: 2.7rem;
   }
 }
-@media screen and (min-width: 1000px) {
-  body {
-    background-color: white;
-  }
+@media screen and (min-width: 1050px) {
   .logo__container-mobile {
     display: none;
   }
@@ -389,13 +386,14 @@
     margin-top: 3.8rem;
   }
   .navbar {
-    width: 95%;
     height: 6.5rem;
     margin: 0 auto;
     margin-top: 4rem;
-    background-color: #79ffd7;
     justify-content: center;
+    padding: 0;
     position: static;
+    width: 98%;
+    background-color: #79ffd7;
     box-shadow: 0px 1px 15px rgba(255, 255, 255, 0.55);
   }
   .navbar .hamburger {
@@ -448,14 +446,20 @@
 }
 @media screen and (min-width: 1200px) {
   .navbar {
-    flex-direction: row;
+    width: 85%;
+  }
+}
+@media screen and (min-width: 1350px) {
+  .navbar {
+    width: 80%;
   }
 }
 .main-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 11.3rem;
+  position: relative;
 }
 .main-header__main-title {
   display: flex;
@@ -479,7 +483,6 @@
 .main-header__main-title span:nth-child(2)::before {
   content: "";
   position: absolute;
-  border-radius: 0 10rem 0 0;
   bottom: 2px;
   width: 105%;
   height: 100%;
@@ -496,82 +499,92 @@
 }
 .main-header__image {
   margin: 0 auto;
-  width: 90%;
+  max-width: 40rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (max-width: 320px) {
+  .main-header__main-title {
+    font-size: 2rem;
+  }
+  .main-header__main-title span:nth-child(2) {
+    font-size: 4rem;
+  }
+}
+@media screen and (min-width: 750px) {
   .main-header {
-    flex-direction: column;
-    margin-top: 0rem;
-    max-width: 100%;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+    margin-top: 22rem;
   }
   .main-header__main-title {
     font-size: 5.5rem;
-    width: 100%;
-    padding: 5rem;
   }
-  .main-header__main-title span:nth-child(2) {
-    font-size: 5.5rem;
-    line-height: 95%;
+  .main-header__main-title span {
+    color: #79ffd7;
     margin-bottom: 1rem;
   }
+  .main-header__main-title span:nth-child(2) {
+    margin-bottom: 2rem;
+  }
   .main-header__image {
-    z-index: -2;
+    margin: 3rem auto 0;
+    max-width: 60rem;
   }
 }
-@media screen and (min-width: 1150px) {
+@media screen and (min-width: 1050px) {
   .main-header {
     flex-direction: row;
-    margin-top: 5rem;
-    max-width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10rem 2rem;
-    position: relative;
+    justify-content: flex-start;
+    margin-top: 10rem;
+    margin-bottom: 25rem;
+    width: 90%;
+    margin: 11.3rem auto 25rem;
   }
   .main-header__main-title {
-    font-size: 7.5rem;
-    width: 100%;
-    padding: 0rem;
-    margin: 0;
     align-items: flex-start;
+    font-size: 6rem;
+  }
+  .main-header__main-title span {
+    transition: 0.3s all ease-in-out;
   }
   .main-header__main-title span:nth-child(2) {
-    font-size: 11rem;
-    line-height: 95%;
-    margin-bottom: 2rem;
-    margin-left: 8%;
-    background: linear-gradient(to right, black, black 90%, rgba(0, 0, 0, 0));
-  }
-  .main-header__main-title span:nth-child(3) {
-    margin-left: 10%;
+    font-size: 12rem;
+    margin-bottom: 5rem;
+    z-index: -1;
   }
   .main-header__image {
-    height: 100%;
-    width: auto;
+    margin: 0;
     position: absolute;
-    margin-left: 50%;
+    right: -2%;
+    max-width: unset;
+    width: 50%;
+    height: auto;
   }
 }
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: 1200px) {
+  .main-header {
+    max-width: 80%;
+    margin: 11.3rem auto 25rem;
+  }
   .main-header__main-title {
-    font-size: 8.5rem;
+    font-size: 6rem;
   }
   .main-header__main-title span:nth-child(2) {
-    font-size: 18rem;
-    margin-bottom: 5rem;
+    margin-left: 5rem;
+  }
+  .main-header__main-title span:nth-child(3) {
+    margin-left: 10rem;
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (min-width: 1550px) {
+  .main-header {
+    max-width: 82%;
+    margin: 11.3rem auto 25rem;
+  }
   .main-header__main-title {
-    font-size: 2.5rem;
+    font-size: 7rem;
+    border: 2px;
   }
   .main-header__main-title span:nth-child(2) {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 17rem;
   }
 }
 .offer {
