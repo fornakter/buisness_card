@@ -129,6 +129,7 @@
   line-height: 3rem;
   margin-bottom: 4.5rem;
 }
+
 @media screen and (min-width: 850px) {
   .projects__header {
     margin-top: 4.2rem;
@@ -591,7 +592,6 @@
   }
 }
 .offer {
-  min-height: 100vh;
   font-weight: 100;
   min-width: 100%;
   display: flex;
@@ -649,11 +649,13 @@
 
 @media screen and (min-width: 750px) {
   .offer__title {
-    font-size: 2.5rem;
-    width: 70%;
+    max-width: 57.5rem;
+    margin-top: 11.4rem;
+    margin-bottom: 5rem;
   }
   .offer__container {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 4.5rem;
   }
   .offer__item {
     width: 90%;
@@ -663,28 +665,24 @@
   .offer__item__text {
     height: 8rem;
     font-size: 2rem;
+    font-weight: 100;
     padding: 2rem;
     transition: 0.3s font-size ease;
     top: 60%;
   }
   .offer__form-link {
-    font-size: 2rem;
-    padding: 2rem 6rem;
-    width: 60%;
-    border-radius: 0 10rem 0 10rem;
-    height: 7.5rem;
-    align-items: flex-start;
-    display: flex;
-    justify-content: center;
-  }
-  .offer__form-link::after {
-    align-items: center;
-    border-radius: 0 10rem 0 10rem;
-    top: 16%;
-    left: 5%;
+    max-width: 35rem;
+    margin-bottom: 15rem;
   }
 }
 @media screen and (min-width: 1300px) {
+  .offer__title {
+    font-size: 4.5rem;
+    width: 90%;
+  }
+  .offer__container {
+    margin-bottom: 10rem;
+  }
   .offer__item__text {
     width: 90%;
     height: 10rem;
@@ -692,6 +690,24 @@
     padding: 2rem;
     top: 65%;
     transition: 0.3s font-size ease;
+  }
+  .offer__form-link {
+    box-sizing: content-box;
+    width: unset;
+    max-width: 57rem;
+    font-size: 2.5rem;
+    padding: 1.5rem 4rem 1.86rem;
+    margin-bottom: 12rem;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .offer__title {
+    max-width: 105rem;
+    width: unset;
+  }
+  .offer__container {
+    display: flex;
+    margin-bottom: 10rem;
   }
 }
 .worth {
@@ -1649,9 +1665,6 @@
   .form__label {
     font-size: 4.5rem;
   }
-  .button {
-    width: 30%;
-  }
   .contact__overlay--active {
     display: block;
   }
@@ -2091,9 +2104,6 @@
   .form__label {
     font-size: 4.5rem;
   }
-  .button {
-    width: 30%;
-  }
   .contact__overlay--active {
     display: block;
   }
@@ -2245,16 +2255,6 @@
   font-family: "Jost", sans-serif;
   font-size: 2.5rem;
   margin-top: 2.5rem;
-}
-.project .write-to-us__button {
-  color: black;
-  font-size: 2rem;
-  padding: 0.5rem 6rem 3rem 4rem;
-  margin-top: 4rem;
-  cursor: pointer;
-}
-.project .write-to-us__button::before {
-  background-color: #79ffd7;
 }
 .project__botom-navigation {
   display: flex;
@@ -2495,13 +2495,6 @@
   .project .write-to-us__message {
     font-size: 2.5rem;
     margin-top: 2.5rem;
-  }
-  .project .write-to-us__button {
-    font-size: 2.5rem;
-    margin-top: 6rem;
-  }
-  .project .write-to-us__button::before {
-    background-color: #79ffd7;
   }
   .project__botom-navigation {
     flex-direction: row;
