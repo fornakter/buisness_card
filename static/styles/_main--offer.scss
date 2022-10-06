@@ -6,7 +6,6 @@
   flex-direction: column;
   &__title {
     width: 90%;
-
     display: block;
     font-size: 2rem;
     margin: 0 auto;
@@ -83,7 +82,7 @@
 
     &__form-link {
       max-width: 35rem;
-      margin-bottom: 15rem;
+      margin-bottom: 12rem;
     }
   }
 }
@@ -117,7 +116,7 @@
     }
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
   .offer {
     &__title {
       max-width: 105rem;
@@ -126,6 +125,10 @@
     &__container {
       display: flex;
       margin-bottom: 10rem;
+      padding: 0 5rem;
+    }
+    &__item__text {
+      width: 82%;
     }
   }
 }

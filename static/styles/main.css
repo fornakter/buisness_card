@@ -674,7 +674,7 @@
   }
   .offer__form-link {
     max-width: 35rem;
-    margin-bottom: 15rem;
+    margin-bottom: 12rem;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -702,7 +702,7 @@
     margin-bottom: 15rem;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1700px) {
   .offer__title {
     max-width: 105rem;
     width: unset;
@@ -710,6 +710,10 @@
   .offer__container {
     display: flex;
     margin-bottom: 10rem;
+    padding: 0 5rem;
+  }
+  .offer__item__text {
+    width: 82%;
   }
 }
 .worth {
@@ -863,15 +867,15 @@
     width: 25%;
     margin: 2rem;
     height: 33rem;
-  }
-  .worth__box:nth-child(3) {
+    justify-content: center;
+    align-items: center;
     justify-content: flex-start;
   }
   .worth__box-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .worth__box-text {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
 }
 .process {
@@ -884,18 +888,20 @@
   margin-bottom: 10.2rem;
 }
 .process__title {
-  margin: 0 auto;
-  background-color: #000;
-  border: 3px solid #79ffd7;
-  width: 80%;
-  color: #79ffd7;
-  padding: 1.5rem 1rem;
-  text-align: center;
-  border-radius: 0 6rem 0 6rem;
+  width: 90%;
+  display: block;
   font-size: 2rem;
-  position: relative;
-  z-index: 10;
+  margin: 0 auto;
+  margin-top: 4rem;
+  color: #79ffd7;
+  border: 4px solid #79ffd7;
+  text-align: center;
+  padding: 1.4rem 3.3rem;
+  border-radius: 0 8rem 0 8rem;
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
   transform: translateY(80%);
+  z-index: 10;
+  background-color: #000;
 }
 .process__gear {
   width: 100%;
@@ -991,7 +997,7 @@
     position: relative;
     transform: translateY(80%);
     line-height: 2.7rem;
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 }
 @media screen and (min-width: 414px) {
@@ -1018,7 +1024,7 @@
   }
   .process__gear__box-btn {
     max-width: 35rem;
-    margin: 6.5rem auto;
+    margin: 2rem auto 0;
   }
   .process__gear__box__item {
     gap: 4rem;
@@ -1029,13 +1035,17 @@
 }
 @media screen and (min-width: 1050px) {
   .process__title {
-    max-width: 100rem;
+    font-size: 4.5rem;
+    min-width: 100rem;
+  }
+  .process__gear__box {
+    gap: 4rem;
   }
   .process__gear__box__item {
     gap: 4rem;
   }
   .process__gear__box__item-text {
-    font-size: 2.4rem;
+    font-size: 2.7rem;
   }
   .process__gear-img {
     width: 95rem;
