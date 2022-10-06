@@ -856,17 +856,20 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 10rem;
-    gap: 2rem;
   }
   .worth__box {
     width: 25%;
     margin: 2rem;
+    height: 33rem;
+  }
+  .worth__box:nth-child(3) {
+    justify-content: flex-start;
   }
   .worth__box-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .worth__box-text {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 }
 .process {
