@@ -381,4 +381,14 @@
   .navbar .navbar__menu-desktop .menu__item a {
     font-size: 2.5rem;
   }
+
+  .offer__form-link {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+
+    &::before {
+      height: 11.5rem;
+    }
+  }
 }
