@@ -66,6 +66,7 @@
   font-size: 1rem;
   transition: 0.2s ease-in background-color;
   z-index: 1000;
+  display: none;
   &:hover > &__img {
     transform: translateY(-10%);
   }
@@ -77,5 +78,8 @@
   &__caption {
     color: $secondary-color;
     display: none;
+  }
+  &--active {
+    display: flex;
   }
 }

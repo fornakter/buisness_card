@@ -64,6 +64,7 @@
   font-size: 1rem;
   transition: 0.2s ease-in background-color;
   z-index: 1000;
+  display: none;
 }
 .goUp:hover > .goUp__img {
   transform: translateY(-10%);
@@ -76,6 +77,9 @@
 .goUp__caption {
   color: #79ffd7;
   display: none;
+}
+.goUp--active {
+  display: flex;
 }
 
 .projects__header {
