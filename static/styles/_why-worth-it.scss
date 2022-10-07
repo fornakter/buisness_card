@@ -178,6 +178,18 @@
     }
   }
 }
+@media only screen and (min-width: 1920px) {
+  .worth__title {
+    height: 15rem;
+    border-radius: 0 15rem;
+    padding: 5rem 15rem;
+    font-size: 8rem;
+  }
+  .worth__text {
+    width: 70%;
+  }
+}
+
 // @media screen and (min-width: 1440px) {
 //   .worth {
 //     position: relative;
