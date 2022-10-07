@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../static/styles/main.css" />
+    <link rel="stylesheet" href="../static/styles/main.scss" />
     <link
       rel="stylesheet"
       href="../node_modules/intl-tel-input/build/css/intlTelInput.css"
@@ -185,7 +185,9 @@
         </div>
       </div>
       <div class="form__row">
-        <label class="form__label" for="form__message">Wiadomość:</label>
+        <label class="form__label form__label--area" for="form__message"
+          >Wiadomość:</label
+        >
         <textarea type="text" class="form__message form__input"> </textarea>
         <div class="error-message"></div>
       </div>

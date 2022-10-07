@@ -1,6 +1,6 @@
 .contact-header {
   width: 90%;
-  margin: 15rem auto 8rem;
+  margin: 15rem auto 5.6rem;
   height: 20rem;
   display: flex;
   align-items: center;
@@ -33,13 +33,21 @@
   flex-direction: column;
   width: 90%;
   margin: 0 auto;
+
+  &:nth-child(5) {
+    margin-bottom: 4.4rem;
+  }
+
+  &:nth-child(5) .form__label {
+    margin-top: 1.5rem;
+  }
 }
 .form__label {
   font-family: "Jost", sans-serif;
   color: $secondary-color;
   font-size: 2.2rem;
-  margin-bottom: 1rem;
-  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 4.4rem;
 }
 .form__input {
   border: 3px solid $secondary-color;
@@ -272,6 +280,10 @@
       line-height: 4rem;
     }
   }
+}
+
+.button {
+  width: 90%;
 }
 @media only screen and (min-width: 1000px) {
   .contact-header {
