@@ -52,16 +52,16 @@
 }
 .goUp {
   position: fixed;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80px;
-  width: 80px;
+  // border: 2px solid red;
+  height: 7rem;
+  width: 7rem;
   background-color: rgba(22, 20, 20, 0.801);
   border-radius: 50%;
-  bottom: 5%;
-  right: 5%;
+  bottom: 2rem;
+  right: 2rem;
   text-align: center;
   font-size: 1rem;
   transition: 0.2s ease-in background-color;
@@ -73,7 +73,7 @@
   &__img {
     transition: 0.3s transform ease-in-out;
     position: absolute;
-    width: 40px;
+    width: 50%;
   }
   &__caption {
     color: $secondary-color;

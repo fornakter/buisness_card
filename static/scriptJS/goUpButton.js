@@ -1,7 +1,8 @@
 export const goUp = (button) => {
-  console.log(button);
+  //Elements
   const navbar = document.querySelector(".navbar");
 
+  // showing and hiding button
   const showGoUpButton = () => {
     button.classList.add("goUp--active");
   };
@@ -9,8 +10,14 @@ export const goUp = (button) => {
     button.classList.remove("goUp--active");
   };
 
+  // move to top after click
+  button.addEventListener("click", (e) => {
+    console.log("click");
+  });
+
+  // Observer
   const options = {
-    rootMargin: "500px 0px 0px 0px",
+    // rootMargin: "900px 0px 0px 0px",
   };
 
   const navbarObserver = new IntersectionObserver((e) => {
