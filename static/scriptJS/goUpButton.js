@@ -12,15 +12,21 @@ export const goUp = (button) => {
 
   // move to top after click
   button.addEventListener("click", (e) => {
-    console.log("click");
+    navbar.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "nearest",
+    });
   });
 
   // Observer
   const options = {
-    // rootMargin: "900px 0px 0px 0px",
+    rootMargin: "900px 0px 0px 0px",
   };
 
   const navbarObserver = new IntersectionObserver((e) => {
+    console.log(...e);
+
     !e[0].isIntersecting ? showGoUpButton() : hideGoUpButton();
   }, options);
   navbarObserver.observe(navbar);
