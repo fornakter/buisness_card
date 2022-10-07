@@ -28,42 +28,47 @@
   }
 }
 
-.form__row {
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 0 auto;
+.form {
+  margin-bottom: 8.2rem;
 
-  &:nth-child(5) {
-    margin-bottom: 4.4rem;
+  &__row {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+
+    &:nth-child(5) {
+      margin-bottom: 4.4rem;
+    }
+
+    &:nth-child(5) .form__label {
+      margin-top: 1.5rem;
+    }
   }
+  &__label {
+    font-family: "Jost", sans-serif;
+    color: $secondary-color;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4.4rem;
+  }
+  &__input {
+    border: 3px solid $secondary-color;
+    width: 100%;
+    background: none;
+    color: white;
+    height: 8rem;
+    padding-left: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 
-  &:nth-child(5) .form__label {
-    margin-top: 1.5rem;
+    &:focus {
+      background-color: $secondary-color;
+      color: black;
+    }
   }
 }
-.form__label {
-  font-family: "Jost", sans-serif;
-  color: $secondary-color;
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-  margin-top: 4.4rem;
-}
-.form__input {
-  border: 3px solid $secondary-color;
-  width: 100%;
-  background: none;
-  color: white;
-  height: 8rem;
-  padding-left: 2rem;
-  font-size: 2rem;
-  margin-bottom: 1rem;
 
-  &:focus {
-    background-color: $secondary-color;
-    color: black;
-  }
-}
 .options-container {
   .wraper {
     position: relative;
@@ -208,9 +213,13 @@
   display: block;
 }
 
+.button {
+  width: 90%;
+}
+
 @media only screen and (min-width: 750px) {
   .contact-header {
-    margin: 20rem auto 18rem;
+    margin: 20rem auto 15rem;
 
     &__title {
       font-size: 8rem;
@@ -223,6 +232,14 @@
       transform: translate(16%, 10%);
       width: 53rem;
     }
+  }
+
+  .form {
+    margin-bottom: 17rem;
+  }
+
+  .form__row:nth-child(5) {
+    margin-bottom: 17rem;
   }
 
   .form__label {
@@ -280,11 +297,17 @@
       line-height: 4rem;
     }
   }
+  .button {
+    width: 50%;
+    font-size: 1.7rem;
+    height: 7rem;
+
+    &::before {
+      top: -10%;
+    }
+  }
 }
 
-.button {
-  width: 90%;
-}
 @media only screen and (min-width: 1000px) {
   .contact-header {
     margin: 15rem auto 5rem;
@@ -312,6 +335,39 @@
       padding-bottom: 5rem;
       font-size: 2.5rem;
       line-height: 5rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .form {
+    margin-bottom: 13rem;
+  }
+  .form__row:nth-child(5) {
+    margin-bottom: 8rem;
+  }
+
+  .button {
+    width: 35%;
+    font-size: 2.2rem;
+
+    &::before {
+      top: -25%;
+      height: 7rem;
+    }
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .form {
+    &__row {
+      width: 80%;
+    }
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .form {
+    &__row {
+      width: 70%;
     }
   }
 }
