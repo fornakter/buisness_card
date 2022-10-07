@@ -363,11 +363,22 @@
       width: 80%;
     }
   }
+
+  .navbar {
+    height: 8rem;
+  }
 }
 @media only screen and (min-width: 1920px) {
   .form {
     &__row {
       width: 70%;
     }
+  }
+  .navbar {
+    height: 10rem;
+  }
+
+  .navbar .navbar__menu-desktop .menu__item a {
+    font-size: 2.5rem;
   }
 }
