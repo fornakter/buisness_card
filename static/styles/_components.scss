@@ -71,7 +71,7 @@
   opacity: 0;
 
   &:hover > &__img {
-    transform: translateY(-10%);
+    animation: goUp 1s infinite both;
   }
   &__img {
     transition: 0.3s transform ease-in-out;
@@ -86,5 +86,17 @@
     visibility: visible;
     transition: 0.4s ease opacity 0.1s, visibility 0.1s ease 0.1s;
     opacity: 1;
+  }
+}
+
+@keyframes goUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
