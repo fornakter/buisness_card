@@ -44,6 +44,10 @@ def faq():
 def project_agency_site():
     return render_template('project_agency-site.html')
 
+@app.route('/project_business_packagese/')
+def project_business_packages():
+    return render_template('project_business_packages.html')
+
 
 
 if __name__ == '__main__':
