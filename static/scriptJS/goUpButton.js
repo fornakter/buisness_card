@@ -25,8 +25,6 @@ export const goUp = (button) => {
   };
 
   const navbarObserver = new IntersectionObserver((e) => {
-    console.log(...e);
-
     !e[0].isIntersecting ? showGoUpButton() : hideGoUpButton();
   }, options);
   navbarObserver.observe(navbar);

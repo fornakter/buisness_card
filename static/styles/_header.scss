@@ -95,10 +95,9 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 10rem;
-    margin-bottom: 25rem;
 
     width: 90%;
-    margin: 11.3rem auto 25rem;
+    margin: 11.3rem auto 20rem;
 
     &__main-title {
       align-items: flex-start;
@@ -126,7 +125,6 @@
 @media screen and (min-width: 1200px) {
   .main-header {
     max-width: 80%;
-    margin: 11.3rem auto 25rem;
 
     &__main-title {
       font-size: 6rem;
@@ -144,7 +142,7 @@
 }
 @media screen and (min-width: 1550px) {
   .main-header {
-    max-width: 82%;
+    max-width: 150rem;
     margin: 11.3rem auto 25rem;
     &__main-title {
       font-size: 7rem;

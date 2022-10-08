@@ -602,9 +602,8 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-top: 10rem;
-    margin-bottom: 25rem;
     width: 90%;
-    margin: 11.3rem auto 25rem;
+    margin: 11.3rem auto 20rem;
   }
   .main-header__main-title {
     align-items: flex-start;
@@ -630,7 +629,6 @@
 @media screen and (min-width: 1200px) {
   .main-header {
     max-width: 80%;
-    margin: 11.3rem auto 25rem;
   }
   .main-header__main-title {
     font-size: 6rem;
@@ -644,7 +642,7 @@
 }
 @media screen and (min-width: 1550px) {
   .main-header {
-    max-width: 82%;
+    max-width: 150rem;
     margin: 11.3rem auto 25rem;
   }
   .main-header__main-title {
@@ -781,25 +779,6 @@
   }
   .offer__item__text {
     width: 82%;
-  }
-}
-@media screen and (min-width: 1920px) {
-  .offer {
-    align-items: center;
-  }
-  .offer__title {
-    padding: 2.5rem;
-    border-radius: 0 10rem 0 10rem;
-  }
-  .offer__container {
-    flex-wrap: wrap;
-    width: 80%;
-  }
-  .offer__item {
-    width: 60%;
-  }
-  .main-header__main-title span:nth-child(3) {
-    margin-left: 30rem;
   }
 }
 .worth {
@@ -1648,7 +1627,7 @@
   width: 100%;
   background: none;
   color: white;
-  height: 8rem;
+  height: 6rem;
   padding-left: 2rem;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -1924,6 +1903,14 @@
   }
   .navbar .navbar__menu-desktop .menu__item a {
     font-size: 2.5rem;
+  }
+  .offer__form-link {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+  }
+  .offer__form-link::before {
+    height: 11.5rem;
   }
 }
 .footer {
@@ -2127,7 +2114,7 @@
   width: 100%;
   background: none;
   color: white;
-  height: 8rem;
+  height: 6rem;
   padding-left: 2rem;
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -2403,6 +2390,14 @@
   }
   .navbar .navbar__menu-desktop .menu__item a {
     font-size: 2.5rem;
+  }
+  .offer__form-link {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+  }
+  .offer__form-link::before {
+    height: 11.5rem;
   }
 }
 .project {

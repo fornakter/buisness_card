@@ -57,7 +57,7 @@
     width: 100%;
     background: none;
     color: white;
-    height: 8rem;
+    height: 6rem;
     padding-left: 2rem;
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -382,13 +382,13 @@
     font-size: 2.5rem;
   }
 
-  // .offer__form-link {
-  //   display: flex;
-  //   font-size: 3rem;
-  //   justify-content: center;
+  .offer__form-link {
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
 
-  //   &::before {
-  //     height: 11.5rem;
-  //   }
-  // }
+    &::before {
+      height: 11.5rem;
+    }
+  }
 }
