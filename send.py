@@ -1,11 +1,11 @@
-#wysłanie maila za pomocą gmaila, protokółów SSL i SMTP
+# wysłanie maila za pomocą gmaila, protokółów SSL i SMTP
 def sendMail(mail, mess):
-    #importowanie potrzebnych bibliotek
+    # importowanie potrzebnych bibliotek
     from email.message import EmailMessage
     import ssl
     import smtplib
 
-    #określanie nadawcy maila, odbiorcy, hasła nadawcy, tematu oraz treści wiadomości
+    # określanie nadawcy maila, odbiorcy, hasła nadawcy, tematu oraz treści wiadomości
     import inform
     sender = inform.sender()
     receiver = inform.receiver()
@@ -16,18 +16,18 @@ def sendMail(mail, mess):
     {mess}
     '''
 
-    #Tworzenie obiektu emailmessage i ustawianie jego parametrów()
+    # Tworzenie obiektu emailmessage i ustawianie jego parametrów()
     email = EmailMessage()
     email['From'] = sender
     email['To'] = receiver
     email['Subject'] = subject
     email.set_content(body)
 
-    #Tworzenie połączenia
+    # Tworzenie połączenia
     context = ssl.create_default_context()
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
-        #logowanie do maila
+        # logowanie do maila
         smtp.login(sender, password)
-        #wysłanie wiadomości
+        # wysłanie wiadomości
         smtp.sendmail(sender, receiver, email.as_string())
