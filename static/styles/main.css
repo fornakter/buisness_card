@@ -2059,7 +2059,11 @@
   font-size: 2rem;
   padding: 0.5rem 6rem 3rem 4rem;
   margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
+  width: 20em;
+  text-align: center;
 }
 .project .write-to-us__button::before {
   background-color: #79ffd7;
