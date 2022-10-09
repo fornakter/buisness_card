@@ -1,12 +1,12 @@
 from flask import Flask, render_template, request
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 
 @app.route('/')
 def index():
-    return render_template('main.html')
+    return render_template('index.html')
 
 
 @app.route('/kontakt/')
@@ -35,6 +35,14 @@ def about():
 @app.route('/projects/')
 def projects():
     return render_template('projects.html')
+
+@app.route('/faq/')
+def faq():
+    return render_template('faq.html')
+
+@app.route('/project_agency-site/')
+def project_agency_site():
+    return render_template('project_agency-site.html')
 
 
 
