@@ -13,15 +13,19 @@ def index():
 def kontakt():
     return render_template('contact.html')
 
-@app.route('/send/', methods=['GET','POST'])
-def sendData():
+
+@app.route('/send/', methods=['GET', 'POST'])
+def sendData():  # Function name should be lowercase
     import send
     import checkinform
     mail = request.form.get('mail')
     message = request.form.get('message')
+
+    # Not used var
     name = request.form.get('client_name')
-    if checkinform.checkMail(mail) == True:
-        send.sendMail(mail,message)
+
+    if checkinform.checkMail(mail):
+        send.sendMail(mail, message)
         return "Poszło"
     else:
         return "Nie"
@@ -36,18 +40,20 @@ def about():
 def projects():
     return render_template('projects.html')
 
+
 @app.route('/faq/')
 def faq():
     return render_template('faq.html')
+
 
 @app.route('/project_agency-site/')
 def project_agency_site():
     return render_template('project_agency-site.html')
 
+
 @app.route('/project_business_packagese/')
 def project_business_packages():
     return render_template('project_business_packages.html')
-
 
 
 if __name__ == '__main__':
