@@ -165,12 +165,6 @@
       }
       &__link,
       .link {
-        // text-decoration: none;
-        // color: white;
-        // font-family: "jost";
-        // font-size: 1.5rem;
-        // margin-top: 1.5rem;
-        display: none;
         &__current-site {
           display: none;
         }
@@ -181,32 +175,26 @@
     }
 
     //Titles witch shadow
-
-    &__section-title {
-      font-size: 5rem;
-    }
-    .client {
-      &__info {
-        font-size: 3rem;
-      }
+    .client__info {
+      font-size: 3rem;
+      max-width: 80rem;
     }
     .work {
-      &__title {
-        &::after {
-          content: "Projekt";
-        }
-        &::before {
-          content: "Projekt";
-        }
+      .client__sign-img {
+        width: 32rem;
+        margin: 7rem auto;
       }
+      .project__sign-img {
+        width: 32rem;
 
+        margin-top: 7rem auto;
+      }
       // project full view
       &__image-container {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-
         margin-top: 8rem;
         .work__image {
           max-width: 60rem;
@@ -217,12 +205,15 @@
         &__step {
           .title {
             font-size: 4rem;
+            max-width: 90%;
           }
           .describe {
             font-size: 3rem;
+            max-width: 70rem;
           }
           .arow-down-image {
-            margin-top: 5rem;
+            margin-top: 6rem;
+            margin-bottom: 2rem;
           }
         }
       }
@@ -231,8 +222,14 @@
     .write-to-us {
       &__title {
         font-size: 4rem;
-        width: 40%;
+        width: 50%;
       }
+      &__message {
+        margin: 6rem auto;
+      }
+    }
+    &__botom-navigation {
+      margin: 7.7rem auto 10rem;
     }
   }
 }

@@ -2674,10 +2674,6 @@
     width: 80%;
     font-size: 5.5rem;
   }
-  .project__header__link,
-.project__header .link {
-    display: none;
-  }
   .project__header__link__current-site,
 .project__header .link__current-site {
     display: none;
@@ -2685,17 +2681,17 @@
   .project__miniature {
     margin-top: 10rem;
   }
-  .project__section-title {
-    font-size: 5rem;
-  }
   .project .client__info {
     font-size: 3rem;
+    max-width: 80rem;
   }
-  .project .work__title::after {
-    content: "Projekt";
+  .project .work .client__sign-img {
+    width: 32rem;
+    margin: 7rem auto;
   }
-  .project .work__title::before {
-    content: "Projekt";
+  .project .work .project__sign-img {
+    width: 32rem;
+    margin-top: 7rem auto;
   }
   .project .work__image-container {
     width: 100%;
@@ -2709,16 +2705,25 @@
   }
   .project .work__info__step .title {
     font-size: 4rem;
+    max-width: 90%;
   }
   .project .work__info__step .describe {
     font-size: 3rem;
+    max-width: 70rem;
   }
   .project .work__info__step .arow-down-image {
-    margin-top: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
   }
   .project .write-to-us__title {
     font-size: 4rem;
-    width: 40%;
+    width: 50%;
+  }
+  .project .write-to-us__message {
+    margin: 6rem auto;
+  }
+  .project__botom-navigation {
+    margin: 7.7rem auto 10rem;
   }
 }
 @media screen and (min-width: 1000px) {
