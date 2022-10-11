@@ -6,7 +6,7 @@ export const singleProject = () => {
   // Opening full view of project
   const openCloseFullView = () => {
     workMiniature.addEventListener("click", () => {
-      projectFullView.classList.add("work__project-fullView--activ");
+      projectFullView.classList.remove("work__project-fullView--hide");
       projectFullView.scrollIntoView({
         behavior: "smooth",
         block: "end",
@@ -14,7 +14,7 @@ export const singleProject = () => {
       });
     });
     closeFullViewBtn.addEventListener("click", () => {
-      projectFullView.classList.remove("work__project-fullView--activ");
+      projectFullView.classList.add("work__project-fullView--hide");
     });
   };
 
