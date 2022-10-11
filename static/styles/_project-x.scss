@@ -234,18 +234,22 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .project {
+    .section__header {
+      width: 30rem;
+    }
     &__header {
       flex-direction: column-reverse;
-      margin-top: 15rem;
+      margin-top: 10rem;
+
       &__main-title {
-        font-size: 6.5rem;
+        font-size: 5rem;
         margin-top: 3rem;
       }
       &__link,
       .link {
-        font-size: 2.5rem;
+        font-size: 1.9rem;
         display: inline;
         &__current-site {
           display: inline;
@@ -257,54 +261,17 @@
     }
 
     //Titles witch shadow
-    .client__title-container {
-      height: 50rem;
-      min-width: 50rem;
-      background-image: url(../source/images/projects-imgs/gear-title-border.png);
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
 
-      img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        height: 100%;
-      }
-    }
-
-    &__section-title {
-      width: 90%;
-      font-size: 6.5rem;
-      position: relative;
-
-      &::before {
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        top: 2rem;
-        z-index: -10;
-        background-color: rgb(0, 0, 0);
-      }
-      &::before {
-        width: 100%;
-        text-align: center;
-        position: absolute;
-        left: 0;
-        top: 4rem;
-        z-index: -5;
-      }
-    }
     .client {
+      margin: 0;
+      &__sign-img {
+        max-width: 30rem;
+      }
       display: flex;
       align-items: center;
       padding: 0 10rem;
       gap: 5rem;
-      margin-top: 10rem;
+      margin-top: 0rem;
       &__title {
         &::after {
           content: "Klient";
@@ -326,46 +293,28 @@
 
     /// section work /////////////
     .work {
+      max-width: 90%;
+      margin: 0 auto;
+      gap: 10rem;
       display: flex;
       flex-direction: row-reverse;
-      padding: 0 2rem;
+      .project__sign-img {
+        max-width: 30rem;
+        margin: 0;
+      }
 
       &__text-wraper {
-        transform: translateY(-2%);
-        max-width: 100%;
         width: 100%;
       }
 
-      &__title-container {
-        height: 50rem;
-        max-width: 50rem;
-        background-image: url(../source/images/projects-imgs/gear-title-border.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 6.5rem;
-      }
-
-      &__title {
-        &::after {
-          content: "Projekt";
-        }
-        &::before {
-          content: "Projekt";
-        }
-      }
       &__image-container {
-        margin-right: 6rem;
-        align-self: baseline;
-
-        margin-top: 15rem;
         max-width: 100%;
-
+        margin: 0;
         .work__image {
           width: 100%;
+          margin: 0;
+          align-self: center;
+          cursor: pointer;
         }
       }
       // STEPS
@@ -373,13 +322,15 @@
         &__step {
           align-items: flex-start;
           .title {
-            font-size: 3.5rem;
+            font-size: 3rem;
             margin-top: 5rem;
+            text-align: start;
           }
           .describe {
             text-align: start;
             width: 100%;
             margin-top: 4rem;
+            font-size: 2rem;
           }
           .arow-down-image {
             margin-top: 5rem;
@@ -402,11 +353,12 @@
     // Write to us
     .write-to-us {
       &__title {
+        width: 100%;
         font-size: 3.5rem;
         margin-top: 10rem;
       }
       &__message {
-        font-size: 2.5rem;
+        font-size: 1.9rem;
         margin-top: 2.5rem;
       }
     }
@@ -433,5 +385,44 @@
         }
       }
     }
+  }
+  .work__project-fullView {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    z-index: 100;
+
+    .layer {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(32, 30, 30, 0.836);
+      backdrop-filter: blur(10px);
+    }
+    .close-fullView {
+      position: fixed;
+      right: 10rem;
+      top: 10rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.5s ease-in-out;
+      transform: rotate(0);
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+
+    .projekt-fullView-image {
+      position: absolute;
+      top: 20rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .work__project-fullView--activ {
+    display: block;
   }
 }

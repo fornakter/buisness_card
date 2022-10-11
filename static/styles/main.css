@@ -2726,18 +2726,21 @@
     margin: 7.7rem auto 10rem;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
+  .project .section__header {
+    width: 30rem;
+  }
   .project__header {
     flex-direction: column-reverse;
-    margin-top: 15rem;
+    margin-top: 10rem;
   }
   .project__header__main-title {
-    font-size: 6.5rem;
+    font-size: 5rem;
     margin-top: 3rem;
   }
   .project__header__link,
 .project__header .link {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     display: inline;
   }
   .project__header__link__current-site,
@@ -2747,51 +2750,16 @@
   .project__miniature {
     display: none;
   }
-  .project .client__title-container {
-    height: 50rem;
-    min-width: 50rem;
-    background-image: url(../source/images/projects-imgs/gear-title-border.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .project .client__title-container img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-  }
-  .project__section-title {
-    width: 90%;
-    font-size: 6.5rem;
-    position: relative;
-  }
-  .project__section-title::before {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: 2rem;
-    z-index: -10;
-    background-color: rgb(0, 0, 0);
-  }
-  .project__section-title::before {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    left: 0;
-    top: 4rem;
-    z-index: -5;
-  }
   .project .client {
+    margin: 0;
     display: flex;
     align-items: center;
     padding: 0 10rem;
     gap: 5rem;
-    margin-top: 10rem;
+    margin-top: 0rem;
+  }
+  .project .client__sign-img {
+    max-width: 30rem;
   }
   .project .client__title::after {
     content: "Klient";
@@ -2809,53 +2777,42 @@
     text-align: start;
   }
   .project .work {
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 10rem;
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 2rem;
+  }
+  .project .work .project__sign-img {
+    max-width: 30rem;
+    margin: 0;
   }
   .project .work__text-wraper {
-    transform: translateY(-2%);
-    max-width: 100%;
     width: 100%;
   }
-  .project .work__title-container {
-    height: 50rem;
-    max-width: 50rem;
-    background-image: url(../source/images/projects-imgs/gear-title-border.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 6.5rem;
-  }
-  .project .work__title::after {
-    content: "Projekt";
-  }
-  .project .work__title::before {
-    content: "Projekt";
-  }
   .project .work__image-container {
-    margin-right: 6rem;
-    align-self: baseline;
-    margin-top: 15rem;
     max-width: 100%;
+    margin: 0;
   }
   .project .work__image-container .work__image {
     width: 100%;
+    margin: 0;
+    align-self: center;
+    cursor: pointer;
   }
   .project .work__info__step {
     align-items: flex-start;
   }
   .project .work__info__step .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-top: 5rem;
+    text-align: start;
   }
   .project .work__info__step .describe {
     text-align: start;
     width: 100%;
     margin-top: 4rem;
+    font-size: 2rem;
   }
   .project .work__info__step .arow-down-image {
     margin-top: 5rem;
@@ -2873,11 +2830,12 @@
     align-self: flex-end;
   }
   .project .write-to-us__title {
+    width: 100%;
     font-size: 3.5rem;
     margin-top: 10rem;
   }
   .project .write-to-us__message {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     margin-top: 2.5rem;
   }
   .project__botom-navigation {
@@ -2902,6 +2860,44 @@
     transform: rotate(180deg);
     height: 2rem;
     margin-left: 0.7rem;
+  }
+  .work__project-fullView {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+    z-index: 100;
+  }
+  .work__project-fullView .layer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(32, 30, 30, 0.836);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  .work__project-fullView .close-fullView {
+    position: fixed;
+    right: 10rem;
+    top: 10rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(0);
+  }
+  .work__project-fullView .close-fullView:hover {
+    transform: rotate(180deg);
+  }
+  .work__project-fullView .projekt-fullView-image {
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .work__project-fullView--activ {
+    display: block;
   }
 }
 @font-face {

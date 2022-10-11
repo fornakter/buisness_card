@@ -28,6 +28,7 @@ export const projectObserver = (elementToObserve) => {
 
     //
   });
+  console.log("siema");
 
   resizeObserver.observe(elementToObserve);
 };

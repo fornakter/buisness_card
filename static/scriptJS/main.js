@@ -1,6 +1,7 @@
 import { changeNavbar } from "./navbar.js";
 import { faq } from "./faq.js";
 import { projectObserver } from "./projects.js";
+import { singleProject } from "./singleProject.js";
 import { goUp } from "./goUpButton.js";
 
 changeNavbar();
@@ -14,7 +15,10 @@ goUpButton ? goUp(goUpButton) : console.log("no button");
 const sectionContainer = document.querySelector(".projects__container");
 sectionContainer ? projectObserver(sectionContainer) : false;
 
-///
+// run singleProject if single project page is loaded
+const workMiniature = document.querySelector(".work__image");
+
+workMiniature ? singleProject(workMiniature) : false;
 
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".navbar");
