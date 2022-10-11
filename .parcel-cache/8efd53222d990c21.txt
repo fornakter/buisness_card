@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 292
 84/mnt/c/Users/Dell/Desktop/STRONA V1/buisness_card/templates/project_agency-site.html1665231940774652300 0
 70/mnt/c/Users/Dell/Desktop/STRONA V1/buisness_card/templates/index.html1665218072096786800 0
@@ -291,3 +292,7 @@
 110/mnt/c/Users/Dell/Desktop/STRONA V1/buisness_card/static/source/images/projects-imgs/agency-site-full-view.png1665217963871233500 0
 118/mnt/c/Users/Dell/Desktop/STRONA V1/buisness_card/static/source/images/projects-imgs/buisnes-packages-project-view.svg1665217963989158300 0
 126/mnt/c/Users/Dell/Desktop/STRONA V1/buisness_card/static/source/images/projects-imgs/project-website-for-business-packages.jpg1665217964234009500 0
+=======
+125875393
+1665244910808325000
+>>>>>>> b1fe1211074e6fbbb07be14bfa709f799ab308c0

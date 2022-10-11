@@ -308,9 +308,22 @@
   // }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
   .contact-header {
-    margin: 15rem auto 5rem;
+    margin: 15rem auto 7rem;
+
+    &__title {
+      font-size: 5rem;
+    }
+
+    &__image--gear {
+      width: 25.3rem;
+    }
+
+    &__image--phone {
+      width: 40rem;
+      transform: translate(10%, 5%);
+    }
   }
 
   .form__label {
@@ -340,10 +353,13 @@
 }
 @media only screen and (min-width: 1200px) {
   .form {
-    margin-bottom: 13rem;
+    margin-bottom: 20rem;
   }
   .form__row:nth-child(5) {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
+  }
+  .form__row:nth-child(6) button {
+    width: 40%;
   }
 
   // .button {
@@ -358,14 +374,44 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .contact-header {
+    margin: 7rem auto 4rem;
+    &__title {
+      font-size: 4rem;
+    }
+
+    &__image--gear {
+      width: 20.3rem;
+    }
+
+    &__image--phone {
+      width: 30rem;
+      transform: translate(10%, 5%);
+    }
+  }
+
   .form {
     &__row {
-      width: 80%;
+      width: 55%;
+
+      &:nth-child(5) .form__label {
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__input {
+      height: 6rem;
+    }
+
+    &__label {
+      font-size: 1.9rem;
+      margin: 1rem 0 0.5rem;
     }
   }
 
   .navbar {
-    height: 8rem;
+    height: 6rem;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -374,21 +420,61 @@
       width: 70%;
     }
   }
-  .navbar {
-    height: 10rem;
-  }
 
   .navbar .navbar__menu-desktop .menu__item a {
     font-size: 2.5rem;
   }
 
-  .offer__form-link {
-    display: flex;
-    font-size: 3rem;
-    justify-content: center;
+  .contact-header {
+    margin: 7rem auto 4rem;
+    &__title {
+      font-size: 4rem;
+    }
 
-    &::before {
-      height: 11.5rem;
+    &__image--gear {
+      width: 20.3rem;
+    }
+
+    &__image--phone {
+      width: 30rem;
+      transform: translate(10%, 5%);
     }
   }
+
+  .form {
+    &__row {
+      width: 55%;
+
+      &:nth-child(5) .form__label {
+        margin-top: 0;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__input {
+      height: 6rem;
+    }
+
+    &__label {
+      font-size: 1.9rem;
+      margin: 1rem 0 0.5rem;
+    }
+
+    &__message {
+      margin-bottom: 4rem;
+    }
+  }
+
+  .navbar {
+    height: 7rem;
+  }
+
+  // .offer__form-link {
+  //   display: flex;
+  //   font-size: 3rem;
+  //   justify-content: center;
+
+  // &::before {
+  //   height: 11.5rem;
+  // }
 }
