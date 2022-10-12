@@ -1443,7 +1443,7 @@
   margin-bottom: 7rem;
 }
 .faq__header__image {
-  max-width: 90%;
+  max-width: 23rem;
 }
 .faq__items {
   display: flex;
@@ -1471,7 +1471,7 @@
   cursor: pointer;
 }
 .faq__item__question-container__question {
-  font-size: 2.4rem;
+  font-size: 2rem;
   padding: 3.1rem 4.4rem 3.5rem 4.4rem;
   text-align: center;
 }
@@ -1496,17 +1496,21 @@
   bottom: 40%;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .faq__header {
-    margin-top: 15rem;
-    margin-bottom: 10rem;
+    margin-top: 7.5rem;
+    margin-bottom: 8.5rem;
+  }
+  .faq__header__image {
+    max-width: 37rem;
   }
   .faq__items {
     display: flex;
     flex-direction: column;
-    margin-bottom: 70rem;
+    margin-bottom: 20rem;
   }
   .faq__item {
+    max-width: 100rem;
     border: none;
     border-radius: 0 8rem 0 0;
     position: relative;
@@ -1518,17 +1522,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 12.5rem;
+    height: 6rem;
     border-radius: 0 12rem 0 12rem;
   }
   .faq__item__question-container__question {
     padding: 3.75rem 1rem 3.75rem 5rem;
-    font-size: 4rem;
+    font-size: 2rem;
   }
   .faq__item__question-container__status-marker,
 .faq__item__question-container .status-marker {
-    height: 7.7rem;
-    width: 7.7rem;
+    height: 3.3rem;
+    width: 3.3rem;
     background-color: #000;
     border-radius: 50%;
     margin-right: 5rem;
@@ -1539,8 +1543,8 @@
   }
   .faq__item__question-container__status-marker__bar,
 .faq__item__question-container .status-marker__bar {
-    height: 0.5rem;
-    width: 4rem;
+    height: 0.2rem;
+    width: 1.7rem;
     background-color: #79ffd7;
     position: absolute;
     transition: 0.3s transform ease-in-out;
@@ -1563,22 +1567,20 @@
     opacity: 0;
     transform: translateY(-5.5rem);
     max-height: 0;
-    transition: 0.5s max-height ease-in, 0.5s opacity ease-in;
+    transition: 0.8s max-height ease 0.1s, 0.8s opacity ease;
   }
   .faq__item__answer-container__answer {
-    font-size: 3.5rem;
+    font-size: 2rem;
     text-align: start;
-    font-size: 3.5rem;
   }
   .faq__item__answer-container__answer--open {
-    font-size: 3.5rem;
-    transition: 0.3s all ease-in;
+    transition: 0.8s all ease;
   }
   .faq__item__answer-container--open {
     max-height: 100rem;
     padding: 6rem 18rem 2rem 18rem;
     opacity: 1;
-    transition: 0.5s max-height ease-in, 0.5s opacity ease-in;
+    transition: 0.8s max-height ease, 0.8s opacity ease 0.1s;
   }
   .faq .bg-grid-left {
     display: none;
