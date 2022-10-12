@@ -2648,7 +2648,7 @@
 }
 .project .write-to-us__button {
   max-width: 28.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   cursor: pointer;
@@ -2749,8 +2749,13 @@
   }
 }
 @media screen and (min-width: 1050px) {
+  .project__header__main-title {
+    max-width: 65.7rem;
+    margin-bottom: 7rem;
+  }
   .project .section__header {
     width: 30rem;
+    margin: 0;
   }
   .project__header {
     flex-direction: column-reverse;
@@ -2774,6 +2779,7 @@
   }
   .project .client {
     margin: 0;
+    justify-content: center;
     display: flex;
     align-items: center;
     padding: 0 10rem;
@@ -2783,19 +2789,13 @@
   .project .client__sign-img {
     max-width: 30rem;
   }
-  .project .client__title::after {
-    content: "Klient";
-  }
-  .project .client__title::before {
-    content: "Klient";
-  }
   .project .client__info {
     color: white;
-    font-family: "Jost";
+    font-family: "Jost", sans-serif;
     font-size: 2.5rem;
     width: 60%;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     text-align: start;
   }
   .project .work {

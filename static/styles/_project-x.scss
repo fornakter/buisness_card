@@ -119,7 +119,7 @@
     }
     &__button {
       max-width: 28.5rem;
-      font-size: 2rem;
+      font-size: 1.7rem;
       padding-left: 3.5rem;
       padding-right: 3.5rem;
       cursor: pointer;
@@ -243,8 +243,13 @@
 
 @media screen and (min-width: 1050px) {
   .project {
+    &__header__main-title {
+      max-width: 65.7rem;
+      margin-bottom: 7rem;
+    }
     .section__header {
       width: 30rem;
+      margin: 0;
     }
     &__header {
       flex-direction: column-reverse;
@@ -271,6 +276,7 @@
 
     .client {
       margin: 0;
+      justify-content: center;
       &__sign-img {
         max-width: 30rem;
       }
@@ -279,21 +285,14 @@
       padding: 0 10rem;
       gap: 5rem;
       margin-top: 0rem;
-      &__title {
-        &::after {
-          content: "Klient";
-        }
-        &::before {
-          content: "Klient";
-        }
-      }
+
       &__info {
         color: white;
-        font-family: "Jost";
+        font-family: "Jost", sans-serif;
         font-size: 2.5rem;
         width: 60%;
         padding: 0;
-        margin: 0 auto;
+        margin: 0;
         text-align: start;
       }
     }
