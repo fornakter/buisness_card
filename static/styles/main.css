@@ -6,7 +6,7 @@
   background: none;
   border-radius: 0 13rem;
   font-family: Helvetica-Nouel, sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 1.3rem 5.9rem 1.86rem 5.9rem;
   text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
   transition: all 0.5s ease;
@@ -718,7 +718,7 @@
   height: 8.1rem;
 }
 .offer__form-link {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   width: 80%;
   padding-left: 0;
   padding-right: 0;
@@ -1036,7 +1036,7 @@
 }
 .process__gear__box-btn {
   font-family: "Helvetica-Nouel";
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   background: #79ffd7;
   border-bottom-left-radius: 6rem;
   border-top-right-radius: 6rem;
