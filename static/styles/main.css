@@ -2880,6 +2880,9 @@
     height: 100%;
     top: 0;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .work__project-fullView .layer {
     position: fixed;
@@ -2888,6 +2891,7 @@
     background-color: rgba(32, 30, 30, 0.836);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
+    z-index: -1;
   }
   .work__project-fullView .close-fullView {
     position: fixed;
@@ -2903,10 +2907,7 @@
     transform: rotate(180deg);
   }
   .work__project-fullView .projekt-fullView-image {
-    position: absolute;
-    top: 20rem;
-    left: 50%;
-    transform: translateX(-50%);
+    margin-top: 20rem;
   }
   .work__project-fullView--hide {
     display: none;

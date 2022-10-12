@@ -116,9 +116,15 @@
       />
       <!-- ////////////////////////////// -->
       <section class="client">
-        <div class="client__title-container">
-          <h2 class="project__section-title client__title">Klient</h2>
-        </div>
+        <img
+          class="client__sign-img section__header"
+          src="../static/source/images/projects-imgs/single-projects/client-sign.png"
+          srcset="
+            ../static/source/images/projects-imgs/single-projects/client-sign.png    1000w,
+            ../static/source/images/projects-imgs/single-projects/client-sign@2x.png 1334w
+          "
+          alt="Klient"
+        />
         <div class="client__info">
           Nowopowstała marka zajmująca się tworzeniem paczek biznesowych dla
           działów hr, marketingu, office managerów oraz właścicieli i zarządców
@@ -128,9 +134,15 @@
       <!-- ////////////////////////////// -->
       <section class="work">
         <div class="work__text-wraper">
-          <div class="work__title-container">
-            <h2 class="project__section-title work__title">Projekt</h2>
-          </div>
+          <img
+            class="project__sign-img section__header"
+            src="../static/source/images/projects-imgs/single-projects/project-sign.png"
+            srcset="
+              ../static/source/images/projects-imgs/single-projects/project-sign.png    1000w,
+              ../static/source/images/projects-imgs/single-projects/project-sign@2x.png 1334w
+            "
+            alt="Projekt"
+          />
           <div class="work__info-container">
             <article class="work__info__step">
               <h3 class="title">Cel współpracy</h3>
@@ -142,7 +154,7 @@
               </p>
               <img
                 class="arow-down-image arow-down-image--left"
-                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                src="../static/source/images/projects-imgs/single-projects/project-arrow-down.png"
                 alt=""
               />
             </article>
@@ -157,7 +169,7 @@
               </p>
               <img
                 class="arow-down-image arow-down-image--right"
-                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                src="../static/source/images/projects-imgs/single-projects/project-arrow-down.png"
                 alt=""
               />
             </article>
@@ -174,7 +186,7 @@
               </p>
               <img
                 class="arow-down-image"
-                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                src="../static/source/images/projects-imgs/single-projects/project-arrow-down.png"
                 alt=""
               />
             </article>
@@ -190,12 +202,33 @@
         </div>
         <div class="work__image-container">
           <img
-            src="../static/source/images/projects-imgs/buisnes-packages-project-view.svg"
-            alt="strona agencji pełen widok"
+            src="../static/source/images/projects-imgs/single-projects/projects-click-to-open.png"
+            alt="kliknij aby obejrzeć cały projekt"
+            class="click-to-open-fullView"
+          />
+          <img
+            src="../static/source/images/projects-imgs/single-projects/package-site/package-site-view1.png"
+            alt="Pełen widok projektu"
             class="work__image"
           />
         </div>
       </section>
+      <!-- // Modal -->
+      <div class="work__project-fullView work__project-fullView--hide ">
+        <div class="layer"></div>
+        <button class="close-fullView"><img src="../static/source/images/projects-imgs/single-projects/Close.svg" alt="close full view">
+        </button>
+        <img
+         alt="Pełny widok projektu" 
+         src="../static/source/images/projects-imgs/single-projects/package-site/package-site-view1.png"
+          class="projekt-fullView-image">
+        </img>
+        <img
+         alt="Pełny widok projektu" 
+         src="../static/source/images/projects-imgs/single-projects/package-site/package-site-view2.png"
+          class="projekt-fullView-image">
+        </img>
+      </div>
       <!-- /////////////////////////////// -->
       <section class="write-to-us">
         <h3 class="write-to-us__title">Spodobał Ci sie projekt?</h3>
@@ -209,7 +242,7 @@
           class="previous-project project-navigation__link"
         >
           <img
-            src="../static/source/images/projects-imgs/botom-navigation-arrow.png"
+            src="../static/source/images/projects-imgs/single-projects/botom-navigation-arrow.png"
             alt=""
             class="previous-project__icon"
           />poprzedni project</a
@@ -218,7 +251,7 @@
           href="#"
           class="next-project project-navigation__link unavailable-link"
           >następny project<img
-            src="../static/source/images/projects-imgs/botom-navigation-arrow.png"
+            src="../static/source/images/projects-imgs/single-projects/botom-navigation-arrow.png"
             alt=""
             class="next-project__icon"
         /></a>

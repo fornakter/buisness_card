@@ -25,10 +25,8 @@ export const projectObserver = (elementToObserve) => {
           miniature.classList.remove("project__img-filter--clear");
           miniatruesObserver.unobserve(miniature);
         });
-
-    //
   });
-  console.log("siema");
-
   resizeObserver.observe(elementToObserve);
+
+  // remove link from bottom navigation if you are in last project
 };
