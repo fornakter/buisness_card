@@ -1,5 +1,5 @@
 export const singleProject = () => {
-  const workMiniature = document.querySelector(".work__image");
+  const workMiniature = document.querySelector(".work__image-container");
   const projectFullView = document.querySelector(".work__project-fullView");
   const closeFullViewBtn = document.querySelector(".close-fullView");
 

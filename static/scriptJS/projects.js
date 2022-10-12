@@ -27,6 +27,4 @@ export const projectObserver = (elementToObserve) => {
         });
   });
   resizeObserver.observe(elementToObserve);
-
-  // remove link from bottom navigation if you are in last project
 };
