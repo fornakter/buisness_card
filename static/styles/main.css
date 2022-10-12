@@ -2576,10 +2576,12 @@
   margin-top: 4rem;
 }
 .project .work__image-container {
-  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 6rem;
+}
+.project .work__image-container .click-to-open-fullView {
+  display: none;
 }
 .project .work__image-container .work__image {
   width: 90%;
@@ -2794,8 +2796,16 @@
     width: 100%;
   }
   .project .work__image-container {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
-    margin: 0;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+  .project .work__image-container .click-to-open-fullView {
+    max-width: 30rem;
+    display: block;
+    margin-bottom: 4rem;
   }
   .project .work__image-container .work__image {
     width: 100%;

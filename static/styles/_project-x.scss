@@ -59,10 +59,13 @@
       margin-top: 4rem;
     }
     &__image-container {
-      width: 100%;
       display: flex;
       justify-content: center;
       margin-top: 6rem;
+      .click-to-open-fullView {
+        display: none;
+      }
+
       .work__image {
         width: 90%;
       }
@@ -312,10 +315,19 @@
       }
 
       &__image-container {
+        display: flex;
+        flex-direction: column;
         max-width: 100%;
-        margin: 0;
+        justify-content: flex-end;
+        cursor: pointer;
+        .click-to-open-fullView {
+          max-width: 30rem;
+          display: block;
+          margin-bottom: 4rem;
+        }
         .work__image {
           width: 100%;
+
           margin: 0;
           align-self: center;
           cursor: pointer;
