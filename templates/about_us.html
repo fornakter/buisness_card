@@ -27,13 +27,13 @@
       </div>
       <ul class="navbar__menu-mobile menu-mobile">
         <li class="menu__item">
-          <a href="index.html" class="link link-about-us">Home</a>
+          <a href="{{url_for('index')}}" class="link link-about-us">Home</a>
         </li>
         <li class="menu__item">
-          <a href="about_us.html" class="link link-about-us">O nas</a>
+          <a href="{{url_for('about')}}" class="link link-about-us">O nas</a>
         </li>
         <li class="menu__item">
-          <a href="faq.html" class="link link-about-us">Faq</a>
+          <a href="{{url_for('faq')}}" class="link link-about-us">Faq</a>
         </li>
         <li class="menu__item">
           <a href="{{url_for('projects')}}" class="link link-our-projects"
@@ -41,7 +41,7 @@
           >
         </li>
         <li class="menu__item">
-          <a href="contact.html" class="link link-contact">Kontakt</a>
+          <a href="{{url_for('kontakt')}}" class="link link-contact">Kontakt</a>
         </li>
       </ul>
 
@@ -59,9 +59,9 @@
         </li>
 
         <li class="menu__item-desktop menu__item">
-          <!--  {{url_for('about_us')}}-->
+
           <a
-            href="about_us.html"
+            href="{{url_for('about')}}"
             class="link link-about-us"
             data-trackerPos="0.95"
             >O nas</a
@@ -78,14 +78,12 @@
           <a
             href="projects.html"
             class="link link-contact"
-            data-trackerPos="2.8"
-            >Projekty</a
+            data-trackerPos="2.8">Projekty</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
           <!--  {{url_for('kontakt')}}-->
-          <a href="contact.html" class="link link-contact" data-trackerPos="3.75"
-            >Kontakt</a
+          <a href="contact.html" class="link link-contact" data-trackerPos="3.75">Kontakt</a
           >
         </li>
       </ul>
@@ -113,11 +111,11 @@
           <p class="text-container__paragraph">
                Teamem, który połączył siły z ogromnej chęci rozwoju oraz teamem kierującym się filozofią <span class="bold">WIN-WIN</span> . Kiedy Ty wygrywasz to także nasz sukces, a solidnie wykonana strona www stanowi jeden z jego niezbędnych elementów.
           </p>
-       
-          <p class="text-container__paragraph">Jesteśmy zespołem młodych, zaangażowanych osób z coraz bogatszym doświadczeniem. Cechuje nas <span class="bold">odpowiedzialność</span> , elastyczność członek 
+
+          <p class="text-container__paragraph">Jesteśmy zespołem młodych, zaangażowanych osób z coraz bogatszym doświadczeniem. Cechuje nas <span class="bold">odpowiedzialność</span> , elastyczność członek
           i ogromne <span class="bold">zamiłowanie</span>  do tego co robimy. Każdy z nas codzień rozwija swoje umiejętności, a jako team preferujemy otwartą komunikację.</p>
-          
-          <p class="text-container__paragraph"> <span class="bold">Odciążymy Cię</span>  z koniecznności zastanawiania się jak wyróżnić się na tle konkurencji - zrobimy to my oraz stworzymy unikatową stronę, która 
+
+          <p class="text-container__paragraph"> <span class="bold">Odciążymy Cię</span>  z koniecznności zastanawiania się jak wyróżnić się na tle konkurencji - zrobimy to my oraz stworzymy unikatową stronę, która
           z całą pewnością wyróżni Twój biznes. <br> <span class="place"></span></p>
           </article>
       </header>
@@ -132,9 +130,9 @@
             <div class="team__member__description">
               <h3 class="description__name">Adam</h3>
               <h4 class="description__job">Back-end</h4>
-              <div class="description__text">Iniciator projektu ForgeDevelopers. Pasjonat nowinek technologicznych, poszukiwacz kreatywnych rozwiązań, w wolnych 
+              <div class="description__text">Iniciator projektu ForgeDevelopers. Pasjonat nowinek technologicznych, poszukiwacz kreatywnych rozwiązań, w wolnych
                 chwilach - gry, książka oraz film.</div>
-              
+
             </div>
           </article>
           <article class="team__member-container team__member">
@@ -142,11 +140,11 @@
             <div class="team__member__description">
               <h3 class="description__name">Krzysiek</h3>
               <h4 class="description__job">Front-end</h4>
-              <div class="description__text">W projektach odpowiedzialny za warstwę frontendową. Wolne chwile spędza 
-                na uprawianiu sportu i gotowaniu. 
-                Technologie w których się rozwija 
+              <div class="description__text">W projektach odpowiedzialny za warstwę frontendową. Wolne chwile spędza
+                na uprawianiu sportu i gotowaniu.
+                Technologie w których się rozwija
                 to HTML CSS/SASS, Type-Script.</div>
-              
+
             </div>
           </article>
           <article class="team__member-container team__member">
@@ -155,7 +153,7 @@
               <h3 class="description__name">Adam</h3>
               <h4 class="description__job">Front-end</h4>
               <div class="description__text"> W naszym zespole zajmuje się warstwą wizualną. W wolnych chwilach lubi słuchać muzyki oraz oglądać filmy katastroficzne.</div>
-              
+
             </div>
           </article>
           <article class="team__member-container team__member">
@@ -163,10 +161,10 @@
             <div class="team__member__description">
               <h3 class="description__name">Katarzyna</h3>
               <h4 class="description__job">Designer</h4>
-              <div class="description__text">Graficzno UI’owa dusza, dla której nie ma niemożliwych misji. Zajmuje się także zdjęciami wizerunkowymi oraz 
-                kreowaniem i wcielaniem 
+              <div class="description__text">Graficzno UI’owa dusza, dla której nie ma niemożliwych misji. Zajmuje się także zdjęciami wizerunkowymi oraz
+                kreowaniem i wcielaniem
                 w życie sesji modowych.</div>
-              
+
             </div>
           </article>
           <article class="team__member-container team__member">
@@ -174,17 +172,17 @@
             <div class="team__member__description">
               <h3 class="description__name">Łukasz</h3>
               <h4 class="description__job">Front-end</h4>
-              <div class="description__text">Pracowity, dokładny oraz niezwykle 
-                efektywny. Nie boi się zmian, uwielbia nowe umiejętności, a także zarządzanie czasem. Komunikatywny i samodzielny. Nigdy 
+              <div class="description__text">Pracowity, dokładny oraz niezwykle
+                efektywny. Nie boi się zmian, uwielbia nowe umiejętności, a także zarządzanie czasem. Komunikatywny i samodzielny. Nigdy
                 nie zawodzi.</div>
-              
+
             </div>
           </article>
 
 
 
         </div>
-        
+
       </section>
       <!-- footer ////////////////////////// -->
       <footer class="footer">
@@ -198,21 +196,21 @@
         </div>
         <div class="footer__container">
           <ul class="footer__list">
-            <li class="footer__list__item">
-              <a class="footer__list__item__link" href="#">Home</a>
-            </li>
-            <li class="footer__list__item">
-              <a class="footer__list__item__link" href="#">O nas</a>
-            </li>
-            <li class="footer__list__item">
-              <a class="footer__list__item__link" href="#">Projekt</a>
-            </li>
-            <li class="footer__list__item">
-              <a class="footer__list__item__link" href="#">FAQ</a>
-            </li>
-            <li class="footer__list__item">
-              <a class="footer__list__item__link" href="#">Kontakt</a>
-            </li>
+             <li class="footer__list__item">
+            <a class="footer__list__item__link" href="{{url_for('index')}}">Home</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="{{url_for('about')}}">O nas</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="{{url_for('projects')}}">Projekt</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="{{url_for('faq')}}">FAQ</a>
+          </li>
+          <li class="footer__list__item">
+            <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
+          </li>
           </ul>
   
           <div class="footer__design-wraper">

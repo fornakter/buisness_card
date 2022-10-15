@@ -2652,6 +2652,8 @@
   padding-left: 3.5rem;
   padding-right: 3.5rem;
   cursor: pointer;
+  width: 20em;
+  text-align: center;
 }
 .project__botom-navigation {
   display: flex;

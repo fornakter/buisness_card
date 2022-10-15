@@ -54,11 +54,10 @@
           <!-- {{url_for('main')}} -->
           <a href="index.html" class="link" data-trackerPos="0.04">Home</a>
         </li>
-
         <li class="menu__item-desktop menu__item">
-          <!--  {{url_for('about_us')}}-->
+
           <a
-            href="about_us.html"
+            href="{{url_for('about')}}"
             class="link link-about-us"
             data-trackerPos="0.95"
             >O nas</a
@@ -66,23 +65,21 @@
         </li>
         <li class="menu__item-desktop menu__item">
           <!-- {{url_for('faq')}} -->
-          <a href="faq.html" class="link link-contact" data-trackerPos="1.9"
-            >Faq</a
-          >
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.9">Faq</a>
         </li>
         <li class="menu__item-desktop menu__item">
-          <!-- {{url_for('projects')}} -->
+
           <a
-            href="projects.html"
+            href="{{url_for('projects')}}"
             class="link link-contact"
             data-trackerPos="2.8"
             >Projekty</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-          <!--  {{url_for('kontakt')}}-->
+
           <a
-            href="contact.html"
+            href="{{url_for('kontakt')}}"
             class="link link-contact"
             data-trackerPos="3.75"
             >Kontakt</a
@@ -134,9 +131,7 @@
             strony internetowej dla agencji PR & Digital marketingu & Social
             Media.
           </p>
-          
             <a href="./project_agency-site.html"><button class="project__button button"> Czytaj więcej</button></a>
-          
         </article>
         <article class="project">
         
@@ -163,9 +158,7 @@
             działów hr, marketingu, office managerów oraz właścicieli i
             zarządców firm.
           </p>
-          
             <a href="./project_business_packages.html"><button class="project__button button"> Czytaj więcej</button></a>
-          
         </article>
       </section>
     </div>
@@ -184,19 +177,20 @@
       <div class="footer__container">
         <ul class="footer__list">
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Home</a>
+            <a class="footer__list__item__link" href="{{url_for('index')}}">Home</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">O nas</a>
+            <a class="footer__list__item__link" href="{{url_for('about')}}">O nas</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Projekt</a>
+            <a class="footer__list__item__link" href="{{url_for('projects')}}">Projekt</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">FAQ</a>
+            <a class="footer__list__item__link" href="{{url_for('faq')}}">FAQ</a>
           </li>
           <li class="footer__list__item">
-            <a class="footer__list__item__link" href="#">Kontakt</a>
+            <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
+          </li>
           </li>
         </ul>
 
