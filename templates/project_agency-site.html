@@ -19,7 +19,7 @@
       <img src="../static/source/images/LOGO.png" alt="" class="logo" />
     </div>
 
-    <nav class="navbar" data-currentPos="2.5">
+    <nav class="navbar" data-currentPos="2.8">
       <!-- Nav-mobile -->
       <div class="logo__container-mobile">
         <img src="../static/source/images/LOGO.png" alt="" class="logo" />
@@ -50,12 +50,12 @@
       <ul class="navbar__menu-desktop menu-desktop">
         <img
           class="current-page-tracker"
-          src="../static/source/images/Vector.png"
+          src="../static/source/images/pageTracker.png"
           alt=""
         />
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
+          <!-- {{url_for('main')}} -->
+          <a href="index.html" class="link" data-trackerPos="0.04">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
@@ -63,22 +63,20 @@
           <a
             href="{{url_for('about')}}"
             class="link link-about-us"
-            data-trackerPos="0.9"
+            data-trackerPos="0.95"
             >O nas</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
-            >Faq</a
-          >
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.9">Faq</a>
         </li>
         <li class="menu__item-desktop menu__item">
 
           <a
             href="{{url_for('projects')}}"
             class="link link-contact"
-            data-trackerPos="2.5"
+            data-trackerPos="2.8"
             >Projekty</a
           >
         </li>
@@ -87,12 +85,11 @@
           <a
             href="{{url_for('kontakt')}}"
             class="link link-contact"
-            data-trackerPos="3.55"
+            data-trackerPos="3.75"
             >Kontakt</a
           >
         </li>
       </ul>
-
       <div class="hamburger">
         <span class="bar bar-1"></span>
         <span class="bar bar-2"></span>
@@ -119,9 +116,16 @@
       />
       <!-- ////////////////////////////// -->
       <section class="client">
-        <div class="client__title-container">
-          <h2 class="project__section-title client__title">Klient</h2>
-        </div>
+        <img
+          class="client__sign-img section__header"
+          src="../static/source/images/projects-imgs/single-projects/client-sign.png"
+          srcset="
+          ../static/source/images/projects-imgs/single-projects/client-sign.png    1000w,
+          ../static/source/images/projects-imgs/single-projects/client-sign@2x.png 1334w
+          "
+          alt="Klient"
+        />
+
         <div class="client__info">
           Agencja PR & Digital marketingu & Social Media Communicatovo z
           Warszawy zwróciła się do nas o odświeżenie wyglądu swojej strony.
@@ -130,9 +134,16 @@
       <!-- ////////////////////////////// -->
       <section class="work">
         <div class="work__text-wraper">
-          <div class="work__title-container">
-            <h2 class="project__section-title work__title">Projekt</h2>
-          </div>
+          <img
+            class="project__sign-img section__header"
+            src="../static/source/images/projects-imgs/single-projects/project-sign.png"
+            srcset="
+            ../static/source/images/projects-imgs/single-projects/project-sign.png    1000w,
+            ../static/source/images/projects-imgs/single-projects/project-sign@2x.png 1334w
+            "
+            alt="Projekt"
+          />
+
           <div class="work__info-container">
             <article class="work__info__step">
               <h3 class="title">Cel współpracy</h3>
@@ -143,7 +154,7 @@
               </p>
               <img
                 class="arow-down-image arow-down-image--left"
-                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                src="../static/source/images/projects-imgs/single-projects/project-arrow-down.png"
                 alt=""
               />
             </article>
@@ -156,7 +167,7 @@
               </p>
               <img
                 class="arow-down-image arow-down-image--right"
-                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                src="../static/source/images/projects-imgs/single-projects/project-arrow-down.png"
                 alt=""
               />
             </article>
@@ -169,7 +180,7 @@
               </p>
               <img
                 class="arow-down-image"
-                src="../static/source/images/projects-imgs/project-arrow-down.png"
+                src="../static/source/images/projects-imgs/single-projects/project-arrow-down.png"
                 alt=""
               />
             </article>
@@ -183,23 +194,32 @@
             </article>
           </div>
         </div>
+
         <div class="work__image-container">
+          <img src="../static/source/images/projects-imgs/single-projects/projects-click-to-open.png" alt="kliknij aby obejrzeć cały projekt" class="click-to-open-fullView">
           <img
-            src="../static/source/images/projects-imgs/agency-site-full-view@2x.png"
+            src="../static/source/images/projects-imgs/single-projects/agency-site/agency-site-full-view.png"
             srcset="
-              ../static/source/images/projects-imgs/agency-site-full-view.png    850w,
-              ../static/source/images/projects-imgs/agency-site-full-view@2x.png
+            ../static/source/images/projects-imgs/single-projects/agency-site/agency-site-full-view.png    1050w,
+            ../static/source/images/projects-imgs/single-projects/agency-site/agency-site-full-view@2x.png
             "
             alt="strona agencji pełen widok"
             class="work__image"
           />
         </div>
-      </section>
+       
+      </section> 
+      <div class="work__project-fullView work__project-fullView--hide ">
+          <div class="layer"></div>
+          <button class="close-fullView"><img src="../static/source/images/projects-imgs/single-projects/Close.svg" alt="close full view"></button>
+          <img alt="Pełny widok projektu" src="../static/source/images/projects-imgs/single-projects/agency-site/agency-site-full-view@2x.png" class="projekt-fullView-image"></img>
+        </div>
       <!-- /////////////////////////////// -->
       <section class="write-to-us">
         <h3 class="write-to-us__title">Spodobał Ci sie projekt?</h3>
         <p class="write-to-us__message">Zamów swój!</p>
-        <a href="{{url_for('kontakt')}}" class="write-to-us__button button">Napisz do nas</a>
+        <a href="../templates/contact.html">
+          <button class="write-to-us__button button">Napisz do nas</button></a>
       </section>
       <!-- /////////////////// -->
       <section class="project__botom-navigation">
@@ -208,7 +228,7 @@
           class="previous-project project-navigation__link"
         >
           <img
-            src="../static/source/images/projects-imgs/botom-navigation-arrow.png"
+            src="../static/source/images/projects-imgs/single-projects/botom-navigation-arrow.png"
             alt=""
             class="previous-project__icon"
           />wszystkie projekty</a
@@ -217,7 +237,7 @@
          href="{{url_for('project_business_packages')}}"
           class="next-project project-navigation__link"
           >następny project<img
-            src="../static/source/images/projects-imgs/botom-navigation-arrow.png"
+            src="../static/source/images/projects-imgs/single-projects/botom-navigation-arrow.png"
             alt=""
             class="next-project__icon"
         /></a>
@@ -231,6 +251,9 @@
         alt="Miętowa zębatka"
         class="footer__img"
       />
+      <div class="footer__logo">
+        <img src="../static/source/images/LOGO.png" alt="" />
+      </div>
       <div class="footer__container">
         <ul class="footer__list">
           <li class="footer__list__item">
@@ -249,14 +272,20 @@
             <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
         </ul>
-        <div class="footer__logo">
-          <img src="../static/source/images/LOGO.png" alt="" />
-        </div>
+
         <div class="footer__design-wraper">
           <p class="footer__design-info">Design by</p>
           <p class="footer__designer">Fotorygo</p>
         </div>
       </div>
     </footer>
+    <div class="goUp goUp--active">
+      <img
+        src="../static/source/images/goUp-img.png"
+        alt=""
+        class="goUp__img"
+      />
+      <p class="goUp__caption">do góry</p>
+    </div>
   </body>
 </html>

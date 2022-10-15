@@ -1,13 +1,24 @@
 import { changeNavbar } from "./navbar.js";
 import { faq } from "./faq.js";
 import { projectObserver } from "./projects.js";
-
-const sectionContainer = document.querySelector(".projects__container");
+import { singleProject } from "./singleProject.js";
+import { goUp } from "./goUpButton.js";
 
 changeNavbar();
 faq();
+
+// run goUpButton script if goUpButton is available
+const goUpButton = document.querySelector(".goUp");
+goUpButton ? goUp(goUpButton) : console.log("no button");
+
+// run project observer script if projects page is loaded.
+const sectionContainer = document.querySelector(".projects__container");
 sectionContainer ? projectObserver(sectionContainer) : false;
-// projectObserver(sectionContainer);
+
+// run singleProject if single project page is loaded
+const workMiniature = document.querySelector(".work__image");
+
+workMiniature ? singleProject(workMiniature) : false;
 
 document.addEventListener("DOMContentLoaded", () => {
   const nav = document.querySelector(".navbar");

@@ -10,15 +10,16 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{url_for('static', filename='styles/main.css')}}" />
+    <link rel="stylesheet" href="../static/styles/main.css" />
     <script src="../static/scriptJS/main.js" type="module" defer></script>
     <title>Home</title>
   </head>
   <body>
+    <!-- Logo and Navbar start -->
     <div class="logo__container-desktop">
       <img src="../static/source/images/LOGO.png" alt="" class="logo" />
     </div>
-    <nav class="navbar" data-currentPos="0">
+    <nav class="navbar" data-currentPos="0.04">
       <!-- Nav-mobile -->
       <div class="logo__container-mobile">
         <img src="../static/source/images/LOGO.png" alt="" class="logo" />
@@ -46,31 +47,32 @@
       <ul class="navbar__menu-desktop menu-desktop">
         <img
           class="current-page-tracker"
-          src="../static/source/images/Vector.png"
+          src="../static/source/images/pageTracker.png"
           alt=""
         />
         <li class="menu__item-desktop menu__item">
-          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
+          <!-- {{url_for('main')}} -->
+          <a href="index.html" class="link" data-trackerPos="0.04">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
+          <!-- {{url_for('about_us')}} -->
           <a
             href="{{url_for('about')}}"
             class="link link-about-us"
-            data-trackerPos="0.9"
+            data-trackerPos="0.95"
             >O nas</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
-            >Faq</a
-          >
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.9">Faq</a>
         </li>
         <li class="menu__item-desktop menu__item">
           <a
             href="{{url_for('projects')}}"
             class="link link-contact"
-            data-trackerPos="2.5"
+            data-trackerPos="2.8"
             >Projekty</a
           >
         </li>
@@ -78,7 +80,7 @@
           <a
             href="{{url_for('kontakt')}}"
             class="link link-contact"
-            data-trackerPos="3.55"
+            data-trackerPos="3.75"
             >Kontakt</a
           >
         </li>
@@ -90,6 +92,9 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
+
+    <!-- Logo and Navbar end -->
+
     <header class="main-header">
       <h1 class="main-header__main-title main-title">
         <span>Tworzenie</span>
@@ -100,8 +105,8 @@
         class="main-header__image"
         src="../static/source/images/main-header-image.png"
         srcset="
-          ../static/source/images/main-header-image.png    750w,
-          ../static/source/images/main-header-image@2x.png
+          ../static/source/images/main-header-image@2x.png 1050w,
+          ../static/source/images/main-header-image.png
         "
         alt=""
       />
@@ -121,7 +126,8 @@
             alt=""
           />
           <p class="offer__item__text">
-            Koncepcja strony w oparciu o wywiad z Państwem
+            Koncepcja strony w oparciu <br />
+            o wywiad z Państwem
           </p>
         </div>
         <div class="offer__item">
@@ -137,7 +143,7 @@
             alt=""
           />
 
-          <p class="offer__item__text">Zaprogramowanie Strony</p>
+          <p class="offer__item__text">Zaprogramowanie strony</p>
         </div>
         <div class="offer__item">
           <img
@@ -168,9 +174,9 @@
           <p class="offer__item__text">Odświeżenie strony</p>
         </div>
       </div>
-      <a href="{{url_for('kontakt')}}" class="offer__form-link">Przejdź do formularza</a>
+      <a href="./contact.html" class="button offer__form-link"
+        >Przejdź do formularza</a>
     </section>
-
     <!-- Section why worth it? -->
     <section class="worth">
       <h2 class="worth__title">Dlaczego warto?</h2>
@@ -200,20 +206,14 @@
           </p>
         </div>
         <div class="worth__box">
-          <h3 class="worth__box-title">
-            Prezentacja <br />
-            oferty
-          </h3>
+          <h3 class="worth__box-title">Prezentacja oferty</h3>
           <p class="worth__box-text">
             Dzięki stronie internetowej w łatwy sposób możesz zaprezentować
             pełen asortyment swoich usług lub produktów w dowolnej formie.
           </p>
         </div>
         <div class="worth__box">
-          <h3 class="worth__box-title">
-            Oszczedność <br />
-            czasu
-          </h3>
+          <h3 class="worth__box-title">Oszczedność czasu</h3>
           <p class="worth__box-text">
             Dobrze zaprojektowana witryna odpowiada na pytania klientów.
             Przemyślana treść i opisy uchronią Cię przed nieustannym
@@ -278,16 +278,21 @@
               >Umieszczanie na serwerach
             </span>
           </div>
-          <a href="{{url_for('projects')}}" class="process__gear__box-btn">Zobacz portfolio!</a>
+          <a href="./projects.html" class="process__gear__box-btn"
+            >Zobacz portfolio!</a>
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <img
         src="../static/source/images/Footer@3x.png"
         alt="Miętowa zębatka"
         class="footer__img"
       />
+      <div class="footer__logo">
+        <img src="../static/source/images/LOGO.png" alt="" />
+      </div>
       <div class="footer__container">
         <ul class="footer__list">
           <li class="footer__list__item">
@@ -306,14 +311,20 @@
             <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
         </ul>
-        <div class="footer__logo">
-          <img src="../static/source/images/LOGO.png" alt="" />
-        </div>
+
         <div class="footer__design-wraper">
           <p class="footer__design-info">Design by</p>
           <p class="footer__designer">Fotorygo</p>
         </div>
       </div>
     </footer>
+    <div class="goUp goUp--active">
+      <img
+        src="../static/source/images/goUp-img.png"
+        alt=""
+        class="goUp__img"
+      />
+      <p class="goUp__caption">do góry</p>
+    </div>
   </body>
 </html>

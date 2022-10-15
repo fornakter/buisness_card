@@ -3,7 +3,7 @@ export const projectObserver = (elementToObserve) => {
 
   // intersection Observer
   const options = {
-    rootMargin: "10px 0px -250px 0px",
+    rootMargin: "10px 0px -150px 0px",
     threshold: 1,
   };
 
@@ -25,9 +25,6 @@ export const projectObserver = (elementToObserve) => {
           miniature.classList.remove("project__img-filter--clear");
           miniatruesObserver.unobserve(miniature);
         });
-
-    //
   });
-
   resizeObserver.observe(elementToObserve);
 };

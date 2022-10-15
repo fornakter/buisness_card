@@ -15,10 +15,12 @@
     <title>About Us</title>
   </head>
   <body>
+
+    <!-- NAVBAR  -->
     <div class="logo__container-desktop">
       <img src="../static/source/images/LOGO.png" alt="" class="logo" />
     </div>
-    <nav class="navbar" data-currentPos="0.9">
+    <nav class="navbar" data-currentPos="0.95">
       <!-- Nav-mobile -->
       <div class="logo__container-mobile">
         <img src="../static/source/images/LOGO.png" alt="" class="logo" />
@@ -48,12 +50,12 @@
       <ul class="navbar__menu-desktop menu-desktop">
         <img
           class="current-page-tracker"
-          src="../static/source/images/Vector.png"
+          src="../static/source/images/pageTracker.png"
           alt=""
         />
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
+          <!-- {{url_for('main')}} -->
+          <a href="index.html" class="link" data-trackerPos="0.04">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
@@ -61,29 +63,27 @@
           <a
             href="{{url_for('about')}}"
             class="link link-about-us"
-            data-trackerPos="0.9"
+            data-trackerPos="0.95"
             >O nas</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.9"
             >Faq</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('projects')}}" class="link link-contact" data-trackerPos="2.5"
-            >Projekty</a
+          <!-- {{url_for('projects')}} -->
+          <a
+            href="projects.html"
+            class="link link-contact"
+            data-trackerPos="2.8">Projekty</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a
-            href="{{url_for('kontakt')}}"
-            class="link link-contact"
-            data-trackerPos="3.55"
-            >Kontakt</a
+          <!--  {{url_for('kontakt')}}-->
+          <a href="contact.html" class="link link-contact" data-trackerPos="3.75">Kontakt</a
           >
         </li>
       </ul>
@@ -94,12 +94,18 @@
         <span class="bar bar-3"></span>
       </div>
     </nav>
+    <!-- POWTARZA SIĘ na każdej stronie-->
+    <!-- KONIEC NAVBARA -->
+
+
     <div class="about-us">
       <header class="about-us__header ">
         <h1 class="about-us__header__title">Kim jesteśmy</h1>
         <img  src="../static/source/images/who_we_are.png"
-        srcset="../static/source/images/who_we_are.png 850W,
-        ../static/source/images/who_we_are@2x.png" alt="" class="about-us__header__img">
+        srcset="../static/source/images/who_we_are.png 850w ,
+        ../static/source/images/who_we_are@2x.png
+        "
+        alt="" class="about-us__header__img">
 
         <article class="about-us__header__text-container text-container">
           <p class="text-container__paragraph">
@@ -185,6 +191,9 @@
           alt="Miętowa zębatka"
           class="footer__img"
         />
+        <div class="footer__logo">
+          <img src="../static/source/images/LOGO.png" alt="" />
+        </div>
         <div class="footer__container">
           <ul class="footer__list">
              <li class="footer__list__item">
@@ -203,15 +212,20 @@
             <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
           </ul>
-          <div class="footer__logo">
-            <img src="../static/source/images/LOGO.png" alt="" />
-          </div>
+  
           <div class="footer__design-wraper">
             <p class="footer__design-info">Design by</p>
             <p class="footer__designer">Fotorygo</p>
           </div>
         </div>
       </footer>
-    </div>
+      <div class="goUp goUp--active">
+        <img
+          src="../static/source/images/goUp-img.png"
+          alt=""
+          class="goUp__img"
+        />
+        <p class="goUp__caption">do góry</p>
+      </div>
   </body>
 </html>

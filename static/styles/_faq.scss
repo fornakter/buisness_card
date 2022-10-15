@@ -1,6 +1,5 @@
 .faq {
   position: relative;
-
   &__header {
     display: flex;
     justify-content: center;
@@ -8,7 +7,7 @@
     margin-bottom: 7rem;
 
     &__image {
-      max-width: 90%;
+      max-width: 23rem;
     }
   }
   &__items {
@@ -35,8 +34,9 @@
       width: 100%;
       border-radius: 0 0 0 8rem;
       z-index: 10;
+      cursor: pointer;
       &__question {
-        font-size: 2.4rem;
+        font-size: 2rem;
         padding: 3.1rem 4.4rem 3.5rem 4.4rem;
         text-align: center;
       }
@@ -66,18 +66,22 @@
     bottom: 40%;
   }
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .faq {
     &__header {
-      margin-top: 15rem;
-      margin-bottom: 10rem;
+      margin-top: 7.5rem;
+      margin-bottom: 8.5rem;
+      &__image {
+        max-width: 37rem;
+      }
     }
     &__items {
       display: flex;
       flex-direction: column;
-      margin-bottom: 70rem;
+      margin-bottom: 20rem;
     }
     &__item {
+      max-width: 100rem;
       border: none;
       border-radius: 0 8rem 0 0;
       position: relative;
@@ -88,16 +92,16 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        height: 12.5rem;
+        height: 6rem;
         border-radius: 0 12rem 0 12rem;
         &__question {
           padding: 3.75rem 1rem 3.75rem 5rem;
-          font-size: 4rem;
+          font-size: 2rem;
         }
         &__status-marker,
         .status-marker {
-          height: 7.7rem;
-          width: 7.7rem;
+          height: 3.3rem;
+          width: 3.3rem;
           background-color: $primary-color;
           border-radius: 50%;
           margin-right: 5rem;
@@ -107,8 +111,8 @@
           align-items: center;
 
           &__bar {
-            height: 0.5rem;
-            width: 4rem;
+            height: 0.2rem;
+            width: 1.7rem;
             background-color: $secondary-color;
             position: absolute;
             transition: 0.3s transform ease-in-out;
@@ -133,23 +137,21 @@
         opacity: 0;
         transform: translateY(-5.5rem);
         max-height: 0;
-        transition: 0.5s max-height ease-in, 0.5s opacity ease-in;
+        transition: 0.8s max-height ease 0.1s, 0.8s opacity ease;
 
         &__answer {
-          font-size: 3.5rem;
+          font-size: 2rem;
           text-align: start;
-          font-size: 3.5rem;
         }
         &__answer--open {
-          font-size: 3.5rem;
-          transition: 0.3s all ease-in;
+          transition: 0.8s all ease;
         }
       }
       &__answer-container--open {
         max-height: 100rem;
         padding: 6rem 18rem 2rem 18rem;
         opacity: 1;
-        transition: 0.5s max-height ease-in, 0.5s opacity ease-in;
+        transition: 0.8s max-height ease, 0.8s opacity ease 0.1s;
       }
     }
     .bg-grid-left {

@@ -1,15 +1,32 @@
 .button {
+  letter-spacing: 0.1rem;
+  margin: 0 auto;
   border: 3px solid $secondary-color;
   color: $secondary-color;
   background: none;
   border-radius: 0 13rem;
   font-family: Helvetica-Nouel, sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   padding: 1.3rem 5.9rem 1.86rem 5.9rem;
   text-shadow: 0px 0.3rem 1rem rgba(0, 0, 0, 0.55);
   transition: all 0.5s ease;
   position: relative;
+  text-decoration: none;
+  text-align: center;
 
+  &:hover {
+    color: white;
+    background-color: $secondary-color;
+    text-shadow: 0px 0.3rem 0.8rem rgb(0, 0, 0);
+  }
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+    width: 100%;
+  }
+  a:hover {
+    color: white;
+  }
   &::before {
     transition: all 0.5s ease;
     position: absolute;
@@ -23,14 +40,63 @@
     border-radius: 0 13rem;
     box-shadow: 0px 0.5rem 1.5rem rgba(255, 255, 255, 0.3);
   }
-  &:hover {
-    color: white;
+  &:hover a {
     transition: all 0.5s ease;
+    color: white !important;
+
     &::before {
       transition: all 0.5s ease;
       background-color: $secondary-color;
-
-      color: white;
     }
+  }
+}
+.goUp {
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  height: 7rem;
+  width: 7rem;
+  background-color: rgba(22, 20, 20, 0.801);
+  border-radius: 50%;
+  bottom: 5rem;
+  right: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  transition: 0.4s ease opacity, visibility 0.1s ease 0.4s;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+
+  &:hover > &__img {
+    animation: goUp 1s infinite both;
+  }
+  &__img {
+    transition: 0.3s transform ease-in-out;
+    position: absolute;
+    width: 50%;
+  }
+  &__caption {
+    color: $secondary-color;
+    display: none;
+  }
+  &--active {
+    visibility: visible;
+    transition: 0.4s ease opacity 0.1s, visibility 0.1s ease 0.1s;
+    opacity: 1;
+  }
+}
+
+@keyframes goUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

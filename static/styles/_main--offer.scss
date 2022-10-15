@@ -1,5 +1,5 @@
 .offer {
-  min-height: 100vh;
+  // min-height: 100vh;
   font-weight: 100;
   min-width: 100%;
   display: flex;
@@ -15,6 +15,7 @@
     text-align: center;
     padding: 1.4rem 3.3rem;
     border-radius: 0 8rem 0 8rem;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
   }
   &__container {
     display: grid;
@@ -25,7 +26,7 @@
     position: relative;
     margin-top: 7rem;
     &__img {
-      width: 80%;
+      width: 70%;
     }
     &__text {
       display: flex;
@@ -34,88 +35,71 @@
       background-color: $secondary-color;
       color: $primary-color;
       position: absolute;
-      font-size: 1.6rem;
+      font-size: 2rem;
       font-family: "Jost", sans-serif;
-      font-weight: 900;
-      bottom: 13%;
+      font-weight: 500;
+      bottom: 10%;
       text-align: center;
       padding: 2rem;
-      width: 90%;
+      width: 85%;
       height: 8.1rem;
     }
   }
   &__form-link {
-    background-color: $accent-color-dark;
-    // width: 80%;
-    margin: 11.6rem auto;
-    text-decoration: none;
-    border-radius: 0 6rem 0 6rem;
-    display: block;
-    padding: 2rem;
-    text-align: center;
-    font-size: 1.4rem;
-    color: transparent;
-    transition: all 0.3s;
-    position: relative;
-
-    &:hover {
-      background-color: $secondary-color;
-      &::after {
-        color: $primary-color;
-
-        transition: 0.2s all ease;
-      }
-    }
-    &::after {
-      content: "Przejdź do formularza";
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 13%;
-      left: 4%;
-      padding: 2rem;
-      border: 5px solid $secondary-color;
-      border-radius: 0 6rem 0 6rem;
-      color: $secondary-color;
-      transition: 0.2s all ease;
-      text-shadow: 0px 3px 10px rgba(0, 0, 0, 0.55);
-    }
+    font-size: 1.7rem;
+    width: 80%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
   }
 }
 
 @media screen and (min-width: 750px) {
   .offer {
     &__title {
-      font-size: 2.5rem;
-      width: 70%;
+      max-width: 57.5rem;
+      margin-top: 11.4rem;
+      margin-bottom: 5rem;
     }
     &__container {
       grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 4.5rem;
     }
     &__item {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
       margin-top: 9rem;
+      display: flex;
+      align-items: flex-end;
       &__text {
         height: 8rem;
         font-size: 2rem;
+        font-weight: 100;
         padding: 2rem;
         transition: 0.3s font-size ease;
         top: 65%;
       }
     }
+
     &__form-link {
-      font-size: 3rem;
-      padding: 2rem 6rem;
+      max-width: 35rem;
+      margin-bottom: 12rem;
     }
   }
 }
 @media screen and (min-width: 1300px) {
   .offer {
+    &__title {
+      font-size: 4.5rem;
+      min-width: 100rem;
+    }
+    &__container {
+      margin-bottom: 10rem;
+    }
     &__item {
+      max-width: 60rem;
+
       &__text {
         width: 90%;
         height: 10rem;
@@ -127,8 +111,51 @@
       }
     }
     &__form-link {
-      // font-size: 3rem;
-      // width: 30%;
+      box-sizing: content-box;
+      width: unset;
+      max-width: 57rem;
+      font-size: 2.5rem;
+      padding: 1.5rem 4rem 1.86rem;
+      margin-bottom: 15rem;
     }
   }
 }
+@media screen and (min-width: 1700px) {
+  .offer {
+    &__title {
+      max-width: 105rem;
+      width: unset;
+    }
+    &__container {
+      display: flex;
+      margin-bottom: 10rem;
+      padding: 0 5rem;
+    }
+    &__item__text {
+      width: 82%;
+    }
+  }
+}
+// @media screen and (min-width: 1920px) {
+//   .offer {
+//     align-items: center;
+
+//     &__title {
+//       padding: 2.5rem;
+//       border-radius: 0 10rem 0 10rem;
+//     }
+
+//     &__container {
+//       flex-wrap: wrap;
+//       width: 80%;
+//     }
+
+//     &__item {
+//       width: 60%;
+//     }
+//   }
+
+//   .main-header__main-title span:nth-child(3) {
+//     margin-left: 30rem;
+//   }
+// }

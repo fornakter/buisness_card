@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{url_for('static', filename='styles/main.css')}}" />
+    <link rel="stylesheet" href="../static/styles/main.css" />
     <script src="../static/scriptJS/main.js" type="module" defer></script>
     <title>FAQ</title>
   </head>
@@ -18,8 +18,7 @@
     <div class="logo__container-desktop">
       <img src="../static/source/images/LOGO.png" alt="" class="logo" />
     </div>
-    <nav class="navbar" data-currentPos="1.65">
-
+    <nav class="navbar" data-currentPos="1.9">
       <div class="logo__container-mobile">
         <img src="../static/source/images/LOGO.png" alt="" class="logo" />
       </div>
@@ -43,17 +42,17 @@
         </li>
       </ul>
 
-      <!-- Nav-Desktop -->
+       <!-- Nav-Desktop -->
 
-      <ul class="navbar__menu-desktop menu-desktop">
+       <ul class="navbar__menu-desktop menu-desktop">
         <img
           class="current-page-tracker"
-          src="../static/source/images/Vector.png"
+          src="../static/source/images/pageTracker.png"
           alt=""
         />
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
+          <!-- {{url_for('main')}} -->
+          <a href="index.html" class="link" data-trackerPos="0.04">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
@@ -61,30 +60,26 @@
           <a
             href="{{url_for('about')}}"
             class="link link-about-us"
-            data-trackerPos="0.9"
+            data-trackerPos="0.95"
             >O nas</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.9"
             >Faq</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('projects')}}" class="link link-contact" data-trackerPos="2.5"
-            >Projekty</a
-          >
+          <!-- {{url_for('projects')}} -->
+          <a
+            href="projects.html"
+            class="link link-contact"
+            data-trackerPos="2.8">Projekty</a>
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a
-            href="{{url_for('kontakt')}}"
-            class="link link-contact"
-            data-trackerPos="3.55"
-            >Kontakt</a
-          >
+          <!--  {{url_for('kontakt')}}-->
+          <a href="contact.html" class="link link-contact" data-trackerPos="3.75">Kontakt</a>
         </li>
       </ul>
 
@@ -167,6 +162,9 @@
         alt="Miętowa zębatka"
         class="footer__img"
       />
+      <div class="footer__logo">
+        <img src="../static/source/images/LOGO.png" alt="" />
+      </div>
       <div class="footer__container">
         <ul class="footer__list">
           <li class="footer__list__item">
@@ -185,12 +183,20 @@
             <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
         </ul>
-        <div class="footer__logo">logo</div>
+
         <div class="footer__design-wraper">
           <p class="footer__design-info">Design by</p>
           <p class="footer__designer">Fotorygo</p>
         </div>
       </div>
     </footer>
+    <div class="goUp goUp--active">
+      <img
+        src="../static/source/images/goUp-img.png"
+        alt=""
+        class="goUp__img"
+      />
+      <p class="goUp__caption">do góry</p>
+    </div>
   </body>
 </html>

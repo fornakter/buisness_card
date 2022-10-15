@@ -21,14 +21,20 @@ export const changeNavbar = () => {
     el.addEventListener("mouseover", (e) => {
       moveTrackingLoop(e);
     });
+    el.addEventListener("mouseleave", (e) => {
+      const trackerPosition = navbar.dataset.currentpos;
+      currentPageTracker.style.transform = `translateX(${
+        trackerPosition * 100
+      }%)`;
+    });
   });
   // set pageTracker on current element
   window.addEventListener("load", () => {
     const trackerPosition = navbar.dataset.currentpos;
-
     currentPageTracker.style.transform = `translateX(${
       trackerPosition * 100
     }%)`;
+    currentPageTracker.style.opacity = "1";
   });
 
   // Open & close navbar menu.

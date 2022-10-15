@@ -25,9 +25,13 @@
   </head>
   <body>
     <div class="logo__container-desktop">
-      <img src="../static/source/images/LOGO.png" alt="" class="logo" />
+      <img
+        src="../static/source/images/LOGO.png"
+        alt=""
+        class="logo logo-desktop"
+      />
     </div>
-    <nav class="navbar" data-currentPos="3.55">
+    <nav class="navbar" data-currentPos="3.75">
       <!-- Nav-mobile -->
       <div class="logo__container-mobile">
         <img src="../static/source/images/LOGO.png" alt="" class="logo" />
@@ -57,26 +61,25 @@
       <ul class="navbar__menu-desktop menu-desktop">
         <img
           class="current-page-tracker"
-          src="../static/source/images/Vector.png"
+          src="../static/source/images/pageTracker.png"
           alt=""
         />
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('index')}}" class="link" data-trackerPos="0">Home</a>
+          <!-- {{url_for('main')}} -->
+          <a href="index.html" class="link" data-trackerPos="0.04">Home</a>
         </li>
 
         <li class="menu__item-desktop menu__item">
           <a
             href="{{url_for('about')}}"
             class="link link-about-us"
-            data-trackerPos="0.9"
+            data-trackerPos="0.95"
             >O nas</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
-
-          <a href="{{url_for('faq')}}" class="link link-contact" data-trackerPos="1.65"
-            >Faq</a
+          <!-- {{url_for('faq')}} -->
+          <a href="faq.html" class="link link-contact" data-trackerPos="1.9">Faq</a
           >
         </li>
         <li class="menu__item-desktop menu__item">
@@ -84,7 +87,7 @@
           <a
             href="{{url_for('projects')}}"
             class="link link-contact"
-            data-trackerPos="2.5"
+            data-trackerPos="2.8"
             >Projekty</a
           >
         </li>
@@ -93,7 +96,7 @@
           <a
             href="{{url_for('kontakt')}}"
             class="link link-contact"
-            data-trackerPos="3.55"
+            data-trackerPos="3.75"
             >Kontakt</a
           >
         </li>
@@ -186,7 +189,9 @@
         </div>
       </div>
       <div class="form__row">
-        <label class="form__label" for="form__message">Wiadomość:</label>
+        <label class="form__label form__label--area" for="form__message"
+          >Wiadomość:</label
+        >
         <textarea type="text" class="form__message form__input"> </textarea>
         <div class="error-message"></div>
       </div>
@@ -211,11 +216,10 @@
         alt="Miętowa zębatka"
         class="footer__img"
       />
+      <div class="footer__logo">
+        <img src="../static/source/images/LOGO.png" alt="" />
+      </div>
       <div class="footer__container">
-        <div class="footer__logo">
-          <img src="../static/source/images/LOGO.png" alt="" />
-        </div>
-
         <ul class="footer__list">
           <li class="footer__list__item">
             <a class="footer__list__item__link" href="{{url_for('index')}}">Home</a>
@@ -233,6 +237,7 @@
             <a class="footer__list__item__link" href="{{url_for('kontakt')}}">Kontakt</a>
           </li>
         </ul>
+
         <div class="footer__design-wraper">
           <p class="footer__design-info">Design by</p>
           <p class="footer__designer">Fotorygo</p>
@@ -248,6 +253,14 @@
           Wiadomość wysłana! <br />Wkrótce się z tobą skontaktujemy.
         </p>
       </div>
+    </div>
+    <div class="goUp goUp--active">
+      <img
+        src="../static/source/images/goUp-img.png"
+        alt=""
+        class="goUp__img"
+      />
+      <p class="goUp__caption">do góry</p>
     </div>
   </body>
 </html>
